@@ -4,10 +4,10 @@ import "./homePage.css";
 function HomePage() {
   return (
     <>
-      <Navbar />
       <div className="App">
-        <div className="App-header">
-          <img src="logo.png" className="App-logo" alt="logo" />
+        <Navbar />
+        <div className="App-header bg-white">
+          <img src="log.png" className="App-logo" alt="logo" />
         </div>
       </div>
     </>

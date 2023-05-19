@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom"
+
 const Navbar = () => {
     return (
-        <header className="shadow mb-2" style={{backgroundColor: "#3b474a", margin: 0,}}>
+        <header className="shadow mb-2" style={{backgroundColor: "#FFFAFA", margin: 0,}}>
             <div className="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center">
                 <a href="#" className="flex items-center whitespace-nowrap text-2xl font-black">
                     <span className="mr-2 text-4xl text-blue-600">
-                        <img src="logo.png" alt="logo" style={{width: "100px"}}/>
+                        <img src="logo-title.png" alt="logo" />
                     </span>
-                    <span className="text-black" style={{color: "#80d8ff"}} >DEVELGRAM</span>
+                    <span className="text-black"  ></span>
                 </a>
                 <input type="checkbox" className="peer hidden" id="navbar-open" />
                 <label className="absolute top-5 right-7 cursor-pointer md:hidden" for="navbar-open">
@@ -17,11 +19,9 @@ const Navbar = () => {
                 </label>
                 <nav aria-label="Header Navigation" className="peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
                     <ul className="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
-                        <li className="text-white md:mr-12 hover:text-blue-600"><a href="#"></a></li>
-                        <li className="text-white md:mr-12 hover:text-blue-600"><a href="#"></a></li>
-                        <li className="text-white md:mr-12 hover:text-blue-600" style={{color: "#80d8ff"}}><a href="#">Support</a></li>
-                        <li className="text-white md:mr-12 hover:text-blue-600">
-                            <button className="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white" style={{color: "#80d8ff"}}>Login</button>
+                        <li className="text-blue md:mr-12 hover:text-pink" ><a href="#">Support</a></li>
+                        <li className="text-blue md:mr-12 hover:text-blue">
+                           <Link to='/login'> <button className="rounded-md border-2 border-blue px-6 py-1 font-medium text-blue transition-colors hover:border-pink hover:text-pink" >Login</button></Link>
                         </li>
                     </ul>
                 </nav>
