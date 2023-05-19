@@ -19,9 +19,9 @@ const Navbar = () => {
                     <ul className="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
                         <li className="text-white md:mr-12 hover:text-blue-600"><a href="#"></a></li>
                         <li className="text-white md:mr-12 hover:text-blue-600"><a href="#"></a></li>
-                        <li className="text-white md:mr-12 hover:text-blue-600"><a href="#">Support</a></li>
+                        <li className="text-white md:mr-12 hover:text-blue-600" style={{color: "#80d8ff"}}><a href="#">Support</a></li>
                         <li className="text-white md:mr-12 hover:text-blue-600">
-                            <button className="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white">Login</button>
+                            <button className="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white" style={{color: "#80d8ff"}}>Login</button>
                         </li>
                     </ul>
                 </nav>
