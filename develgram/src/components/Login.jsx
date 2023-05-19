@@ -5,8 +5,8 @@ function Login() {
   return (
     <div className="flex h-screen w-full items-center justify-center bg-gray-100">
       <div className="w-full max-w-3xl overflow-hidden rounded-lg bg-white shadow-lg sm:flex">
-        <div className="m-2 w-full rounded-2xl bg-gray-400 bg-cover bg-center text-white sm:w-2/5">
-        <Link to="/"> <img src="log.png" alt="logo" style={{ width: "1000px" }} /> </Link>
+        <div className="m-2 w-full rounded-2xl bg-gray-400 bg-cover bg-center text-white sm:w-2/5" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+          <Link to="/"> <img src="log.png" alt="logo" style={{width: "1000px" }} /> </Link>
         </div>
         <div className="w-full sm:w-3/5">
           <div className="p-8">
@@ -17,7 +17,7 @@ function Login() {
                 <input
                   type="text"
                   id="email"
-                  value="email@gmail.com"
+                  value=""
                   className="border-1 peer block w-full appearance-none rounded-lg border border-blue bg-transparent px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-pink focus:outline-none focus:ring-0"
                   placeholder=" "
                 />
