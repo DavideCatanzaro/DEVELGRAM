@@ -10,7 +10,7 @@ function Login() {
         </div>
         <div className="w-full sm:w-3/5">
           <div className="p-8">
-            <h1 className="text-3xl font-black text-slate-700">Sign in</h1>
+            <h1 className="text-3xl font-black text-slate-700"><img src="logo-title.png" alt="logo" /></h1>
             <p className="mt-2 mb-5 text-base leading-tight text-gray-600"></p>
             <form className="mt-8">
               <div className="relative mt-2 w-full">
