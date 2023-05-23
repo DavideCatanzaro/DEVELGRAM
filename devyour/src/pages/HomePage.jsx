@@ -1,5 +1,5 @@
 import Navbar from "../components/NavbarHome";
-import "../style/homePage.css";
+import "../template/homePage.css";
 
 function HomePage() {
   return (

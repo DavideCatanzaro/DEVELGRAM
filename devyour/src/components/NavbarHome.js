@@ -6,7 +6,7 @@ const Navbar = () => {
             <div className="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center">
                 <a href="#" className="flex items-center whitespace-nowrap text-2xl font-black">
                     <span className="mr-2 text-4xl text-blue-600">
-                        <img src="logo-title.png" alt="logo" />
+                        <img src="DevYour.png" alt="logo" />
                     </span>
                     <span className="text-black"  ></span>
                 </a>
