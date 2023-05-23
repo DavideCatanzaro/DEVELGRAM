@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Navbar from "../components/NavbarHome";
 import "../template/homePage.css";
 
@@ -6,9 +7,10 @@ function HomePage() {
     <>
       <div className="App">
         <Navbar />
-        <div className="App-header bg-white">
-          <img src="log.png" className="App-logo" alt="logo" />
+        <div  className="App-header bg-white">
+          <img src="log.png" className="App-logo bg-transparent" alt="logo" />
         </div>
+        <Footer />
       </div>
     </>
   );
