@@ -33,7 +33,7 @@ function Register() {
               <div className="relative mt-2 w-full">
                 <input
                   type="text"
-                  id="usrname"
+                  id="username"
                   className="border-1 peer block w-full appearance-none rounded-lg border border-blue bg-transparent px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-pink focus:outline-none focus:ring-0"
                   placeholder=" "
                 />
