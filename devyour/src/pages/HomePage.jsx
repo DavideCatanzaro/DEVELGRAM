@@ -1,5 +1,5 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/NavbarHome";
+import Footer from "../components/shared/Footer";
+import Navbar from "../components/shared/NavbarHome";
 import "../template/homePage.css";
 
 function HomePage() {

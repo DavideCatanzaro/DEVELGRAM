@@ -19,7 +19,7 @@ const Navbar = () => {
                 </label>
                 <nav aria-label="Header Navigation" className="peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
                     <ul className="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
-                        <li className="text-blue md:mr-12 hover:text-pink" ><a href="#">Support</a></li>
+                      <Link to="credits">  <li className="text-blue md:mr-12 hover:text-pink" ><a href="#">Credits</a></li></Link>
                         <li className="text-blue md:mr-12 hover:text-blue">
                            <Link to='/login'> <button className="rounded-md border-2 border-blue px-6 py-1 font-medium text-blue transition-colors hover:border-pink hover:text-pink" >Login</button></Link>
                         </li>
