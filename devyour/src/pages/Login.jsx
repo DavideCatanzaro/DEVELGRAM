@@ -57,7 +57,7 @@ function Login() {
                   {" "}
                   <a
                     href="#"
-                    className="font-bold text-blue-600 no-underline hover:text-blue-400"
+                    className="font-bold text-blue no-underline hover:text-pink"
                   >
                     Sign up
                   </a>{" "}
