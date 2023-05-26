@@ -9,7 +9,8 @@ module.exports = {
       'blue' : '#80d8ff',
       'pink' : '#ea80fc',
       'grey' : '#3b474a',
-      'white' : '#FFFAFA'
+      'white' : '#FFFAFA',
+      'red' : '#FF0000'
     },
     extend: {},
   },

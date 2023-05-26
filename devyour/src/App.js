@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import DevYour from "./pages/Devyour";
 import Credits from "./pages/Credits";
+import Notifiche from "./pages/Notifiche";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="register" element={<Register/>}/>
         <Route path="devyour" element={<DevYour/>}/>
         <Route path="credits" element={<Credits/>}/>
+        <Route path="notifiche" element={<Notifiche/>}/>
       </Routes>
     </>
   );
