@@ -1,22 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import InputField from "../atoms/InputField"
 import ButtonToggle from "../atoms/ButtonToggle";
 import { Link } from "react-router-dom";
 
 function LeftSidebar() {
+  const [value,setValue]= useState("")
+
+  const handleValue = (e) =>{
+    setValue(e.target.value)
+  }
+  
+  
   return (
     <div className="min-h-screen w-72 mr-0 bg-white ">
       <div className="absolute left-0 flex h-screen w-72 flex-col overflow-hidden rounded-r-1xl bg-white text-grey border-r-2 border-grey">
-        <img
-          src="DevYour.png"
-          alt="log"
-          style={{
-            width: "70%",
-            height: "9%",
-            marginTop: "30px",
-            marginLeft: "10px",
-          }}
-        />
+        <Link to="/">
+          <img
+            src="DevYour.png"
+            alt="log"
+            style={{
+              width: "70%",
+              height: "68%",
+              marginTop: "30px",
+              marginLeft: "20px",
+            }}
+          />
+        </Link>
         <ul className="mt-20 space-y-3">
          <Link to="/devyour"> 
             <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-bold text-grey hover:text-pink">
@@ -72,28 +81,30 @@ function LeftSidebar() {
                 d="M 499.289 57.696 C 499.289 171.989 399.349 196.304 399.349 257.333 C 399.349 322.485 499.512 354.485 499.512 458.767 C 499.512 483.155 499.289 57.696 499.289 57.696 Z"
               />
             </svg>
-            <InputField placeholder="Cerca" id="search" value="" type="text" input="thirdInputVariant"/>
+            <InputField placeholder="Cerca" id="search" type="text" input="thirdInputVariant" onChange={handleValue}/>
           </li>
           <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-grey font-semibold hover:text-pink">
-          <button className="flex">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                  />
-                </svg>
-              </span>
-              <span className="ml-2">Messaggi</span>
-            </button>
+          <Link to="/messaggi">
+            <button className="flex">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                    />
+                  </svg>
+                </span>
+                <span className="ml-2">Messaggi</span>
+              </button>
+            </Link>
           </li>
           <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-semibold text-grey hover:text-blue">
             <Link to="/notifiche" className="flex">
