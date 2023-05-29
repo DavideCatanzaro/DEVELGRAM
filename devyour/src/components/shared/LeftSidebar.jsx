@@ -4,28 +4,23 @@ import ButtonToggle from "../atoms/ButtonToggle";
 import { Link } from "react-router-dom";
 
 function LeftSidebar() {
-  const [value,setValue]= useState("")
 
-  const handleValue = (e) =>{
-    setValue(e.target.value)
-  }
-  
   
   return (
-    <div className="min-h-screen w-72 mr-0 bg-white ">
-      <div className="absolute left-0 flex h-screen w-72 flex-col overflow-hidden rounded-r-1xl bg-white text-grey border-r-2 border-grey">
-        <Link to="/">
+    
+      <div className="absolute left-0 flex h-screen w-72 flex-col overflow-hidden rounded-r-1xl bg-white text-grey border-r-2 border-grey justify-center items-center">
+        
           <img
             src="DevYour.png"
             alt="log"
             style={{
-              width: "70%",
-              height: "68%",
+              width: "60%",
+              
               marginTop: "30px",
-              marginLeft: "20px",
+              /* marginLeft: "20px", */
             }}
           />
-        </Link>
+        
         <ul className="mt-20 space-y-3">
          <Link to="/devyour"> 
             <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-bold text-grey hover:text-pink">
@@ -81,7 +76,7 @@ function LeftSidebar() {
                 d="M 499.289 57.696 C 499.289 171.989 399.349 196.304 399.349 257.333 C 399.349 322.485 499.512 354.485 499.512 458.767 C 499.512 483.155 499.289 57.696 499.289 57.696 Z"
               />
             </svg>
-            <InputField placeholder="Cerca" id="search" type="text" input="thirdInputVariant" onChange={handleValue}/>
+            <InputField placeholder="Cerca" id="search" type="text" input="thirdInputVariant"/>
           </li>
           <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-grey font-semibold hover:text-pink">
           <Link to="/messaggi">
@@ -175,7 +170,7 @@ function LeftSidebar() {
           <ButtonToggle />
         </div>
       </div>
-    </div>
+    
   );
 }
 
