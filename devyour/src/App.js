@@ -8,7 +8,9 @@ import Credits from "./pages/Credits";
 import UserProfile from "./pages/UserProfile";
 import UserCard from "./components/shared/UserCard";
 import UsersList from "./components/shared/UsersList";
-import User2 from "./pages/UserProfile";
+import Notifiche from "./pages/Notifiche";
+import Messaggi from "./pages/Messaggi";
+
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
         <Route path="/userProfile" element={<UserProfile/>}/>
         <Route path="/userCard" element={<UserCard/>}/>
         <Route path="/usersList" element={<UsersList/>}/>
-        <Route path="/user2" element={<User2/>}/>
+        <Route path="notifiche" element={<Notifiche/>}/>
+        <Route path="messaggi" element={<Messaggi/>}/>
+
       </Routes>
     </>
   );

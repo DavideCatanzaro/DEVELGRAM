@@ -56,9 +56,10 @@ function Login() {
                 />
               </div>
               
-              <Link to='/devyour'> 
+
+              <Link to="/devyour">
                 <InputField input="secondaryInputVariant" type="submit" value="Login"/>
-              </Link> 
+                </Link>
             </form>
             <div className="mt-4 text-center">
               <p className="text-sm text-grey">
