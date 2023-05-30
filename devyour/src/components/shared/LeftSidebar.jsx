@@ -5,123 +5,123 @@ import { Link } from "react-router-dom";
 
 function LeftSidebar() {
 
-  
+
   return (
-    
-      <div className="absolute left-0 flex h-screen w-72 flex-col overflow-hidden rounded-r-1xl bg-white text-grey border-r-2 border-grey justify-center items-center">
-        
-          <img
-            src="DevYour.png"
-            alt="log"
-            style={{
-              width: "60%",
-              
-              marginTop: "30px",
-              /* marginLeft: "20px", */
-            }}
-          />
-        
-        <ul className="mt-20 space-y-3">
-         <Link to="/devyour"> 
-            <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-bold text-grey hover:text-pink">
-              <button
-                className="flex"
-              >
-                <span>
-                  <svg
-                    className=" h-6 w-6 align-middle"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                      class=""
-                    ></path>
-                  </svg>
-                </span>
-                <span className="ml-2">Home</span>
-              </button>
-            </li>
-          </Link>
-          <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-semibold text-grey hover:text-blue">
-            
+
+    <div className="absolute left-0 flex h-screen w-72 flex-col overflow-hidden rounded-r-1xl bg-white text-grey border-r-2 border-grey justify-center items-center">
+
+      <img
+        src="DevYour.png"
+        alt="log"
+        style={{
+          width: "60%",
+
+          marginTop: "30px",
+          /* marginLeft: "20px", */
+        }}
+      />
+
+      <ul className="mt-20 space-y-3">
+        <Link to="/devyour">
+          <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-bold text-grey hover:text-pink">
+            <button
+              className="flex"
+            >
               <span>
                 <svg
-                  className="h-6 w-6 align-middle"
+                  className=" h-6 w-6 align-middle"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
                   fill="none"
+                  viewBox="0 0 24 24"
                   stroke="currentColor"
                   stroke-width="2"
                 >
-                  <circle cx="11" cy="11" r="8" class=""></circle>
-                  <line x1="21" y1="21" x2="16.65" y2="16.65" class=""></line>
-                </svg>
-              </span>
-              
-            
-            <svg
-              className="absolute -top-1/2 -right-1 h-32 w-8 text-gray-50"
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="4em"
-            >
-              <path
-                fill="currentColor"
-                d="M 499.289 57.696 C 499.289 171.989 399.349 196.304 399.349 257.333 C 399.349 322.485 499.512 354.485 499.512 458.767 C 499.512 483.155 499.289 57.696 499.289 57.696 Z"
-              />
-            </svg>
-            <InputField placeholder="Cerca" id="search" type="text" input="thirdInputVariant"/>
-          </li>
-          <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-grey font-semibold hover:text-pink">
-          <Link to="/messaggi">
-            <button className="flex">
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                    />
-                  </svg>
-                </span>
-                <span className="ml-2">Messaggi</span>
-              </button>
-            </Link>
-          </li>
-          <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-semibold text-grey hover:text-blue">
-            <Link to="/notifiche" className="flex">
-              <span className="text-2xl">
-                <svg
-                  className="h-7 w-7"
-                  viewBox="0 0 32 32"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M24.0362 21.3333H18.5243L15.9983 24.4208L13.4721 21.3333H7.96047L7.99557 8H24.0009L24.0362 21.3333ZM24.3705 23.3333H19.4721L17.2883 26.0026C16.6215 26.8176 15.3753 26.8176 14.7084 26.0026L12.5243 23.3333H7.62626C6.70407 23.3333 5.95717 22.5845 5.9596 21.6623L5.99646 7.66228C5.99887 6.74352 6.74435 6 7.66312 6H24.3333C25.2521 6 25.9975 6.7435 26 7.66224L26.0371 21.6622C26.0396 22.5844 25.2927 23.3333 24.3705 23.3333ZM12.6647 14C12.2965 14 11.998 14.2985 11.998 14.6667V15.3333C11.998 15.7015 12.2965 16 12.6647 16H19.3313C19.6995 16 19.998 15.7015 19.998 15.3333V14.6667C19.998 14.2985 19.6995 14 19.3313 14H12.6647Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    class=""
                   ></path>
                 </svg>
               </span>
-              <span className="ml-1 ">Notifiche</span>
-              </Link>
+              <span className="ml-2">Home</span>
+            </button>
           </li>
-          <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-grey font-semibold hover:text-pink">
+        </Link>
+        <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-semibold text-grey hover:text-blue">
+
+          <span>
+            <svg
+              className="h-6 w-6 align-middle"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8" class=""></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65" class=""></line>
+            </svg>
+          </span>
+
+
+          <svg
+            className="absolute -top-1/2 -right-1 h-32 w-8 text-gray-50"
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="4em"
+          >
+            <path
+              fill="currentColor"
+              d="M 499.289 57.696 C 499.289 171.989 399.349 196.304 399.349 257.333 C 399.349 322.485 499.512 354.485 499.512 458.767 C 499.512 483.155 499.289 57.696 499.289 57.696 Z"
+            />
+          </svg>
+          <InputField placeholder="Cerca" id="search" type="text" input="thirdInputVariant" />
+        </li>
+        <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-grey font-semibold hover:text-pink">
+          <Link to="/messaggi">
             <button className="flex">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                  />
+                </svg>
+              </span>
+              <span className="ml-2">Messaggi</span>
+            </button>
+          </Link>
+        </li>
+        <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-semibold text-grey hover:text-blue">
+          <Link to="/notifiche" className="flex">
+            <span className="text-2xl">
+              <svg
+                className="h-7 w-7"
+                viewBox="0 0 32 32"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24.0362 21.3333H18.5243L15.9983 24.4208L13.4721 21.3333H7.96047L7.99557 8H24.0009L24.0362 21.3333ZM24.3705 23.3333H19.4721L17.2883 26.0026C16.6215 26.8176 15.3753 26.8176 14.7084 26.0026L12.5243 23.3333H7.62626C6.70407 23.3333 5.95717 22.5845 5.9596 21.6623L5.99646 7.66228C5.99887 6.74352 6.74435 6 7.66312 6H24.3333C25.2521 6 25.9975 6.7435 26 7.66224L26.0371 21.6622C26.0396 22.5844 25.2927 23.3333 24.3705 23.3333ZM12.6647 14C12.2965 14 11.998 14.2985 11.998 14.6667V15.3333C11.998 15.7015 12.2965 16 12.6647 16H19.3313C19.6995 16 19.998 15.7015 19.998 15.3333V14.6667C19.998 14.2985 19.6995 14 19.3313 14H12.6647Z"
+                ></path>
+              </svg>
+            </span>
+            <span className="ml-1 ">Notifiche</span>
+          </Link>
+        </li>
+        <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-grey font-semibold hover:text-pink">
+          <button className="flex">
             <span>
               <svg
                 className="h-5 w-8"
@@ -162,15 +162,15 @@ function LeftSidebar() {
               </svg>
             </span>
             <span className="">Crea</span>
-            </button>
-          </li>
-        </ul>
+          </button>
+        </li>
+      </ul>
 
-        <div className="my-6 mt-auto ml-1 flex cursor-pointer">
-          <ButtonToggle />
-        </div>
+      <div className="my-6 mt-auto ml-1 flex cursor-pointer">
+        <ButtonToggle />
       </div>
-    
+    </div>
+
   );
 }
 
