@@ -108,7 +108,7 @@ const UsersList = () => {
                     </div>
                     {/* <!--User row --> */}
 
-                    <a className="show-more block w-10/12 mx-auto py-2.5 px-4 text-center no-underline rounded text-white text-center border-0 font-medium bg-blue hover:bg-pink duration-300" href="#/">
+                    <a className="show-more block w-10/12 mx-auto py-2.5 px-4 text-center no-underline rounded text-white border-0 font-medium bg-blue hover:bg-pink duration-300" href="#/">
                         
                     Show more members  
                     </a>

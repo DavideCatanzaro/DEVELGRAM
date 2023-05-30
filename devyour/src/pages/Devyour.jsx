@@ -1,5 +1,5 @@
 import InputField from "../components/atoms/InputField";
-import Post from "../components/atoms/Post";
+import Post from "../components/shared/Post";
 import LeftSidebar from "../components/shared/LeftSidebar";
 import NewContent from "../components/shared/NewContent";
 import UserCard from "../components/shared/UserCard";
@@ -13,7 +13,7 @@ function DevYour() {
       <style dangerouslySetInnerHTML={{ __html: "\n\n    .hover-image-1{\n        transition: ease-in-out 0.2s;\n    }\n    .hover-image-1:hover{\n        width: 50px;\n        height: 50px;\n    }\n\n" }} />
       <div className="flex h-screen  dark:bg-gray-900" >
         {/* Desktop sidebar */}
-        <aside className="z-20 hidden w-80 overflow-y-auto  md:block flex-shrink-0">
+        <aside className="z-20 hidden w-80 overflow-y-auto md:block flex-shrink-0">
           <LeftSidebar />
         </aside>
         <div className="flex flex-col flex-1">
@@ -64,10 +64,10 @@ function DevYour() {
               </div>
             </div>
           </header>
-          <main className="flex grow h-full overflow-y-auto">
+          <main className="flex grow h-full gap-2 overflow-y-auto">
             {/* Remove everything INSIDE this div to a really blank page */}
             {/* Main Contents */}
-            <div className="flex flex-col">
+            <div className="flex flex-col mx-auto">
               <NewContent />
               <Post
                 imgProfile="https://randomuser.me/api/portraits/women/9.jpg"
@@ -102,7 +102,7 @@ function DevYour() {
                 likes="709"
               />
             </div>
-             <aside>
+             <aside >
               <div className="hidden md:block lg:block py-8 sticky top-6">
                 <UserCard />
                 <UsersList />
