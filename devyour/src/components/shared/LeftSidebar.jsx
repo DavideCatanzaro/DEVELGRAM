@@ -167,7 +167,7 @@ function LeftSidebar() {
       </ul>
 
       <div className="my-6 mt-auto ml-1 flex cursor-pointer">
-        <ButtonToggle />
+        {/* <ButtonToggle /> */}
       </div>
     </div>
 

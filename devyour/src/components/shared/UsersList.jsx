@@ -1,117 +1,108 @@
+import ButtonFollow from "../atoms/ButtonFollow"
+
 const UsersList = () => {
     return (
         <>
-            <div className='flex flex-col rounded-[20px] items-center justify-center min-h-screen p-4 bg-slate-200'>
-                <div className='user-list w-full max-w-lg mx-auto bg-white rounded-xl shadow-xl flex flex-col py-4'>
-                    {/* <!--User row --> */}
-                    <div className="user-row flex flex-col items-center justify-between cursor-pointer  p-4 duration-300 sm:flex-row sm:py-4 sm:px-8 hover:bg-[#f6f8f9]">
-                        <div className="user flex items-center text-center flex-col sm:flex-row sm:text-left">
-                            <div className="avatar-content mb-2.5 sm:mb-0 sm:mr-2.5">
-                                <img className="avatar w-20 h-20 rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg" />
-                            </div>
-                            <div className="user-body flex flex-col mb-4 sm:mb-0 sm:mr-4">
-                                <a href="#" className="title font-medium no-underline">@wade_warren</a>
-                                <div className="skills flex flex-col">
-                                    <span className="subtitle text-slate-500">Wade Warren</span>
-                                </div>
-                            </div>
-                        </div>
-                        {/* <!--Button content --> */}
-                        <div className="user-option mx-auto sm:ml-auto sm:mr-0">
-                            <button className="btn inline-block select-none no-underline align-middle cursor-pointer whitespace-nowrap px-4 py-1.5 rounded text-base font-medium leading-6 tracking-tight text-white text-center border-0 bg-blue hover:bg-pink duration-300" type="button">Follow</button>
-                        </div>
-                        {/* <!--Close Button content --> */}
-                    </div>
-                    {/* <!--User row -->
-
-        <!--User row --> */}
-                    <div className="user-row flex flex-col items-center justify-between cursor-pointer  p-4 duration-300 sm:flex-row sm:py-4 sm:px-8 hover:bg-[#f6f8f9]">
-                        <div className="user flex items-center text-center flex-col sm:flex-row sm:text-left">
-                            <div className="avatar-content mb-2.5 sm:mb-0 sm:mr-2.5">
-                                <img className="avatar w-20 h-20 rounded-full" src="https://randomuser.me/api/portraits/women/44.jpg" />
-                            </div>
-                            <div className="user-body flex flex-col mb-4 sm:mb-0 sm:mr-4">
-                                <a href="#" className="title font-medium no-underline">@loura_weber</a>
-                                <div className="skills flex flex-col">
-                                    <span className="subtitle text-slate-500">Loura Weber</span>
-                                </div>
-                            </div>
-                        </div>
-                        {/* <!--Button content --> */}
-                        <div className="user-option mx-auto sm:ml-auto sm:mr-0">
-                            <button className="btn inline-block select-none no-underline align-middle cursor-pointer whitespace-nowrap px-4 py-1.5 rounded text-base font-medium leading-6 tracking-tight text-white text-center border-0 bg-blue hover:bg-pink duration-300" type="button">Follow</button>
-                        </div>
-                        {/* <!--Close Button content --> */}
-                    </div>
-                    {/* <!--User row -->
-
-        <!--User row --> */}
-                    <div className="user-row flex flex-col items-center justify-between cursor-pointer  p-4 duration-300 sm:flex-row sm:py-4 sm:px-8 hover:bg-[#f6f8f9]">
-                        <div className="user flex items-center text-center flex-col sm:flex-row sm:text-left">
-                            <div className="avatar-content mb-2.5 sm:mb-0 sm:mr-2.5">
-                                <img className="avatar w-20 h-20 rounded-full" src="https://randomuser.me/api/portraits/men/46.jpg" />
-                            </div>
-                            <div className="user-body flex flex-col mb-4 sm:mb-0 sm:mr-4">
-                                <a href="#" className="title font-medium no-underline">@jane_cooper</a>
-                                <div className="skills flex flex-col">
-                                    <span className="subtitle text-slate-500">Jane Cooper</span>
-                                </div>
-                            </div>
-                        </div>
-                        {/* <!--Button content --> */}
-                        <div className="user-option mx-auto sm:ml-auto sm:mr-0">
-                            <button className="btn inline-block select-none no-underline align-middle cursor-pointer whitespace-nowrap px-4 py-1.5 rounded text-base font-medium leading-6 tracking-tight text-white text-center border-0 bg-blue hover:bg-pink duration-300" type="button">Follow</button>
-                        </div>
-                        {/* <!--Close Button content --> */}
-                    </div>
-                    {/* <!--User row -->
-
-        <!--User row --> */}
-                    <div className="user-row flex flex-col items-center justify-between cursor-pointer  p-4 duration-300 sm:flex-row sm:py-4 sm:px-8 hover:bg-[#f6f8f9]">
-                        <div className="user flex items-center text-center flex-col sm:flex-row sm:text-left">
-                            <div className="avatar-content mb-2.5 sm:mb-0 sm:mr-2.5">
-                                <img className="avatar w-20 h-20 rounded-full" src="https://randomuser.me/api/portraits/men/47.jpg" />
-                            </div>
-                            <div className="user-body flex flex-col mb-4 sm:mb-0 sm:mr-4">
-                                <a href="#" className="title font-medium no-underline">@guy_hawkins</a>
-                                <div className="skills flex flex-col">
-                                    <span className="subtitle text-slate-500">Guy Hawkins</span>
-                                </div>
-                            </div>
-                        </div>
-                        {/* <!--Button content --> */}
-                        <div className="user-option mx-auto sm:ml-auto sm:mr-0">
-                            <button className="btn inline-block select-none no-underline align-middle cursor-pointer whitespace-nowrap px-4 py-1.5 rounded text-base font-medium leading-6 tracking-tight text-white text-center border-0 bg-blue hover:bg-pink duration-300" type="button">Follow</button>
-                        </div>
-                        {/* <!--Close Button content --> */}
-                    </div>
-                    {/* <!--User row -->
-
-        <!--User row --> */}
-                    <div className="user-row flex flex-col items-center justify-between cursor-pointer  p-4 duration-300 sm:flex-row sm:py-4 sm:px-8 hover:bg-[#f6f8f9]">
-                        <div className="user flex items-center text-center flex-col sm:flex-row sm:text-left">
-                            <div className="avatar-content mb-2.5 sm:mb-0 sm:mr-2.5">
-                                <img className="avatar w-20 h-20 rounded-full" src="https://randomuser.me/api/portraits/women/63.jpg" />
-                            </div>
-                            <div className="user-body flex flex-col mb-4 sm:mb-0 sm:mr-4">
-                                <a href="#" className="title font-medium no-underline">@julian_jill_brown</a>
-                                <div className="skills flex flex-col">
-                                    <span className="subtitle text-slate-500">Julian Jill Brown</span>
-                                </div>
-                            </div>
-                        </div>
-                        {/* <!--Button content --> */}
-                        <div className="user-option mx-auto sm:ml-auto sm:mr-0">
-                            <button className="btn inline-block select-none no-underline align-middle cursor-pointer whitespace-nowrap px-4 py-1.5 rounded text-base font-medium leading-6 tracking-tight text-white text-center border-0 bg-blue hover:bg-pink duration-300" type="button">Follow</button>
-                        </div>
-                        {/* <!--Close Button content --> */}
-                    </div>
-                    {/* <!--User row --> */}
-
-                    <a className="show-more block w-10/12 mx-auto py-2.5 px-4 text-center no-underline rounded text-white border-0 font-medium bg-blue hover:bg-pink duration-300" href="#/">
-                        
-                    Show more members  
+            <div className="w-full max-w-md p-4 bg-white rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                <div className="flex items-center justify-between mb-4">
+                    <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">Suggested for you</h5>
+                    <a href="#" className="text-sm font-medium text-blue hover:underline dark:text-blue-500">
+                        Show all
                     </a>
+                </div>
+                <div className="flow-root">
+                    <ul role="list" className="divide-y divide-gray-200 dark:divide-gray-700">
+                        <li className="py-3 sm:py-4">
+                            <div className="flex items-center space-x-4">
+                                <div className="flex-shrink-0">
+                                    <img className="w-8 h-8 rounded-full" src='./assets/profile-img/Untitled.png' alt="Neil image" />
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                    <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                        Monkey D. Luffy
+                                    </p>
+                                    <p className="text-sm text-gray-500 truncate dark:text-gray-400">
+                                        @mugiwara
+                                    </p>
+                                </div>
+                                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    <ButtonFollow />
+                                </div>
+                            </div>
+                        </li>
+                        <li className="py-3 sm:py-4">
+                            <div className="flex items-center space-x-4">
+                                <div className="flex-shrink-0">
+                                    <img className="w-8 h-8 rounded-full" src='./assets/profile-img/images.jpg' alt="Bonnie image" />
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                    <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                        Zoro Roronoa
+                                    </p>
+                                    <p className="text-sm text-gray-500 truncate dark:text-gray-400">
+                                        @kaizoku_hanta
+                                    </p>
+                                </div>
+                                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    <ButtonFollow />
+                                </div>
+                            </div>
+                        </li>
+                        <li className="py-3 sm:py-4">
+                            <div className="flex items-center space-x-4">
+                                <div className="flex-shrink-0">
+                                    <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Michael image" />
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                    <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                        Michael Gough
+                                    </p>
+                                    <p className="text-sm text-gray-500 truncate dark:text-gray-400">
+                                        email@windster.com
+                                    </p>
+                                </div>
+                                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    <ButtonFollow />
+                                </div>
+                            </div>
+                        </li>
+                        <li className="py-3 sm:py-4">
+                            <div className="flex items-center space-x-4">
+                                <div className="flex-shrink-0">
+                                    <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Lana image" />
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                    <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                        Lana Byrd
+                                    </p>
+                                    <p className="text-sm text-gray-500 truncate dark:text-gray-400">
+                                        email@windster.com
+                                    </p>
+                                </div>
+                                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    <ButtonFollow />
+                                </div>
+                            </div>
+                        </li>
+                        <li className="pt-3 pb-0 sm:pt-4">
+                            <div className="flex items-center space-x-4">
+                                <div className="flex-shrink-0">
+                                    <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Thomas image" />
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                    <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                        Thomes Lean
+                                    </p>
+                                    <p className="text-sm text-gray-500 truncate dark:text-gray-400">
+                                        email@windster.com
+                                    </p>
+                                </div>
+                                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    <ButtonFollow />
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </>

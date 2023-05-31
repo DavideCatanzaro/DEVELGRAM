@@ -10,7 +10,7 @@ export default function WriteComment() {
           id="text"
           value=""
           placeholder="Write a comment..."
-          labelText="Write a comment"
+          labelText=""
           input="primaryInputVariant"
           label="primaryLabelVariant"
         />
