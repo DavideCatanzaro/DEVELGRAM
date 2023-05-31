@@ -67,7 +67,7 @@ function DevYour() {
           <main className="flex grow h-full overflow-y-auto">
             {/* Remove everything INSIDE this div to a really blank page */}
             {/* Main Contents */}
-            <div className="flex flex-col">
+            <div className="flex flex-col mx-auto">
               <NewContent />
               <Post
                 imgProfile="https://randomuser.me/api/portraits/women/9.jpg"
