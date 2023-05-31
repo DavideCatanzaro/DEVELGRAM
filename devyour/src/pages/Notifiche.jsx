@@ -5,15 +5,11 @@ function Notifiche() {
   return (
     <>
       <LeftSidebar />
-      <div className="fixed inset-0 left-56 mx-auto my-10 max-w-lg rounded-xl border border-gray-100 px-4 py-8 shadow-lg">
+      <div className="fixed inset-0 left-56 mx-auto my-10 max-w-lg rounded-xl border border-blue px-4 py-8 shadow-lg">
         <div className="mb-4 flex justify-between border-b pb-3">
           <p className="text-xl font-bold text-grey">Notifiche</p>
         </div>
         <div>
-          <div
-            className="mb-3 space-y-4 py-2 focus:outline-none focus:ring-1 focus:ring-grey"
-            tabindex="0"
-          >
             <div className="relative flex items-center">
               <img
                 className="h-10 w-10 rounded-full object-cover"
@@ -45,7 +41,6 @@ function Notifiche() {
                 1min ago
               </span>
             </div>
-          </div>
           <div
             className="mb-3 space-y-4 py-2 focus:outline-none focus:ring-1 focus:ring-grey"
             tabindex="0"
