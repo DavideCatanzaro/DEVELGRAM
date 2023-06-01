@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import UserCard from "../components/shared/UserCard"
+import NewContent from "../components/shared/NewContent"
 
 const UserProfile = () => {
     return (
@@ -14,7 +15,7 @@ const UserProfile = () => {
                     </div>
                 </nav>
 
-                <main className="grid grid-cols-1 lg:grid-cols-2 gap-6 my-12 mx-12 w-2xl container px-2 mx-auto">
+                <main className="grid grid-cols-1 lg:grid-cols-2 gap-6 my-12 w-2xl container px-2 mx-auto">
 
                     <aside className="">
 
@@ -31,7 +32,7 @@ const UserProfile = () => {
                                 <li className="flex flex-col items-center space-y-2">
                                     {/* <!-- Ring --> */}
                                     <a className="block bg-white p-1 rounded-full" href="#">
-                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638612913771-8f00622b96fb?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" />
+                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638612913771-8f00622b96fb?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" alt="" />
                                     </a>
                                     {/* <!-- Username --> */}
                                     <span className="text-xs text-gray-500">
@@ -43,7 +44,7 @@ const UserProfile = () => {
                                 <li className="flex flex-col items-center space-y-2">
                                     {/* <!-- Ring --> */}
                                     <a className="block bg-white p-1 rounded-full" href="#">
-                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638649602320-450b717fa622?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" />
+                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638649602320-450b717fa622?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" alt="" />
                                     </a>
 
 
@@ -58,7 +59,7 @@ const UserProfile = () => {
                                     {/* <!-- Ring --> */}
                                     <a className="block bg-white p-1 rounded-full" href="#">
                                         {/* <!-- Thumbnail --> */}
-                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638708644743-2502f38000a0?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" />
+                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638708644743-2502f38000a0?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" alt="" />
                                     </a>
 
                                     {/* <!-- Username --> */}
@@ -72,7 +73,7 @@ const UserProfile = () => {
                                     {/* <!-- Ring --> */}
                                     <a className="block bg-white p-1 rounded-full" href="#">
                                         {/* <!-- Thumbnail --> */}
-                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638691899851-0e955bceba1f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" />
+                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638691899851-0e955bceba1f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" alt="" />
                                     </a>
 
                                     {/* <!-- Username --> */}
@@ -85,7 +86,7 @@ const UserProfile = () => {
                                 <li className="flex flex-col items-center space-y-2">
                                     {/* <!-- Ring --> */}
                                     <a className="block bg-white p-1 rounded-full" href="#">
-                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638612913771-8f00622b96fb?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" />
+                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638612913771-8f00622b96fb?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" alt="" />
                                     </a>
 
 
@@ -97,9 +98,9 @@ const UserProfile = () => {
                                 {/* <!-- Story #1 --> */}
                                 <li className="flex flex-col items-center space-y-2">
                                     {/* <!-- Ring --> */}
-                                    <a className="block bg-white p-1 rounded-full" href="#">
+                                    <a className="block bg-white p-1 rounded-full" href="#" >
                                         {/* <!-- Thumbnail --> */}
-                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638649602320-450b717fa622?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" />
+                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638649602320-450b717fa622?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" alt="" />
                                     </a>
 
 
@@ -224,25 +225,9 @@ const UserProfile = () => {
 
                     <article className="">
 
-                        <form className="bg-white shadow rounded-lg mb-6 p-4">
-                            <textarea name="message" placeholder="Type something..." className="w-full rounded-lg p-2 text-sm bg-gray-100 border border-transparent appearance-none rounded-tg placeholder-gray-400"></textarea>
-                            <footer className="flex justify-between mt-2">
-                                <div className="flex gap-2">
-                                    <span className="flex items-center transition ease-out duration-300 hover:bg-blue-500 hover:text-white bg-blue-100 w-8 h-8 px-2 rounded-full text-blue-400 cursor-pointer">
-                                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-                                    </span>
-                                    <span className="flex items-center transition ease-out duration-300 hover:bg-blue-500 hover:text-white bg-blue-100 w-8 h-8 px-2 rounded-full text-blue-400 cursor-pointer">
-                                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                    </span>
-                                    <span className="flex items-center transition ease-out duration-300 hover:bg-blue-500 hover:text-white bg-blue-100 w-8 h-8 px-2 rounded-full text-blue-400 cursor-pointer">
-                                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
-                                    </span>
-                                </div>
-                                <button className="flex items-center py-2 px-4 rounded-lg text-sm bg-blue-600 text-white shadow-lg">Send
-                                    <svg className="ml-1" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                                </button>
-                            </footer>
-                        </form>
+                        <NewContent />
+
+                        
 
                         <div className="bg-white shadow rounded-lg mb-6">
                             <div className="flex flex-row px-2 py-3 mx-3">
@@ -320,7 +305,7 @@ const UserProfile = () => {
                                 </div>
                             </div>
                             <div className="text-black p-4 antialiased flex">
-                                <img className="rounded-full h-8 w-8 mr-2 mt-1 " src="https://picsum.photos/id/1027/200/200" />
+                                <img className="rounded-full h-8 w-8 mr-2 mt-1 " src="https://picsum.photos/id/1027/200/200" alt="" />
                                 <div>
                                     <div className="bg-gray-100 rounded-lg px-4 pt-2 pb-2.5">
                                         <div className="font-semibold text-sm leading-relaxed">Sara Lauren</div>
@@ -367,7 +352,7 @@ const UserProfile = () => {
                             </div>
                             <div className="border-b border-gray-100"></div>
                             <div className="text-gray-400 font-medium text-sm mb-7 mt-6 mx-3 px-2">
-                                <img className="rounded w-full" src="https://picsum.photos/536/354" />
+                                <img className="rounded w-full" src="https://picsum.photos/536/354" alt="" />
                             </div>
                             <div className="text-gray-600 font-semibold  mb-2 mx-3 px-2">Dummy text of the printing and typesetting industry</div>
                             <div className="text-gray-500 text-sm mb-6 mx-3 px-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</div>
