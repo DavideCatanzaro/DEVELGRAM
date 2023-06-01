@@ -9,19 +9,18 @@ import Shoots from "../components/shared/Shoots";
 
 function DevYour() {
   return (
-    <div>
-      <div className="flex h-screen  dark:bg-gray-900" >
-        {/* Desktop sidebar */}
+    <div className="">
+      <div className="flex h-screen dark:bg-gray-900" >
         
         <aside className="z-20 hidden w-52 overflow-y-auto md:block flex-shrink-0">
           <LeftSidebar />
         </aside>
-        <div className="flex flex-col mx-auto flex-1">
-          <main className="flex grow h-full gap-2 overflow-y-auto px-4">
 
-            {/* Main Contents */}
+        <div className="flex flex-col max-w-7xl mx-auto flex-1">
+      <Shoots />
+          <main className="flex grow gap-2 overflow-y-auto px-4">
+
             <div className="flex flex-col mx-auto">
-              <Shoots />
               <NewContent />
               <Post
                 imgProfile="https://randomuser.me/api/portraits/men/9.jpg"
@@ -52,12 +51,14 @@ function DevYour() {
                 likes="709"
               />
             </div>
+
             <aside className="hidden md:block lg:block sticky top-0">
-              <div className="hidden md:block lg:block py-8 sticky top-0 p-4">
+              <div className="hidden md:block lg:block sticky top-0">
                 <UserCard />
                 <UsersList />
               </div>
             </aside>
+
           </main>
         </div>
       </div>

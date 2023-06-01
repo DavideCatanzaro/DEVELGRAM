@@ -39,7 +39,7 @@ export default function Comment({
               <span className="text-base font-bold">{likes}</span>
             </a>
             <button className="py-2 px-4 font-medium hover:bg-slate-50 rounded-lg transition">
-              Repply
+              Reply
             </button>
           </div>
         </div>

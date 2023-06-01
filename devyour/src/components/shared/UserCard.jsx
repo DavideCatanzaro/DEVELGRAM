@@ -13,7 +13,7 @@ const UserCard = () => {
                             </div>
                         </div>
                         <div className="mt-16 flex flex-col items-center">
-                            <h4 className="text-xl font-bold text-navy-700 dark:text-white">
+                            <h4 className="text-xl font-bold text-gray dark:text-white">
                                 Andrea Angelo D'Onorio De Meo
                             </h4>
                             <p className="text-base font-normal text-gray-600">@andgelorea</p>
@@ -33,7 +33,7 @@ const UserCard = () => {
                             </div>
                         </div>
                         <div>
-                            <span class="absolute inset-x-0 bottom-0 rounded-b-[20px] h-2 bg-gradient-to-r from-[#80d8ff] to-[#ea80fc]"></span>
+                            <span class="absolute inset-x-0 bottom-0 rounded-b-[20px] h-3 bg-gradient-to-r from-[#80d8ff] to-[#ea80fc]"></span>
                         </div>
                     </div>
                 </div>
