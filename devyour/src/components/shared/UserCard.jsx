@@ -32,7 +32,9 @@ const UserCard = () => {
                                 <p className="text-sm font-normal text-gray-600">Following</p>
                             </div>
                         </div>
-                        <span class="absolute inset-x-0 bottom-0 rounded-xl h-2 bg-gradient-to-r from-[#80d8ff] to-[#ea80fc]"></span>
+                        <div>
+                            <span class="absolute inset-x-0 bottom-0 rounded-b-[20px] h-2 bg-gradient-to-r from-[#80d8ff] to-[#ea80fc]"></span>
+                        </div>
                     </div>
                 </div>
             </Link>

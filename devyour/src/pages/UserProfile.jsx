@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import UserCard from "../components/shared/UserCard"
 import NewContent from "../components/shared/NewContent"
+import SecondSidebar from "../components/shared/SecondSidebar"
 
 const UserProfile = () => {
     return (
@@ -14,7 +15,7 @@ const UserProfile = () => {
                         </Link>
                     </div>
                 </nav>
-
+                <SecondSidebar />
                 <main className="grid grid-cols-1 lg:grid-cols-2 gap-6 my-12 w-2xl container px-2 mx-auto">
 
                     <aside className="">

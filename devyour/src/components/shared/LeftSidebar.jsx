@@ -12,12 +12,8 @@ function LeftSidebar() {
       <img
         src="DevYour.png"
         alt="log"
-        style={{
-          width: "50%",
 
-          marginTop: "30px",
-          /* marginLeft: "20px", */
-        }}
+        style={{ width: "60%", marginTop: "30px",/* marginLeft: "20px", */ }}
       />
 
       <ul className="mt-20 space-y-3">

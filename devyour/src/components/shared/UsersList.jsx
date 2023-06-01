@@ -3,10 +3,10 @@ import ButtonFollow from "../atoms/ButtonFollow"
 const UsersList = () => {
     return (
         <>
-            <div className="w-full max-w-md p-4 bg-white rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div className="w-full max-w-md p-4 mt-4 bg-white text-gray rounded-lg shadow sm:p-8 dark:bg-gray dark:border-gray">
                 <div className="flex items-center justify-between mb-4">
-                    <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">Suggested for you</h5>
-                    <a href="#" className="text-sm font-medium text-blue hover:underline dark:text-blue-500">
+                    <h5 className="text-xl font-bold leading-none text-gray dark:text-white">Suggested for you</h5>
+                    <a href="#" className="text-sm font-medium text-blue hover:text-pink duration-300">
                         Show all
                     </a>
                 </div>
