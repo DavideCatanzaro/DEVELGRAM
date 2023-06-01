@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import InputField from "../atoms/InputField"
-import ButtonToggle from "../atoms/ButtonToggle";
 import { Link } from "react-router-dom";
 
 function LeftSidebar() {
@@ -8,13 +7,13 @@ function LeftSidebar() {
 
   return (
 
-    <div className="absolute left-0 flex h-screen w-72 flex-col overflow-hidden rounded-r-1xl bg-white text-grey border-r-2 border-blue justify-center items-center">
+    <div className="absolute left-0 flex h-screen w-52 flex-col overflow-hidden rounded-r-1xl bg-white text-grey border-r-2 border-blue justify-center items-center">
 
       <img
         src="DevYour.png"
         alt="log"
         style={{
-          width: "60%",
+          width: "50%",
 
           marginTop: "30px",
           /* marginLeft: "20px", */
