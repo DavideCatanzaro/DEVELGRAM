@@ -27,7 +27,7 @@ function Register() {
             <p className="mt-2 mb-5 text-base leading-tight text-grey"></p>
             <form className="mt-8">
               <div className="relative mt-2 w-full">
-              <InputField
+                <InputField
                   type="text"
                   id="name"
                   value=""
@@ -38,7 +38,7 @@ function Register() {
                 />
               </div>
               <div className="relative mt-2 w-full">
-              <InputField
+                <InputField
                   type="text"
                   id="username"
                   value=""
@@ -49,7 +49,7 @@ function Register() {
                 />
               </div>
               <div className="relative mt-2 w-full">
-              <InputField
+                <InputField
                   type="text"
                   id="email"
                   value=""
@@ -60,7 +60,7 @@ function Register() {
                 />
               </div>
               <div className="relative mt-2 w-full">
-              <InputField
+                <InputField
                   type="password"
                   id="password"
                   value=""
@@ -70,10 +70,10 @@ function Register() {
                   label="primaryLabelVariant"
                 />
               </div>
-              
-              
-              <InputField input="secondaryInputVariant" type="submit" value="Register Now"/>
-              
+
+
+              <InputField input="secondaryInputVariant" type="submit" value="Register Now" />
+
             </form>
             <div className="mt-4 text-center">
               <p className="text-sm text-grey">

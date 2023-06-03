@@ -13,23 +13,24 @@ const UserCard = () => {
                             </div>
                         </div>
                         <div className="mt-16 flex flex-col items-center">
-                            <h4 className="text-xl font-bold text-gray dark:text-white">
-                                Andrea Angelo D'Onorio De Meo
+                            <h4 className="flex flex-col justify-center items-center text-xl font-bold text-grey dark:text-white">
+                                <span>Andrea Angelo</span>
+                                <span>D'Onorio De Meo</span>
                             </h4>
-                            <p className="text-base font-normal text-gray-600">@andgelorea</p>
+                            <p className="text-base font-normal text-grey dark:text-white">@andgelorea</p>
                         </div>
-                        <div className="mt-6 mb-3 flex gap-14 md:!gap-14">
+                        <div className="mt-6 mb-3 flex gap-6">
                             <div className="flex flex-col items-center justify-center">
-                                <p className="text-2xl font-bold text-navy-700 dark:text-white">38</p>
-                                <p className="text-sm font-normal text-gray-600">Posts</p>
+                                <p className="text-2xl font-bold text-grey dark:text-white">838</p>
+                                <p className="text-sm font-normal text-grey dark:text-white">Posts</p>
                             </div>
                             <div className="flex flex-col items-center justify-center">
-                                <p className="text-2xl font-bold text-navy-700 dark:text-white">8.3K</p>
-                                <p className="text-sm font-normal text-gray-600">Followers</p>
+                                <p className="text-2xl font-bold text-grey dark:text-white">8.3K</p>
+                                <p className="text-sm font-normal text-grey dark:text-white">Followers</p>
                             </div>
                             <div className="flex flex-col items-center justify-center">
-                                <p className="text-2xl font-bold text-navy-700 dark:text-white">838</p>
-                                <p className="text-sm font-normal text-gray-600">Following</p>
+                                <p className="text-2xl font-bold text-grey dark:text-white">838</p>
+                                <p className="text-sm font-normal text-grey dark:text-white">Following</p>
                             </div>
                         </div>
                         <div>

@@ -16,7 +16,7 @@ export default function WriteComment() {
           label="primaryLabelVariant"
         />
         <span className="flex items-center">
-          <ButtonSend/>
+          <ButtonSend />
         </span>
       </form>
     </>

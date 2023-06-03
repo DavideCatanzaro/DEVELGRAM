@@ -16,7 +16,7 @@ const UsersList = () => {
                                     <img className="w-8 h-8 rounded-full" src='./assets/profile-img/Untitled.png' alt="Neil image" />
                                 </div>
                                 <div className="flex-1 min-w-0">
-                                    <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                    <p className="text-sm font-medium text-gray truncate dark:text-white">
                                         Monkey D. Luffy
                                     </p>
                                     <p className="text-sm text-gray-500 truncate dark:text-gray-400">

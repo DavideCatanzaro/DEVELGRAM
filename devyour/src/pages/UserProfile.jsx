@@ -6,22 +6,24 @@ import Separator from "../components/atoms/Separator"
 import UsersList from "../components/shared/UsersList"
 import Following from "../components/shared/Following"
 import Post from "../components/shared/Post"
+import Post2 from "../components/shared/Post2"
+import Footer from "../components/shared/Footer"
 
 const UserProfile = () => {
     return (
         <>
             <div className="max-w-7xl mx-auto">
                 <SecondSidebar />
-                <main className="flex lg:flex gap-6 container px-2 mx-auto">
+                <main className="flex gap-6 container px-2 mx-auto">
 
-                    <aside className="hidden md:block lg:block sticky top-0">
-                        <div className="hidden md:block lg:block sticky top-4">
+                    <aside className="hidden md:block lg:block">
+                        <div className="sticky top-4">
                             <Following />
                             <UsersList />
                         </div>
                     </aside>
 
-                    <div className="mt-4">
+                    <div className="grow-2">
                         <div className="sticky top-0">
                             <div className="sticky top-0">
                                 <Separator title={"My post"} />
@@ -42,6 +44,18 @@ const UserProfile = () => {
                             imgPost="https://picsum.photos/500/500"
                             descriptionPost="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                             likes="709"
+                            postDate="2 week ago"
+                        />
+
+                        <Post2 
+                        imgProfile=""
+                        nameProfile=""
+                        username=""
+                        imgPost=""
+                        stringPost=""
+                        likes=""
+                        descriptionPost=""
+                            postDate="2 week ago"
                         />
 
                         <div className="bg-white shadow rounded-lg mb-6">
@@ -216,10 +230,10 @@ const UserProfile = () => {
 
                     </div>
 
-                    <aside className="hidden md:block lg:block sticky top-0">
-                        <div className="hidden md:block lg:block sticky top-4">
+                    <aside className="block">
+                        <div className="sticky top-4">
                             <UserCard />
-
+                            <Footer />
                         </div>
                     </aside>
                 </main>
