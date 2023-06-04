@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom"
 import UserCard from "../components/shared/UserCard"
-import NewContent from "../components/shared/NewContent"
 import SecondSidebar from "../components/shared/SecondSidebar"
 import Separator from "../components/atoms/Separator"
 import UsersList from "../components/shared/UsersList"
@@ -48,13 +46,12 @@ const UserProfile = () => {
                         />
 
                         <Post2 
-                        imgProfile=""
-                        nameProfile=""
-                        username=""
-                        imgPost=""
-                        stringPost=""
-                        likes=""
-                        descriptionPost=""
+                            imgProfile="./assets/profile-img/Andrea-profile.jpg"
+                            nameProfile="Andrea A. D'Onorio De Meo"
+                            username="@andgelorea"
+                            imgPost="https://picsum.photos/600/600"
+                            likes="88"
+                            descriptionPost="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"
                             postDate="2 week ago"
                         />
 
