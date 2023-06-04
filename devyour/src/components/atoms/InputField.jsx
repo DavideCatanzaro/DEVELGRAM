@@ -5,7 +5,7 @@ import React, { useState } from "react";
 const InputVariants = {
     primaryInputVariant: "border-1 peer block w-full appearance-none rounded-lg border border-blue bg-transparent px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-pink focus:outline-none focus:ring-0",
     secondaryInputVariant: "mt-4 w-full cursor-pointer rounded-lg bg-blue pt-3 pb-3 text-white shadow-lg hover:bg-pink",
-    thirdInputVariant: " w-full h-7 py-2 pl-1 pr-4 text-grey bg-transparent border-none rounded-md dark:bg-white dark:text-grey dark:border-white focus:border-blue focus:outline-none hover:placeholder-blue placeholder-grey ",
+    thirdInputVariant: " w-full h-7 py-2 pl-1 pr-4 text-grey bg-transparent border-none rounded-md dark:bg-white dark:text-grey dark:border-white  focus:outline-none focus:placeholder-blue placeholder-grey ",
 }
 
 const LabelVariants = {

@@ -6,13 +6,13 @@ function Messaggi() {
   return (
     <>
       <LeftSidebar />
-      <div className="fixed inset-0 left-56 w-3/4 top-10 h-2/4 mx-auto mr-none   rounded-lg bg-white">
+      <div className="fixed inset-0 left-56 w-3/4 top-10 h-2/4 mx-auto mr-none   rounded-lg ">
 
         <div className="flex flex-row justify-between ">
 
           <div className="flex flex-col w-2/5  overflow-y-auto ">
 
-            <div className="border-y border-x border-blue rounded-tl-lg py-4 px-2 bg-white">
+            <div className="border-y border-x border-blue rounded-tl-lg py-4 px-2 ">
               <InputField type="text" placeholder="search chatting" input="primaryInputVariant" />
             </div>
 

@@ -39,7 +39,7 @@ function LeftSidebar() {
                   ></path>
                 </svg>
               </span>
-              <span className="ml-2">Home</span>
+              <span className="ml-2 font-semibold">Home</span>
             </button>
           </li>
         </Link>
