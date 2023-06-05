@@ -1,6 +1,6 @@
 import ButtonFollow from "../atoms/ButtonFollow"
 
-const UsersList = () => {
+const UsersSuggested = () => {
     return (
         <>
             <div className="w-full max-w-md p-4 mt-4 bg-white text-gray rounded-lg shadow sm:p-8 dark:bg-gray dark:border-gray">
@@ -82,6 +82,24 @@ const UsersList = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="py-3 sm:py-4">
+                            <div className="flex items-center space-x-4">
+                                <div className="flex-shrink-0">
+                                    <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Lana image" />
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                    <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                        Lana Byrd
+                                    </p>
+                                    <p className="text-sm text-gray-500 truncate dark:text-gray-400">
+                                        email@windster.com
+                                    </p>
+                                </div>
+                                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    <ButtonFollow />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,4 +107,4 @@ const UsersList = () => {
     )
 }
 
-export default UsersList
+export default UsersSuggested

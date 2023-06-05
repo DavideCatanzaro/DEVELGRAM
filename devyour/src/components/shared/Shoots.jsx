@@ -17,10 +17,13 @@ export default function Shoots() {
                 <div className="flex justify-between">
                     <div className="flex items-center flex-shrink-0 space-x-6">
                         <Shoot onclick={handleClickShoot} storyImage='./assets/profile-img/Untitled.png' />
+                        <Shoot onclick={handleClickShoot} storyImage='./assets/profile-img/images.jpg' />
+                        <Shoot storyImage="https://picsum.photos/200/200?i=201" />
                         <Shoot storyImage="https://picsum.photos/200/200?i=203" />
                         <Shoot storyImage="https://picsum.photos/200/200?i=205" />
                         <Shoot storyImage="https://picsum.photos/200/200?i=207" />
                         <Shoot storyImage="https://picsum.photos/200/200?i=209" />
+                        <Shoot storyImage="https://picsum.photos/200/200?i=208" />
                     </div>
                 </div>
             </div>

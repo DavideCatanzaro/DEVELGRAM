@@ -1,29 +1,26 @@
 import UserCard from "../components/shared/UserCard"
 import SecondSidebar from "../components/shared/SecondSidebar"
 import Separator from "../components/atoms/Separator"
-import UsersList from "../components/shared/UsersList"
-import Following from "../components/shared/Following"
+import UsersSuggested from "../components/shared/UsersSuggested"
 import Post from "../components/shared/Post"
 import Post2 from "../components/shared/Post2"
-import Footer from "../components/shared/Footer"
 
 const UserProfile = () => {
     return (
         <>
-            <div className="max-w-7xl mx-auto">
+            <div className="flex max-w-7xl mx-auto">
                 <SecondSidebar />
                 <main className="flex gap-6 container px-2 mx-auto">
 
-                    <aside className="hidden md:block lg:block">
+                    <aside className="basis-1/4 hidden md:block">
                         <div className="sticky top-4">
-                            <Following />
-                            <UsersList />
+                            <UsersSuggested />
                         </div>
                     </aside>
 
-                    <div className="grow-2">
-                        <div className="sticky top-0">
-                            <div className="sticky top-0">
+                    <div className="basis-1/2 grow">
+                        <div className="sticky top-0 py-4">
+                            <div className="sticky top-0 bg-white rounded-xl shadow">
                                 <Separator title={"My post"} />
                             </div>
                         </div>
@@ -227,10 +224,9 @@ const UserProfile = () => {
 
                     </div>
 
-                    <aside className="block">
+                    <aside className="basis-1/4 hidden md:block">
                         <div className="sticky top-4">
                             <UserCard />
-                            <Footer />
                         </div>
                     </aside>
                 </main>
