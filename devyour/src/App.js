@@ -6,7 +6,7 @@ import DevYour from "./pages/Devyour";
 import Credits from "./pages/Credits";
 import UserProfile from "./pages/UserProfile";
 import UserCard from "./components/shared/UserCard";
-import UsersList from "./components/shared/UsersList";
+import UsersSuggested from "./components/shared/UsersSuggested";
 import Notifiche from "./pages/Notifiche";
 import Messaggi from "./pages/Messaggi";
 
@@ -22,7 +22,7 @@ function App() {
         <Route path="/credits" element={<Credits/>}/>
         <Route path="/userProfile" element={<UserProfile/>}/>
         <Route path="/userCard" element={<UserCard/>}/>
-        <Route path="/usersList" element={<UsersList/>}/>
+        <Route path="/usersSuggested" element={<UsersSuggested/>}/>
         <Route path="notifiche" element={<Notifiche/>}/>
         <Route path="messaggi" element={<Messaggi/>}/>
 

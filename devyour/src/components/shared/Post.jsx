@@ -7,7 +7,6 @@ export default function Post({
   nameProfile,
   username,
   imgPost,
-  stringPost,
   likes,
   descriptionPost,
   postDate,
@@ -35,9 +34,6 @@ export default function Post({
             </div>
           </div>
         </div>
-        <h2 className="text-3xl font-extrabold">
-          {stringPost}
-        </h2>
         <div className="py-4">
           <a className="flex" href="#">
             <img

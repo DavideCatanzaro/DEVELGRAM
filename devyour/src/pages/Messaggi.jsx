@@ -5,7 +5,11 @@ import InputField from "../components/atoms/InputField";
 function Messaggi() {
   return (
     <>
-      <LeftSidebar />
+     <aside className="basis-1/6  md:block">
+            <div className="h-screen sticky top-0">
+              <LeftSidebar />
+            </div>
+          </aside>
       <div className="fixed inset-0 left-56 w-3/4 top-10 h-2/4 mx-auto mr-none   rounded-lg ">
 
         <div className="flex flex-row justify-between ">

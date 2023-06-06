@@ -7,18 +7,18 @@ function LeftSidebar() {
 
   return (
 
-    <div className="absolute left-0 flex h-screen w-52 flex-col overflow-hidden rounded-r-1xl bg-white text-grey border-r-2 border-blue justify-center items-center">
+    <div className="flex h-full w-52 md:flex-col grow rounded-r-1xl bg-white text-grey border-r-2 border-blue justify-center items-center">
 
-      <img
+<img
         src="DevYour.png"
         alt="log"
 
         style={{ width: "60%", marginTop: "30px",/* marginLeft: "20px", */ }}
       />
 
-      <ul className="mt-20 space-y-3">
+      <div className="mt-20 space-y-3">
         <Link to="/devyour">
-          <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-bold text-grey hover:text-pink">
+          <div className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-bold text-grey hover:text-pink">
             <button
               className="flex"
             >
@@ -41,9 +41,9 @@ function LeftSidebar() {
               </span>
               <span className="ml-2 font-semibold">Home</span>
             </button>
-          </li>
+          </div>
         </Link>
-        <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-semibold text-grey hover:text-blue">
+        <div className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-semibold text-grey hover:text-blue">
 
           <span>
             <svg
@@ -72,8 +72,8 @@ function LeftSidebar() {
             />
           </svg>
           <InputField placeholder="Cerca" id="search" type="text" input="thirdInputVariant" />
-        </li>
-        <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-grey font-semibold hover:text-pink">
+        </div>
+        <div className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-grey font-semibold hover:text-pink">
           <Link to="/messaggi">
             <button className="flex">
               <span>
@@ -95,8 +95,8 @@ function LeftSidebar() {
               <span className="ml-2">Messaggi</span>
             </button>
           </Link>
-        </li>
-        <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-semibold text-grey hover:text-blue">
+        </div>
+        <div className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-semibold text-grey hover:text-blue">
           <Link to="/notifiche" className="flex">
             <span className="text-2xl">
               <svg
@@ -114,8 +114,8 @@ function LeftSidebar() {
             </span>
             <span className="ml-1 ">Notifiche</span>
           </Link>
-        </li>
-        <li className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-grey font-semibold hover:text-pink">
+        </div>
+        <div className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-grey font-semibold hover:text-pink">
           <button className="flex">
             <span>
               <svg
@@ -158,8 +158,8 @@ function LeftSidebar() {
             </span>
             <span className="">Crea</span>
           </button>
-        </li>
-      </ul>
+        </div>
+      </div>
 
       <div className="my-6 mt-auto ml-1 flex cursor-pointer">
         {/* <ButtonToggle /> */}

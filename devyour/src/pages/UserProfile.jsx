@@ -1,29 +1,26 @@
-import { Link } from "react-router-dom"
 import UserCard from "../components/shared/UserCard"
-import NewContent from "../components/shared/NewContent"
 import SecondSidebar from "../components/shared/SecondSidebar"
 import Separator from "../components/atoms/Separator"
-import UsersList from "../components/shared/UsersList"
-import Following from "../components/shared/Following"
+import UsersSuggested from "../components/shared/UsersSuggested"
 import Post from "../components/shared/Post"
+import Post2 from "../components/shared/Post2"
 
 const UserProfile = () => {
     return (
         <>
-            <div className="max-w-7xl mx-auto">
+            <div className="flex max-w-7xl mx-auto">
                 <SecondSidebar />
-                <main className="flex lg:flex gap-6 container px-2 mx-auto">
+                <main className="flex gap-6 container px-2 mx-auto">
 
-                    <aside className="hidden md:block lg:block sticky top-0">
-                        <div className="hidden md:block lg:block sticky top-4">
-                            <Following />
-                            <UsersList />
+                    <aside className="basis-1/4 hidden md:block">
+                        <div className="sticky top-4">
+                            <UsersSuggested />
                         </div>
                     </aside>
 
-                    <div className="mt-4">
-                        <div className="sticky top-0">
-                            <div className="sticky top-0">
+                    <div className="basis-1/2 grow">
+                        <div className="sticky top-0 py-4">
+                            <div className="sticky top-0 bg-white rounded-xl shadow">
                                 <Separator title={"My post"} />
                             </div>
                         </div>
@@ -42,6 +39,17 @@ const UserProfile = () => {
                             imgPost="https://picsum.photos/500/500"
                             descriptionPost="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                             likes="709"
+                            postDate="2 week ago"
+                        />
+
+                        <Post2 
+                            imgProfile="./assets/profile-img/Andrea-profile.jpg"
+                            nameProfile="Andrea A. D'Onorio De Meo"
+                            username="@andgelorea"
+                            imgPost="https://picsum.photos/600/600"
+                            likes="88"
+                            descriptionPost="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"
+                            postDate="2 week ago"
                         />
 
                         <div className="bg-white shadow rounded-lg mb-6">
@@ -216,10 +224,9 @@ const UserProfile = () => {
 
                     </div>
 
-                    <aside className="hidden md:block lg:block sticky top-0">
-                        <div className="hidden md:block lg:block sticky top-4">
+                    <aside className="basis-1/4 hidden md:block">
+                        <div className="sticky top-4">
                             <UserCard />
-
                         </div>
                     </aside>
                 </main>

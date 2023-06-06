@@ -2,25 +2,37 @@ import Post from "../components/shared/Post";
 import LeftSidebar from "../components/shared/LeftSidebar";
 import NewContent from "../components/shared/NewContent";
 import UserCard from "../components/shared/UserCard";
-import UsersList from "../components/shared/UsersList";
+import UsersSuggested from "../components/shared/UsersSuggested";
 import Shoots from "../components/shared/Shoots";
-
-
+import Post2 from "../components/shared/Post2";
 
 function DevYour() {
   return (
-    <div className="">
-      <div className="flex h-screen dark:bg-gray-900" >
-        
-        <aside className="z-20 hidden w-52 overflow-y-auto md:block flex-shrink-0">
-          <LeftSidebar />
-        </aside>
+    <>
+      <div className="flex max-w-7xl mx-auto">
 
-        <div className="flex flex-col max-w-7xl mx-auto flex-1">
-      <Shoots />
-          <main className="flex grow gap-2 overflow-y-auto px-4">
+        <main className="flex gap-6 container px-2 mx-auto">
 
+          <aside className="basis-1/6  md:block">
+            <div className="h-screen sticky top-0">
+              <LeftSidebar />
+            </div>
+          </aside>
+
+          <div className="basis-2/3 grow">
+            <div className="sticky top-0 py-4">
+              <div className="sticky top-0 bg-white rounded-xl shadow">
+                <Shoots />
+              </div>
+            </div>
             <div className="flex flex-col mx-auto">
+
+              <div className="sticky top-0 w-full bg-white rounded-xl shadow">
+                <div className="sticky top-0">
+
+                </div>
+              </div>
+
               <NewContent />
               <Post
                 imgProfile="https://randomuser.me/api/portraits/men/9.jpg"
@@ -29,7 +41,7 @@ function DevYour() {
                 descriptionPost="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 likes="709"
               />
-              <Post
+              <Post2
                 imgProfile='./assets/profile-img/Andrea-profile.jpg'
                 nameProfile="Andrea A. D'Onorio De Meo"
                 imgPost="https://picsum.photos/500/250"
@@ -52,17 +64,18 @@ function DevYour() {
               />
             </div>
 
-            <aside className="hidden md:block lg:block sticky top-0">
-              <div className="hidden md:block lg:block sticky top-0">
-                <UserCard />
-                <UsersList />
-              </div>
-            </aside>
+          </div>
 
-          </main>
-        </div>
+          <aside className="basis-1/6 hidden md:block">
+            <div className="sticky top-4">
+              <UserCard />
+              <UsersSuggested />
+            </div>
+          </aside>
+        </main>
+
       </div>
-    </div>
+    </>
   );
 }
 

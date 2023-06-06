@@ -5,7 +5,7 @@ import ButtonSend from "../atoms/ButtonSend";
 export default function WriteComment() {
   return (
     <>
-      <form className="flex gap-2">
+      <form className="flex ">
         <InputField
           type="text"
           id="text"
@@ -13,10 +13,9 @@ export default function WriteComment() {
           placeholder="Write a comment..."
           labelText=""
           input="primaryInputVariant"
-          label="primaryLabelVariant"
         />
-        <span className="flex items-center">
-          <ButtonSend/>
+        <span className="flex justify-center items-center">
+          <ButtonSend />
         </span>
       </form>
     </>
