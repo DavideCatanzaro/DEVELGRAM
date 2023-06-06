@@ -7,11 +7,12 @@ function LeftSidebar() {
 
   return (
 
-    <div className="absolute left-0 flex h-full w-52 flex-col overflow-hidden rounded-r-1xl bg-white text-grey border-r-2 border-blue justify-center items-center">
+    <div className="flex h-full w-52 md:flex-col grow rounded-r-1xl bg-white text-grey border-r-2 border-blue justify-center items-center">
 
-      <img
+<img
         src="DevYour.png"
         alt="log"
+
         style={{ width: "60%", marginTop: "30px",/* marginLeft: "20px", */ }}
       />
 
@@ -38,7 +39,7 @@ function LeftSidebar() {
                   ></path>
                 </svg>
               </span>
-              <span className="ml-2">Home</span>
+              <span className="ml-2 font-semibold">Home</span>
             </button>
           </li>
         </Link>

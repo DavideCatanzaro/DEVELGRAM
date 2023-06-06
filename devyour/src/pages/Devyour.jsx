@@ -10,17 +10,17 @@ import Post2 from "../components/shared/Post2";
 function DevYour() {
   return (
     <>
-      <div className="flex">
-        <SecondSidebar />
+      <div className="flex max-w-7xl mx-auto">
+
         <main className="flex gap-6 container px-2 mx-auto">
 
-          <aside className="basis-1/4 hidden md:block">
-            <div className="sticky top-4">
-              <UsersSuggested />
+          <aside className="basis-1/6  md:block">
+            <div className="h-screen sticky top-0">
+              <LeftSidebar />
             </div>
           </aside>
 
-          <div className="basis-1/2 grow">
+          <div className="basis-2/3 grow">
             <div className="sticky top-0 py-4">
               <div className="sticky top-0 bg-white rounded-xl shadow">
                 <Shoots />
@@ -67,9 +67,10 @@ function DevYour() {
 
           </div>
 
-          <aside className="basis-1/4 hidden md:block">
+          <aside className="basis-1/6 hidden md:block">
             <div className="sticky top-4">
               <UserCard />
+              <UsersSuggested />
             </div>
           </aside>
         </main>
