@@ -12,7 +12,7 @@ function LeftSidebar() {
 <img
         src="DevYour.png"
         alt="log"
-
+        className="hidden md:block lg:block"
         style={{ width: "60%", marginTop: "30px",/* marginLeft: "20px", */ }}
       />
 
