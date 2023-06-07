@@ -4,7 +4,7 @@ import Comment from "./Comment";
 export default function Comments() {
   return (
     <>
-      <div className="pt-6">
+      <div className="flex flex-col gap-1">
         <Comment
           imageProfile="https://randomuser.me/api/portraits/men/83.jpg"
           nameProfile="Fake Name"
@@ -20,10 +20,7 @@ export default function Comments() {
           likes="3"
         />
         <div className="w-full">
-          <a
-            href="#"
-            className="py-3 px-4 w-full block bg-slate-100 text-center rounded-lg font-medium hover:bg-slate-200 transition ease-in-out delay-75"
-          >
+          <a href="#" className="w-full block bg-blue text-center rounded-lg text-sm hover:bg-pink transition ease-in-out delay-75">
             Show more comments
           </a>
         </div>
