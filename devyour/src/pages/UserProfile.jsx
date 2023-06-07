@@ -1,234 +1,56 @@
-import { Link } from "react-router-dom"
 import UserCard from "../components/shared/UserCard"
-import NewContent from "../components/shared/NewContent"
 import SecondSidebar from "../components/shared/SecondSidebar"
+import Separator from "../components/atoms/Separator"
+import UsersSuggested from "../components/shared/UsersSuggested"
+import Post from "../components/shared/Post"
+import Post2 from "../components/shared/Post2"
 
 const UserProfile = () => {
     return (
         <>
-            <div className="app bg-gray-100">
-
-                <nav className="bg-white w-full flex relative shadow justify-center items-center px-8 h-20">
-                    <div className="relative ">
-                        <Link to="/devyour">
-                            <img src="DevYour.png" alt="" className="h-20" />
-                        </Link>
-                    </div>
-                </nav>
+            <div className="flex max-w-7xl mx-auto">
                 <SecondSidebar />
-                <main className="grid grid-cols-1 lg:grid-cols-2 gap-6 my-12 w-2xl container px-2 mx-auto">
+                <main className="flex gap-6 container px-2 mx-auto">
 
-                    <aside className="">
-
-                        <div className="bg-white shadow rounded-lg p-10">
-                            <UserCard />
-                            {/* <div className="flex flex-col gap-1 text-center items-center"></div> */}
-
+                    <aside className="basis-1/4 hidden md:block">
+                        <div className="sticky top-4">
+                            <UsersSuggested />
                         </div>
-
-                        <div className="bg-white shadow mt-6  rounded-lg p-6">
-                            <h3 className="text-gray-600 text-sm font-semibold mb-4">Following</h3>
-                            <ul className="flex items-center justify-center space-x-2">
-                                {/* <!-- Story #1 --> */}
-                                <li className="flex flex-col items-center space-y-2">
-                                    {/* <!-- Ring --> */}
-                                    <a className="block bg-white p-1 rounded-full" href="#">
-                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638612913771-8f00622b96fb?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" alt="" />
-                                    </a>
-                                    {/* <!-- Username --> */}
-                                    <span className="text-xs text-gray-500">
-                                        Sage
-                                    </span>
-                                </li>
-
-                                {/* <!-- Story #1 --> */}
-                                <li className="flex flex-col items-center space-y-2">
-                                    {/* <!-- Ring --> */}
-                                    <a className="block bg-white p-1 rounded-full" href="#">
-                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638649602320-450b717fa622?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" alt="" />
-                                    </a>
-
-
-                                    {/* <!-- Username --> */}
-                                    <span className="text-xs text-gray-500">
-                                        Jett
-                                    </span>
-                                </li>
-
-                                {/* <!-- Story #2 --> */}
-                                <li className="flex flex-col items-center space-y-2">
-                                    {/* <!-- Ring --> */}
-                                    <a className="block bg-white p-1 rounded-full" href="#">
-                                        {/* <!-- Thumbnail --> */}
-                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638708644743-2502f38000a0?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" alt="" />
-                                    </a>
-
-                                    {/* <!-- Username --> */}
-                                    <span className="text-xs text-gray-500">
-                                        Sky
-                                    </span>
-                                </li>
-
-                                {/* <!-- Story #3 --> */}
-                                <li className="flex flex-col items-center space-y-2">
-                                    {/* <!-- Ring --> */}
-                                    <a className="block bg-white p-1 rounded-full" href="#">
-                                        {/* <!-- Thumbnail --> */}
-                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638691899851-0e955bceba1f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" alt="" />
-                                    </a>
-
-                                    {/* <!-- Username --> */}
-                                    <span className="text-xs text-gray-500">
-                                        Olivia
-                                    </span>
-                                </li>
-
-                                {/* <!-- Story #4 --> */}
-                                <li className="flex flex-col items-center space-y-2">
-                                    {/* <!-- Ring --> */}
-                                    <a className="block bg-white p-1 rounded-full" href="#">
-                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638612913771-8f00622b96fb?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" alt="" />
-                                    </a>
-
-
-                                    {/* <!-- Username --> */}
-                                    <span className="text-xs text-gray-500">
-                                        Julia
-                                    </span>
-                                </li>
-                                {/* <!-- Story #1 --> */}
-                                <li className="flex flex-col items-center space-y-2">
-                                    {/* <!-- Ring --> */}
-                                    <a className="block bg-white p-1 rounded-full" href="#" >
-                                        {/* <!-- Thumbnail --> */}
-                                        <img className="w-16 rounded-full" src="https://images.unsplash.com/photo-1638649602320-450b717fa622?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=80" alt="" />
-                                    </a>
-
-
-                                    {/* <!-- Username --> */}
-                                    <span className="text-xs text-gray-500">
-                                        Hendrick
-                                    </span>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        {/* <div className="flex bg-white shadow mt-6  rounded-lg p-2">
-                            <img src="https://images.unsplash.com/photo-1439130490301-25e322d88054?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1189&amp;q=80" alt="Just a flower" className=" w-16  object-cover  h-16 rounded-xl" />
-                            <div className="flex flex-col justify-center w-full px-2 py-1">
-                                <div className="flex justify-between items-center ">
-                                    <div className="flex flex-col">
-                                        <h2 className="text-sm font-medium">Massive Dynamic</h2>
-                                    </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500 hover:text-blue-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
-                                    </svg>
-                                </div>
-                                <div className="flex pt-2  text-sm text-gray-400">
-                                    <div className="flex items-center mr-auto">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                            </path>
-                                        </svg>
-                                        <p className="font-normal">4.5</p>
-                                    </div>
-                                    <div className="flex items-center font-medium text-gray-900 ">
-                                        $1800
-                                        <span className="text-gray-400 text-sm font-normal"> /wk</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="grid mt-5 grid-cols-2  space-x-4 overflow-y-scroll flex justify-center items-center w-full ">
-                            <div className="relative flex flex-col justify-between   bg-white shadow-md rounded-3xl  bg-cover text-gray-800  overflow-hidden cursor-pointer w-full object-cover object-center rounded shadow-md h-64 my-2" >
-                                <div className="absolute bg-gradient-to-t from-green-400 to-blue-400  opacity-50 inset-0 z-0"></div>
-                                <div className="relative flex flex-row items-end  h-72 w-full ">
-                                    <div className="absolute right-0 top-0 m-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-9 w-9 p-2 text-gray-200 hover:text-blue-400 rounded-full hover:bg-white transition ease-in duration-200 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
-                                        </svg>
-                                    </div>
-                                    <div className="p-6 rounded-lg  flex flex-col w-full z-10 ">
-                                        <h4 className="mt-1 text-white text-xl font-semibold  leading-tight truncate">Loremipsum..
-                                        </h4>
-                                        <div className="flex justify-between items-center ">
-                                            <div className="flex flex-col">
-                                                <h2 className="text-sm flex items-center text-gray-300 font-normal">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-                                                        </path>
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                    </svg>
-                                                    Dubai
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <div className="flex pt-4  text-sm text-gray-300">
-                                            <div className="flex items-center mr-auto">
-                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                                    </path>
-                                                </svg>
-                                                <p className="font-normal">4.5</p>
-                                            </div>
-                                            <div className="flex items-center font-medium text-white ">
-                                                $1800
-                                                <span className="text-gray-300 text-sm font-normal"> /wk</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="relative flex flex-col justify-between   bg-white shadow-md  rounded-3xl  bg-cover text-gray-800  overflow-hidden cursor-pointer w-full object-cover object-center rounded shadow-md h-64 my-2" >
-                                <div className="absolute bg-gradient-to-t from-blue-500 to-yellow-400  opacity-50 inset-0 z-0"></div>
-                                <div className="relative flex flex-row items-end  h-72 w-full ">
-                                    <div className="absolute right-0 top-0 m-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-9 w-9 p-2 text-gray-200 hover:text-blue-400 rounded-full hover:bg-white transition ease-in duration-200 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
-                                        </svg>
-                                    </div>
-                                    <div className="p-5 rounded-lg  flex flex-col w-full z-10 ">
-                                        <h4 className="mt-1 text-white text-xl font-semibold  leading-tight truncate">Loremipsum..
-                                        </h4>
-                                        <div className="flex justify-between items-center ">
-                                            <div className="flex flex-col">
-                                                <h2 className="text-sm flex items-center text-gray-300 font-normal">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-                                                        </path>
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                    </svg>
-                                                    India
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <div className="flex pt-4  text-sm text-gray-300">
-                                            <div className="flex items-center mr-auto">
-                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                                    </path>
-                                                </svg>
-                                                <p className="font-normal">4.5</p>
-                                            </div>
-                                            <div className="flex items-center font-medium text-white ">
-                                                $1800
-                                                <span className="text-gray-300 text-sm font-normal"> /wk</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
-
                     </aside>
 
-                    <article className="">
+                    <div className="basis-1/2 grow">
+                        <div className="sticky top-0 py-4">
+                            <div className="sticky top-0 bg-white rounded-xl shadow">
+                                <Separator title={"My post"} />
+                            </div>
+                        </div>
+                        <Post
+                            imgProfile='./assets/profile-img/Andrea-profile.jpg'
+                            nameProfile="Andrea A. D'Onorio De Meo"
+                            username="@andgelorea"
+                            imgPost="https://picsum.photos/500/250"
+                            descriptionPost="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            likes="709"
+                        />
+                        <Post
+                            imgProfile='./assets/profile-img/Andrea-profile.jpg'
+                            nameProfile="Andrea A. D'Onorio De Meo"
+                            username="@andgelorea"
+                            imgPost="https://picsum.photos/500/500"
+                            descriptionPost="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            likes="709"
+                            postDate="2 week ago"
+                        />
 
-                        <NewContent />
-
-                        
+                        <Post2 
+                            imgProfile="./assets/profile-img/Andrea-profile.jpg"
+                            nameProfile="Andrea A. D'Onorio De Meo"
+                            username="@andgelorea"
+                            imgPost="https://picsum.photos/600/600"
+                            likes="88"
+                            descriptionPost="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500"
+                            postDate="2 week ago"
+                        />
 
                         <div className="bg-white shadow rounded-lg mb-6">
                             <div className="flex flex-row px-2 py-3 mx-3">
@@ -313,11 +135,6 @@ const UserProfile = () => {
                                         <div className="text-xs leading-snug md:leading-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                                     </div>
                                     <div className="text-xs  mt-0.5 text-gray-500">14 w</div>
-                                    <div className="bg-white border border-white rounded-full float-right -mt-8 mr-0.5 flex shadow items-center ">
-                                        {/* <svg className="p-0.5 h-5 w-5 rounded-full z-20 bg-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16"><defs><linearGradient id="a1" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#18AFFF"></stop><stop offset="100%" stop-color="#0062DF"></stop></linearGradient><filter id="c1" width="118.8%" height="118.8%" x="-9.4%" y="-9.4%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1"></feGaussianBlur><feOffset dy="-1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset><feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"></feComposite><feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0"></feColorMatrix></filter><path id="b1" d="M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z"></path></defs><g fill="none"><use fill="url(#a1)" xlink:href="#b1"></use><use fill="black" filter="url(#c1)" xlink:href="#b1"></use><path fill="white" d="M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z"></path></g></svg>
-                        <svg className="p-0.5 h-5 w-5 rounded-full -ml-1.5 bg-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16"><defs><linearGradient id="a2" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6680"></stop><stop offset="100%" stop-color="#E61739"></stop></linearGradient><filter id="c2" width="118.8%" height="118.8%" x="-9.4%" y="-9.4%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1"></feGaussianBlur><feOffset dy="-1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset><feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"></feComposite><feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.710144928 0 0 0 0 0 0 0 0 0 0.117780134 0 0 0 0.349786932 0"></feColorMatrix></filter><path id="b2" d="M8 0a8 8 0 100 16A8 8 0 008 0z"></path></defs><g fill="none"><use fill="url(#a2)" xlink:href="#b2"></use><use fill="black" filter="url(#c2)" xlink:href="#b2"></use><path fill="white" d="M10.473 4C8.275 4 8 5.824 8 5.824S7.726 4 5.528 4c-2.114 0-2.73 2.222-2.472 3.41C3.736 10.55 8 12.75 8 12.75s4.265-2.2 4.945-5.34c.257-1.188-.36-3.41-2.472-3.41"></path></g></svg>
-                        <span className="text-sm ml-1 pr-1.5 text-gray-500">3</span> */}
-                                    </div>
                                 </div>
                             </div>
                             <div className="relative flex items-center self-center w-full max-w-xl p-4 overflow-hidden text-gray-600 focus-within:text-gray-400">
@@ -405,8 +222,13 @@ const UserProfile = () => {
                             </div>
                         </div>
 
-                    </article>
+                    </div>
 
+                    <aside className="basis-1/4 hidden md:block">
+                        <div className="sticky top-4">
+                            <UserCard />
+                        </div>
+                    </aside>
                 </main>
 
             </div>

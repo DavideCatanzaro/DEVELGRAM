@@ -1,10 +1,11 @@
 import React from "react";
 import InputField from "../atoms/InputField";
+import ButtonSend from "../atoms/ButtonSend";
 
 export default function WriteComment() {
   return (
     <>
-      <form className="flex gap-2">
+      <form className="flex ">
         <InputField
           type="text"
           id="text"
@@ -12,16 +13,9 @@ export default function WriteComment() {
           placeholder="Write a comment..."
           labelText=""
           input="primaryInputVariant"
-          label="primaryLabelVariant"
         />
-        <span className="flex items-center">
-          <svg
-            className="fill-blue hover:fill-pink"
-            style={{ width: "28px", height: "28px" }}
-            viewBox="0 0 24 24"
-          >
-            <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"></path>
-          </svg>
+        <span className="flex justify-center items-center">
+          <ButtonSend />
         </span>
       </form>
     </>

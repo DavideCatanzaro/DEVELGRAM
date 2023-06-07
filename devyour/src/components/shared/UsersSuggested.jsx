@@ -1,24 +1,22 @@
 import ButtonFollow from "../atoms/ButtonFollow"
 
-const UsersList = () => {
+const UsersSuggested = () => {
     return (
         <>
             <div className="w-full max-w-md p-4 mt-4 bg-white text-gray rounded-lg shadow sm:p-8 dark:bg-gray dark:border-gray">
                 <div className="flex items-center justify-between mb-4">
-                    <h5 className="text-xl font-bold leading-none text-gray dark:text-white">Suggested for you</h5>
-                    <a href="#" className="text-sm font-medium text-blue hover:text-pink duration-300">
-                        Show all
-                    </a>
+                    <h5 className="text-md font-bold leading-none text-gray dark:text-white">Suggested for you</h5>
+                    <a href="#" className="text-sm font-medium text-blue hover:text-pink duration-300">Show all</a>
                 </div>
                 <div className="flow-root">
-                    <ul role="list" className="divide-y divide-gray-200 dark:divide-gray-700">
-                        <li className="py-3 sm:py-4">
+                    <div className="divide-y divide-gray-200 dark:divide-gray-700">
+                        <div className="py-3 sm:py-4">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
                                     <img className="w-8 h-8 rounded-full" src='./assets/profile-img/Untitled.png' alt="Neil image" />
                                 </div>
                                 <div className="flex-1 min-w-0">
-                                    <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                    <p className="text-sm font-medium text-gray truncate dark:text-white">
                                         Monkey D. Luffy
                                     </p>
                                     <p className="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -29,8 +27,8 @@ const UsersList = () => {
                                     <ButtonFollow />
                                 </div>
                             </div>
-                        </li>
-                        <li className="py-3 sm:py-4">
+                        </div>
+                        <div className="py-3 sm:py-4">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
                                     <img className="w-8 h-8 rounded-full" src='./assets/profile-img/images.jpg' alt="Bonnie image" />
@@ -47,8 +45,8 @@ const UsersList = () => {
                                     <ButtonFollow />
                                 </div>
                             </div>
-                        </li>
-                        <li className="py-3 sm:py-4">
+                        </div>
+                        <div className="py-3 sm:py-4">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
                                     <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Michael image" />
@@ -65,8 +63,8 @@ const UsersList = () => {
                                     <ButtonFollow />
                                 </div>
                             </div>
-                        </li>
-                        <li className="py-3 sm:py-4">
+                        </div>
+                        <div className="py-3 sm:py-4">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
                                     <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Lana image" />
@@ -83,15 +81,15 @@ const UsersList = () => {
                                     <ButtonFollow />
                                 </div>
                             </div>
-                        </li>
-                        <li className="pt-3 pb-0 sm:pt-4">
+                        </div>
+                        <div className="py-3 sm:py-4">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
-                                    <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Thomas image" />
+                                    <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Lana image" />
                                 </div>
                                 <div className="flex-1 min-w-0">
                                     <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
-                                        Thomes Lean
+                                        Lana Byrd
                                     </p>
                                     <p className="text-sm text-gray-500 truncate dark:text-gray-400">
                                         email@windster.com
@@ -101,12 +99,12 @@ const UsersList = () => {
                                     <ButtonFollow />
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
     )
 }
 
-export default UsersList
+export default UsersSuggested
