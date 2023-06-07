@@ -6,6 +6,7 @@ import UsersSuggested from "../components/shared/UsersSuggested";
 import Shoots from "../components/shared/Shoots";
 import Post2 from "../components/shared/Post2";
 import SecondSidebar from "../components/shared/SecondSidebar";
+import ProfileCard from "../components/shared/ProfileCard";
 
 function DevYour() {
   return (
@@ -64,7 +65,7 @@ function DevYour() {
 
           <aside className="basis-1/6 hidden md:block">
             <div className="sticky top-4">
-              <UserCard />
+              <ProfileCard />
               <UsersSuggested />
             </div>
           </aside>

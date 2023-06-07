@@ -4,6 +4,8 @@ import UsersSuggested from "../components/shared/UsersSuggested"
 import Post from "../components/shared/Post"
 import Post2 from "../components/shared/Post2"
 import LeftSidebar from "../components/shared/LeftSidebar"
+import SecondSidebar from "../components/shared/SecondSidebar"
+import ProfileCard from "../components/shared/ProfileCard"
 
 const UserProfile = () => {
     return (
@@ -16,7 +18,6 @@ const UserProfile = () => {
                     <aside className="hidden basis-1/6 md:block ">
                         <div className="sticky top-0 h-screen">
                             <LeftSidebar/>
-
                         </div>
                             
                         
@@ -60,7 +61,7 @@ const UserProfile = () => {
 
                     <aside className="basis-1/6 hidden md:block">
                         <div className="sticky top-4">
-                            <UserCard />
+                            <ProfileCard />
                             <UsersSuggested />
                         </div>
                     </aside>
