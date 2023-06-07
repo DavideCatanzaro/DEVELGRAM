@@ -2,7 +2,7 @@ function UnfollowU() {
     return(
         <>
         <div
-            className="mb-3 space-y-4 py-2 focus:outline-none focus:ring-1 focus:ring-grey"
+            className="mb-3 space-y-4 py-2 focus:outline-none "
             tabindex="0"
           >
             <div className="relative flex items-center">
@@ -13,7 +13,7 @@ function UnfollowU() {
               />
               <div className="ml-4 flex flex-col sm:w-96">
                 <p className="mb-1 font-medium text-grey">TIZIO 2</p> 
-                <span className="text-grey">Decide unfllow you</span>
+                <span className="text-blue">Decide unfllow you</span>
               </div>
               <span className="absolute top-0 right-2 text-sm text-grey">
                 1min ago

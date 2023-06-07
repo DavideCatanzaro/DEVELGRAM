@@ -1,27 +1,21 @@
 import React, { useState } from "react";
-import InputField from "../atoms/InputField"
+import InputField from "../atoms/InputField";
 import { Link } from "react-router-dom";
 
 function LeftSidebar() {
-
-
   return (
-
-    <div className="flex h-full w-52 md:flex-col grow rounded-r-1xl bg-white text-grey border-r-2 border-blue justify-center items-center">
-
-<img
+    <div className=" hidden md:flex h-full w-full md:flex-col  rounded-xl bg-white text-grey border-2 border-blue justify-center items-center">
+      <img
         src="DevYour.png"
         alt="log"
         className="hidden md:block lg:block"
-        style={{ width: "60%", marginTop: "30px",/* marginLeft: "20px", */ }}
+        style={{ width: "60%", marginTop: "30px" /* marginLeft: "20px", */ }}
       />
 
       <div className="mt-20 space-y-3">
         <Link to="/devyour">
           <div className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-bold text-grey hover:text-pink">
-            <button
-              className="flex"
-            >
+            <button className="flex">
               <span>
                 <svg
                   className=" h-6 w-6 align-middle"
@@ -44,34 +38,28 @@ function LeftSidebar() {
           </div>
         </Link>
         <div className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-semibold text-grey hover:text-blue">
-
-          <span>
-            <svg
-              className="h-6 w-6 align-middle"
+        <svg
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
               fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
               stroke="currentColor"
-              stroke-width="2"
+              className="w-10 h-6"
             >
-              <circle cx="11" cy="11" r="8" class=""></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65" class=""></line>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
             </svg>
-          </span>
 
-
-          <svg
-            className="absolute -top-1/2 -right-1 h-32 w-8 text-gray-50"
-            xmlns="http://www.w3.org/2000/svg"
-            width="1em"
-            height="4em"
-          >
-            <path
-              fill="currentColor"
-              d="M 499.289 57.696 C 499.289 171.989 399.349 196.304 399.349 257.333 C 399.349 322.485 499.512 354.485 499.512 458.767 C 499.512 483.155 499.289 57.696 499.289 57.696 Z"
-            />
-          </svg>
-          <InputField placeholder="Cerca" id="search" type="text" input="thirdInputVariant" />
+         
+          <InputField
+            placeholder="Search"
+            id="search"
+            type="text"
+            input="thirdInputVariant"
+          />
         </div>
         <div className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-grey font-semibold hover:text-pink">
           <Link to="/messaggi">
@@ -79,20 +67,20 @@ function LeftSidebar() {
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
+                  strokeWidth="1.5"
                   stroke="currentColor"
-                  stroke-width="2"
+                  class="w-6 h-6"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
                   />
                 </svg>
               </span>
-              <span className="ml-2">Messaggi</span>
+              <span className="ml-2">Messagge</span>
             </button>
           </Link>
         </div>
@@ -100,19 +88,21 @@ function LeftSidebar() {
           <Link to="/notifiche" className="flex">
             <span className="text-2xl">
               <svg
-                className="h-7 w-7"
-                viewBox="0 0 32 32"
-                fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M24.0362 21.3333H18.5243L15.9983 24.4208L13.4721 21.3333H7.96047L7.99557 8H24.0009L24.0362 21.3333ZM24.3705 23.3333H19.4721L17.2883 26.0026C16.6215 26.8176 15.3753 26.8176 14.7084 26.0026L12.5243 23.3333H7.62626C6.70407 23.3333 5.95717 22.5845 5.9596 21.6623L5.99646 7.66228C5.99887 6.74352 6.74435 6 7.66312 6H24.3333C25.2521 6 25.9975 6.7435 26 7.66224L26.0371 21.6622C26.0396 22.5844 25.2927 23.3333 24.3705 23.3333ZM12.6647 14C12.2965 14 11.998 14.2985 11.998 14.6667V15.3333C11.998 15.7015 12.2965 16 12.6647 16H19.3313C19.6995 16 19.998 15.7015 19.998 15.3333V14.6667C19.998 14.2985 19.6995 14 19.3313 14H12.6647Z"
-                ></path>
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5"
+                />
               </svg>
             </span>
-            <span className="ml-1 ">Notifiche</span>
+            <span className="ml-1 ">Notices</span>
           </Link>
         </div>
         <div className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-grey font-semibold hover:text-pink">
@@ -156,16 +146,40 @@ function LeftSidebar() {
                 ></line>
               </svg>
             </span>
-            <span className="">Crea</span>
+            <span className="">Create</span>
           </button>
         </div>
       </div>
 
       <div className="my-6 mt-auto ml-1 flex cursor-pointer">
-        {/* <ButtonToggle /> */}
+        <a
+          href="#settings"
+          className="flex h-16 w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:bg-pink"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="w-6 h-6 shrink-0"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"
+            />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
+
+          <small className="text-center text-xs font-semibold"> Settings </small>
+        </a>
       </div>
     </div>
-
   );
 }
 

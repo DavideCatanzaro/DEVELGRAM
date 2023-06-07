@@ -4,18 +4,21 @@ import Separator from "../components/atoms/Separator"
 import UsersSuggested from "../components/shared/UsersSuggested"
 import Post from "../components/shared/Post"
 import Post2 from "../components/shared/Post2"
+import LeftSidebar from "../components/shared/LeftSidebar"
 
 const UserProfile = () => {
     return (
         <>
             <div className="flex max-w-7xl mx-auto">
-                <SecondSidebar />
+                
                 <main className="flex gap-6 container px-2 mx-auto">
-
-                    <aside className="basis-1/4 hidden md:block">
-                        <div className="sticky top-4">
-                            <UsersSuggested />
+                <SecondSidebar />
+                    <aside className="hidden basis-1/6 md:block ">
+                        <div className="sticky top-0 h-screen">
+                            <LeftSidebar/>
                         </div>
+                            
+                        
                     </aside>
 
                     <div className="basis-1/2 grow">

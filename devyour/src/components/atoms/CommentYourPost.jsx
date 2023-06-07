@@ -2,7 +2,7 @@ function CommentYourPost(){
     return(
         <>
          <div
-            className="mb-3 space-y-4 py-2 focus:outline-none focus:ring-1 focus:ring-grey"
+            className="mb-3 space-y-4 py-2 focus:outline-none "
             tabindex="0"
           >
             <div className="relative flex items-center">
