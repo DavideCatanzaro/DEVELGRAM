@@ -1,16 +1,19 @@
+import { Link } from "react-router-dom"
 import ButtonFollow from "../atoms/ButtonFollow"
 
 const UsersSuggested = () => {
     return (
         <>
-            <div className="w-full max-w-md p-4 mt-4 bg-white text-gray rounded-lg shadow sm:p-8 dark:bg-gray dark:border-gray">
+            <div className="w-full p-4 mt-4 bg-white text-gray rounded-lg shadow dark:bg-gray dark:border-gray">
                 <div className="flex items-center justify-between mb-4">
                     <h5 className="text-md font-bold leading-none text-gray dark:text-white">Suggested for you</h5>
-                    <a href="#" className="text-sm font-medium text-blue hover:text-pink duration-300">Show all</a>
+                    <Link to="/suggested">
+                        <a href="#" className="text-sm font-medium text-blue hover:text-pink duration-300">Show all</a>
+                    </Link>
                 </div>
                 <div className="flow-root">
                     <div className="divide-y divide-gray-200 dark:divide-gray-700">
-                        <div className="py-3 sm:py-4">
+                        <div className="py-3 ">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
                                     <img className="w-8 h-8 rounded-full" src='./assets/profile-img/Untitled.png' alt="Neil image" />
@@ -28,7 +31,7 @@ const UsersSuggested = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="py-3 sm:py-4">
+                        <div className="py-3">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
                                     <img className="w-8 h-8 rounded-full" src='./assets/profile-img/images.jpg' alt="Bonnie image" />
@@ -46,7 +49,7 @@ const UsersSuggested = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="py-3 sm:py-4">
+                        <div className="py-3">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
                                     <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Michael image" />
@@ -64,7 +67,7 @@ const UsersSuggested = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="py-3 sm:py-4">
+                        <div className="py-3">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
                                     <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Lana image" />
@@ -82,7 +85,7 @@ const UsersSuggested = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="py-3 sm:py-4">
+                        <div className="py-3">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
                                     <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Lana image" />

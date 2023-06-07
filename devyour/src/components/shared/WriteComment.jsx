@@ -5,7 +5,7 @@ import ButtonSend from "../atoms/ButtonSend";
 export default function WriteComment() {
   return (
     <>
-      <form className="flex ">
+      <form className="flex grow">
         <InputField
           type="text"
           id="text"
