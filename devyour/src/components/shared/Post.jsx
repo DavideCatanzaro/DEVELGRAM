@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import WriteComment from "./WriteComment";
 import Comments from "./Comments";
 
@@ -7,10 +7,18 @@ export default function Post({
   nameProfile,
   username,
   imgPost,
-  likes,
   descriptionPost,
   postDate,
 }) {
+
+  const [likes, setLikes] = useState(0)
+  
+  const incrementLikes = (e) => {
+    e.preventDefault()
+    const increment = likes + 1;
+    setLikes(increment)
+  }
+
   return (
     <>
       <div className="mb-4 break-inside break-inside-avoid p-6 rounded-xl bg-white flex flex-col bg-clip-border mx-auto max-w-md shadow">
@@ -46,9 +54,9 @@ export default function Post({
         <p>
           {descriptionPost}
         </p>
-        <div className="py-4">
-          <a className="inline-flex items-center" href="#">
-            <span className="mr-2">
+        <div className="py-4 flex ">
+          <a className="flex-row" href="#">
+            <button onClick={incrementLikes}><span>
               <svg
                 className="fill-rose-600"
                 style={{ width: "24px", height: "24px" }}
@@ -56,7 +64,7 @@ export default function Post({
               >
                 <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
               </svg>
-            </span>
+            </span></button>
             <span className="text-lg font-bold">{likes}</span>
           </a>
         </div>
