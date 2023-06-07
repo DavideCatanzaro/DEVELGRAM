@@ -3,6 +3,7 @@ import Separator from "../components/atoms/Separator"
 import UsersSuggested from "../components/shared/UsersSuggested"
 import LeftSidebar from "../components/shared/LeftSidebar"
 import ButtonFollow from "../components/atoms/ButtonFollow"
+import ProfileCard from "../components/shared/ProfileCard"
 
 const Follow = () => {
     return (
@@ -71,108 +72,11 @@ const Follow = () => {
                                 </div>
                             </div>
                         </div>
-
-                        <div className="flex-col basis-2/3 my-4 gap-4 flex bg-white justify-center items-center rounded-xl shadowmx-auto ">
-                            <div className="flow-root">
-                                <div className="divide-y divide-gray-200 dark:divide-gray-700">
-                                    <div className="py-3 ">
-                                        <div className="flex items-center space-x-4">
-                                            <div className="flex-shrink-0">
-                                                <img className="w-8 h-8 rounded-full" src='./assets/profile-img/Untitled.png' alt="Neil image" />
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <p className="text-sm font-medium text-gray truncate dark:text-white">
-                                                    Monkey D. Luffy
-                                                </p>
-                                                <p className="text-sm text-gray-500 truncate dark:text-gray-400">
-                                                    @mugiwara
-                                                </p>
-                                            </div>
-                                            <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                                                <ButtonFollow />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="py-3">
-                                        <div className="flex items-center space-x-4">
-                                            <div className="flex-shrink-0">
-                                                <img className="w-8 h-8 rounded-full" src='./assets/profile-img/images.jpg' alt="Bonnie image" />
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
-                                                    Zoro Roronoa
-                                                </p>
-                                                <p className="text-sm text-gray-500 truncate dark:text-gray-400">
-                                                    @kaizoku_hanta
-                                                </p>
-                                            </div>
-                                            <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                                                <ButtonFollow />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="py-3">
-                                        <div className="flex items-center space-x-4">
-                                            <div className="flex-shrink-0">
-                                                <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Michael image" />
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
-                                                    Michael Gough
-                                                </p>
-                                                <p className="text-sm text-gray-500 truncate dark:text-gray-400">
-                                                    email@windster.com
-                                                </p>
-                                            </div>
-                                            <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                                                <ButtonFollow />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="py-3">
-                                        <div className="flex items-center space-x-4">
-                                            <div className="flex-shrink-0">
-                                                <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Lana image" />
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
-                                                    Lana Byrd
-                                                </p>
-                                                <p className="text-sm text-gray-500 truncate dark:text-gray-400">
-                                                    email@windster.com
-                                                </p>
-                                            </div>
-                                            <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                                                <ButtonFollow />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="py-3">
-                                        <div className="flex items-center space-x-4">
-                                            <div className="flex-shrink-0">
-                                                <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Lana image" />
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
-                                                    Lana Byrd
-                                                </p>
-                                                <p className="text-sm text-gray-500 truncate dark:text-gray-400">
-                                                    email@windster.com
-                                                </p>
-                                            </div>
-                                            <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                                                <ButtonFollow />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     <aside className="basis-1/6 hidden md:block">
                         <div className="sticky top-4">
-                            <UserCard />
+                            <ProfileCard />
                             <UsersSuggested />
                         </div>
                     </aside>

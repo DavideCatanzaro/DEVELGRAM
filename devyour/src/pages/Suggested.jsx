@@ -3,6 +3,8 @@ import Separator from "../components/atoms/Separator"
 import UsersSuggested from "../components/shared/UsersSuggested"
 import LeftSidebar from "../components/shared/LeftSidebar"
 import ButtonFollow from "../components/atoms/ButtonFollow"
+import ProfileCard from "../components/shared/ProfileCard"
+import SecondSidebar from "../components/shared/SecondSidebar"
 
 const Suggested = () => {
     return (
@@ -10,9 +12,9 @@ const Suggested = () => {
             <div className="flex max-w-7xl mx-auto">
 
                 <main className="flex gap-6 container px-2 mx-auto">
-
-                    <aside className="basis-1/6  md:block">
-                        <div className="h-screen sticky top-0">
+                    <SecondSidebar />
+                    <aside className="hidden basis-1/6 md:block ">
+                        <div className="sticky top-0 h-screen">
                             <LeftSidebar />
                         </div>
                     </aside>
@@ -32,7 +34,7 @@ const Suggested = () => {
                                 <UserCard />
                             </div>
                             <div className="basis-1/4 rounded-xl bg-white flex flex-wrap mx-auto shadow">
-                                <UserCard />
+                                <UserCard firstName={"Ciro"} />
                             </div>
                             <div className="basis-1/4 rounded-xl bg-white flex flex-wrap mx-auto shadow">
                                 <UserCard />
@@ -57,7 +59,7 @@ const Suggested = () => {
 
                     <aside className="basis-1/6 hidden md:block">
                         <div className="sticky top-4">
-                            <UserCard />
+                            <ProfileCard />
                         </div>
                     </aside>
                 </main>
