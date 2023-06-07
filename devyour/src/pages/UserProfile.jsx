@@ -12,10 +12,14 @@ const UserProfile = () => {
                 
                 <main className="flex gap-6 container px-2 mx-auto">
 
-                <aside className="basis-1/6  md:block">
-            <div className="h-screen sticky top-0">
-                            <LeftSidebar />
+                <SecondSidebar />
+                    <aside className="hidden basis-1/6 md:block ">
+                        <div className="sticky top-0 h-screen">
+                            <LeftSidebar/>
+
                         </div>
+                            
+                        
                     </aside>
 
                     <div className="basis-2/3 grow">

@@ -4,18 +4,17 @@ import NewContent from "../components/shared/NewContent";
 import UserCard from "../components/shared/UserCard";
 import UsersSuggested from "../components/shared/UsersSuggested";
 import Shoots from "../components/shared/Shoots";
-import SecondSidebar from "../components/shared/SecondSidebar";
 import Post2 from "../components/shared/Post2";
+import SecondSidebar from "../components/shared/SecondSidebar";
 
 function DevYour() {
   return (
     <>
       <div className="flex max-w-7xl mx-auto">
-
         <main className="flex gap-6 container px-2 mx-auto">
-
-          <aside className="basis-1/6  md:block">
-            <div className="h-screen sticky top-0">
+          <SecondSidebar />
+          <aside className="hidden basis-1/6 md:block ">
+            <div className="sticky top-0 h-screen">
               <LeftSidebar />
             </div>
           </aside>
@@ -27,11 +26,8 @@ function DevYour() {
               </div>
             </div>
             <div className="flex flex-col mx-auto">
-
               <div className="sticky top-0 w-full bg-white rounded-xl shadow">
-                <div className="sticky top-0">
-
-                </div>
+                <div className="sticky top-0"></div>
               </div>
 
               <NewContent />
@@ -43,7 +39,7 @@ function DevYour() {
                 likes="709"
               />
               <Post2
-                imgProfile='./assets/profile-img/Andrea-profile.jpg'
+                imgProfile="./assets/profile-img/Andrea-profile.jpg"
                 nameProfile="Andrea A. D'Onorio De Meo"
                 imgPost="https://picsum.photos/500/250"
                 descriptionPost="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -64,7 +60,6 @@ function DevYour() {
                 likes="709"
               />
             </div>
-
           </div>
 
           <aside className="basis-1/6 hidden md:block">
@@ -74,7 +69,6 @@ function DevYour() {
             </div>
           </aside>
         </main>
-
       </div>
     </>
   );
