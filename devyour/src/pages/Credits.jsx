@@ -50,7 +50,7 @@ function Credits() {
                         </div>
 
                         <div className="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-gradient-to-t from-[#80d8ff] to-[#ea80fc] rounded-xl">
-                            <img className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./assets/credits/Andrea.jpg" alt="" />
+                            <img className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./assets/credits/Davide.jpg" alt="" />
 
                             <h1 style={{ backgroundColor: "transparent" }} className="flex flex-col items-center mt-4 text-2xl font-semibold text-grey capitalize dark:text-white group-hover:text-grey rounded-md"><span style={{ backgroundColor: "transparent" }} className="rounded-md">Davide</span><span style={{ backgroundColor: "transparent" }} className="rounded-md">Catanzaro</span></h1>
 
