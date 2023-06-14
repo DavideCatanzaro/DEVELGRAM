@@ -28,7 +28,7 @@ const ProfileCard = ({
                             <p className="text-base font-normal text-grey dark:text-white">@{username}</p>
                         </div>
                     </Link>
-                    <div className="py-3 w-full flex justify-center items-center gap-4">
+                    <div className="py-3 w-full flex justify-evenly items-center gap-4">
                         <Link to="/userProfile">
                             <div className="basis-1/3 flex flex-col items-center justify-center">
                                 <p className="text-2xl font-bold text-grey dark:text-white">3</p>

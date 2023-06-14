@@ -62,7 +62,7 @@ function LeftSidebar() {
           />
         </div>
         <div className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 text-grey font-semibold hover:text-pink">
-          <Link to="/messaggi">
+          <Link to="/messages">
             <button className="flex">
               <span>
                 <svg
@@ -85,7 +85,7 @@ function LeftSidebar() {
           </Link>
         </div>
         <div className="relative flex cursor-pointer space-x-2 rounded-md py-4 px-10 font-semibold text-grey hover:text-blue">
-          <Link to="/notifiche" className="flex">
+          <Link to="/notices" className="flex">
             <span className="text-2xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -1,27 +1,16 @@
-import UserCard from "../components/shared/UserCard"
 import Separator from "../components/atoms/Separator"
 import UsersSuggested from "../components/shared/UsersSuggested"
 import Post from "../components/shared/Post"
 import Post2 from "../components/shared/Post2"
-import LeftSidebar from "../components/shared/LeftSidebar"
-import SecondSidebar from "../components/shared/SecondSidebar"
 import ProfileCard from "../components/shared/ProfileCard"
+import Navbar from "../components/shared/Navbar"
 
 const UserProfile = () => {
     return (
         <>
             <div className="flex max-w-7xl mx-auto">
-                
                 <main className="flex gap-6 container px-2 mx-auto">
-
-                <SecondSidebar />
-                    <aside className="hidden basis-1/6 md:block ">
-                        <div className="sticky top-0 h-screen">
-                            <LeftSidebar/>
-                        </div>
-                            
-                        
-                    </aside>
+                <Navbar />
 
                     <div className="basis-2/3 grow">
                         <div className="sticky top-0 py-4">
@@ -48,7 +37,7 @@ const UserProfile = () => {
                             postDate="2 week ago"
                         />
 
-                        <Post 
+                        <Post
                             imgProfile="./assets/profile-img/Andrea-profile.jpg"
                             nameProfile="Andrea A. D'Onorio De Meo"
                             username="@andgelorea"

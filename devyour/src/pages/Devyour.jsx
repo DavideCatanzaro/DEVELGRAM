@@ -1,24 +1,17 @@
 import Post from "../components/shared/Post";
-import LeftSidebar from "../components/shared/LeftSidebar";
 import NewContent from "../components/shared/NewContent";
-import UserCard from "../components/shared/UserCard";
 import UsersSuggested from "../components/shared/UsersSuggested";
 import Shoots from "../components/shared/Shoots";
 import Post2 from "../components/shared/Post2";
-import SecondSidebar from "../components/shared/SecondSidebar";
 import ProfileCard from "../components/shared/ProfileCard";
+import Navbar from "../components/shared/Navbar";
 
 function DevYour() {
   return (
     <>
       <div className="flex max-w-7xl mx-auto">
         <main className="flex gap-6 container px-2 mx-auto">
-          <SecondSidebar />
-          <aside className="hidden basis-1/6 md:block ">
-            <div className="sticky top-0 h-screen">
-              <LeftSidebar />
-            </div>
-          </aside>
+          <Navbar />
 
           <div className="basis-2/3 grow">
             <div className="sticky top-0 py-4">

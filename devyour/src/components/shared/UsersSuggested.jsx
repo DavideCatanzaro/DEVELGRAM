@@ -4,15 +4,15 @@ import ButtonFollow from "../atoms/ButtonFollow"
 const UsersSuggested = () => {
     return (
         <>
-            <div className="w-full p-4 mt-4 bg-white text-gray rounded-lg shadow dark:bg-gray dark:border-gray">
-                <div className="flex items-center justify-between mb-4">
-                    <h5 className="text-md font-bold leading-none text-gray dark:text-white">Suggested for you</h5>
+            <div className="flex flex-col basis-1/6 w-full mt-4 bg-white text-grey rounded-lg shadow dark:bg-grey">
+                <div className="flex items-center justify-between p-4 mb-4">
+                    <h5 className="text-md font-bold leading-none text-grey dark:text-white">Suggested</h5>
                     <Link to="/suggested">
-                        <a href="#" className="text-sm font-medium text-blue hover:text-pink duration-300">Show all</a>
+                        <div className="text-sm font-medium text-blue hover:text-pink duration-300">Show all</div>
                     </Link>
                 </div>
-                <div className="flow-root">
-                    <div className="divide-y divide-gray-200 dark:divide-gray-700">
+                <div className="flex">
+                    <div className="divide-y divide-blue dark:divide-pink">
                         <div className="py-3 ">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
@@ -26,7 +26,7 @@ const UsersSuggested = () => {
                                         @mugiwara
                                     </p>
                                 </div>
-                                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                <div className="flex justify-center items-center">
                                     <ButtonFollow />
                                 </div>
                             </div>

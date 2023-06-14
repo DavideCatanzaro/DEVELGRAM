@@ -1,21 +1,15 @@
 import React from "react";
-import LeftSidebar from "../components/shared/LeftSidebar";
 import InputField from "../components/atoms/InputField";
-import SecondSidebar from "../components/shared/SecondSidebar";
 import ProfileCard from "../components/shared/ProfileCard";
 import UsersSuggested from "../components/shared/UsersSuggested";
+import Navbar from "../components/shared/Navbar";
 
-function Messaggi() {
+function Messages() {
   return (
     <>
       <div className="flex max-w-7xl mx-auto">
         <main className="flex gap-6 container px-2 mx-auto">
-          <SecondSidebar />
-          <aside className="hidden basis-1/6 md:block ">
-            <div className="sticky top-0 h-screen">
-              <LeftSidebar />
-            </div>
-          </aside>
+        <Navbar />
           <div className="basis-2/3 grow">
             <div className="flex flex-row justify-between ">
               <div className="flex flex-col w-2/5  overflow-y-auto ">
@@ -218,4 +212,4 @@ function Messaggi() {
   );
 }
 
-export default Messaggi;
+export default Messages;

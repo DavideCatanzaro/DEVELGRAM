@@ -21,9 +21,6 @@ export default function Shoots() {
                         <Shoot storyImage="https://picsum.photos/200/200?i=201" />
                         <Shoot storyImage="https://picsum.photos/200/200?i=203" />
                         <Shoot storyImage="https://picsum.photos/200/200?i=205" />
-                        <Shoot storyImage="https://picsum.photos/200/200?i=207" />
-                        <Shoot storyImage="https://picsum.photos/200/200?i=209" />
-                        <Shoot storyImage="https://picsum.photos/200/200?i=208" />
                     </div>
                 </div>
             </div>

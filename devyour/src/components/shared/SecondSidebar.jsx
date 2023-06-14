@@ -1,6 +1,17 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function SecondSidebar() {
+  const [view, setView] = useState(false)
+
+  const handleView = () => {
+    if(view === false) {
+      setView(true)
+    } else {
+      setView(false)
+    }
+  }
+
   return (
     <>
       <div className="md:hidden absolute bottom-0 left-[50%] bg-white mx-auto dark:bg-grey h-screen pattern">
@@ -51,7 +62,7 @@ function SecondSidebar() {
 
             <small className="text-center text-xs font-semibold"> Near </small>
           </a>
-          <Link to="/messaggi">
+          <Link to="/messages">
             <a
               href="#messages"
               className="flex h-16 w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:bg-blue dark:text-white dark:hover:bg-pink"
@@ -78,7 +89,7 @@ function SecondSidebar() {
             </a>
           </Link>
 
-          <Link to="/notifiche">
+          <Link to="/notices">
             <a
               href="#notices"
               className="hidden md:flex h-16 w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:bg-blue dark:text-white dark:hover:bg-pink"
@@ -184,6 +195,7 @@ function SecondSidebar() {
           <a
             href="#settings"
             className="flex h-16 w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:bg-blue dark:text-white dark:hover:bg-pink"
+            onClick={handleView}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -211,6 +223,9 @@ function SecondSidebar() {
             </small>
           </a>
         </nav>
+        <div className={`${view ? "flex" : "hidden"} `}>
+          <div>Logout</div>
+        </div>
       </div>
     </>
   );
