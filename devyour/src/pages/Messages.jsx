@@ -3,6 +3,7 @@ import InputField from "../components/atoms/InputField";
 import ProfileCard from "../components/shared/ProfileCard";
 import UsersSuggested from "../components/shared/UsersSuggested";
 import Navbar from "../components/shared/Navbar";
+import ButtonSend from "../components/atoms/ButtonSend";
 
 function Messages() {
   return (
