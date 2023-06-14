@@ -30,7 +30,6 @@ function DevYour() {
                 nameProfile="Pietro Amato"
                 imgPost="https://picsum.photos/500/500"
                 descriptionPost="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                likes="709"
               />
               <Post2
                 imgProfile="./assets/profile-img/Andrea-profile.jpg"
