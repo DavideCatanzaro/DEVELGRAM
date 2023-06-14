@@ -9,7 +9,7 @@ function Messages() {
     <>
       <div className="flex max-w-7xl mx-auto">
         <main className="flex gap-6 container px-2 mx-auto">
-        <Navbar />
+          <Navbar />
           <div className="basis-2/3 grow">
             <div className="flex flex-row justify-between ">
               <div className="flex flex-col w-2/5  overflow-y-auto ">
@@ -183,21 +183,24 @@ function Messages() {
                 </div>
               </div>
 
-              {/* <div className="w-2/5 border-y border-x rounded-r-lg px-5">
-            <div className="flex flex-col">
-              <div className="font-semibold text-xl py-4">Mern Stack Group</div>
-              <img
-                src="https://source.unsplash.com/L2cxSuKWbpo/600x600"
-                className="object-cover rounded-xl h-64"
-                alt=""
-              />
-              <div className="font-semibold py-4">Created 22 Sep 2021</div>
-              <div className="font-light">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                perspiciatis!
-              </div>
-            </div>
-          </div> */}
+              {/* 
+              Banner pubblicitario laterale 
+              <div className="w-2/5 border-y border-x rounded-r-lg px-5">
+                <div className="flex flex-col">
+                  <div className="font-semibold text-xl py-4">Mern Stack Group</div>
+                  <img
+                    src="https://source.unsplash.com/L2cxSuKWbpo/600x600"
+                    className="object-cover rounded-xl h-64"
+                    alt=""
+                  />
+                  <div className="font-semibold py-4">Created 22 Sep 2021</div>
+                  <div className="font-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+                    perspiciatis!
+                  </div>
+                </div>
+              </div> */}
+
             </div>
           </div>
           <aside className="basis-1/6 hidden md:block">

@@ -43,15 +43,17 @@ function Navbar() {
                             <small className="text-center text-xs font-medium"> Search </small>
                         </a>
 
-                        <a href="#messages" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
+                        <Link to="/messages">
+                            <a href="#messages" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
                                                 md:flex-row">
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
-                            </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                                </svg>
 
-                            <small className="text-center text-xs font-medium"> Messages </small>
-                        </a>
+                                <small className="text-center text-xs font-medium"> Messages </small>
+                            </a>
+                        </Link>
 
                         <a href="#create" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
                                                 md:flex-row">
@@ -65,15 +67,17 @@ function Navbar() {
                             <small className="text-center text-xs font-medium"> Create </small>
                         </a>
 
-                        <a href="#notices" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
+                        <Link to="/notices">
+                            <a href="#notices" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
                                                 md:flex-row">
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
-                            </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
+                                </svg>
 
-                            <small className="text-center text-xs font-medium"> Notices </small>
-                        </a>
+                                <small className="text-center text-xs font-medium"> Notices </small>
+                            </a>
+                        </Link>
 
                         <a href="#profile" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
                                                 md:flex-row">
@@ -89,14 +93,16 @@ function Navbar() {
                     <div className={`${view ? "flex" : "hidden"} z-20 w-full items-center justify-center`}>
                         <div className="flex flex-col items-center justify-center gap-1 rounded-md
                                                 md:flex-row">
-                            <div className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
+                            <Link to="/">
+                                <div className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
                                                 md:flex-row">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
-                                </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+                                    </svg>
 
-                                <small className="text-center text-xs font-medium"> Logout </small>
-                            </div>
+                                    <small className="text-center text-xs font-medium"> Logout </small>
+                                </div>
+                            </Link>
                         </div>
                     </div>
 

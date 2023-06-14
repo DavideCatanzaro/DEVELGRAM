@@ -5,15 +5,15 @@ const UsersSuggested = () => {
     return (
         <>
             <div className="flex flex-col basis-1/6 w-full mt-4 bg-white text-grey rounded-lg shadow dark:bg-grey">
-                <div className="flex items-center justify-between p-4 mb-4">
+                <div className="flex items-center justify-between p-3">
                     <h5 className="text-md font-bold leading-none text-grey dark:text-white">Suggested</h5>
                     <Link to="/suggested">
                         <div className="text-sm font-medium text-blue hover:text-pink duration-300">Show all</div>
                     </Link>
                 </div>
-                <div className="flex">
+                <div className="">
                     <div className="divide-y divide-blue dark:divide-pink">
-                        <div className="py-3 ">
+                        <div className="py-3 px-3">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
                                     <img className="w-8 h-8 rounded-full" src='./assets/profile-img/Untitled.png' alt="Neil image" />
@@ -22,7 +22,7 @@ const UsersSuggested = () => {
                                     <p className="text-sm font-medium text-gray truncate dark:text-white">
                                         Monkey D. Luffy
                                     </p>
-                                    <p className="text-sm text-gray-500 truncate dark:text-gray-400">
+                                    <p className="text-sm text-grey truncate dark:text-white">
                                         @mugiwara
                                     </p>
                                 </div>
@@ -31,7 +31,7 @@ const UsersSuggested = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="py-3">
+                        <div className="py-3 px-3">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
                                     <img className="w-8 h-8 rounded-full" src='./assets/profile-img/images.jpg' alt="Bonnie image" />
@@ -49,7 +49,7 @@ const UsersSuggested = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="py-3">
+                        <div className="py-3 px-3">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
                                     <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Michael image" />
@@ -67,7 +67,7 @@ const UsersSuggested = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="py-3">
+                        <div className="py-3 px-3">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
                                     <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Lana image" />
@@ -85,7 +85,7 @@ const UsersSuggested = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="py-3">
+                        <div className="py-3 px-3">
                             <div className="flex items-center space-x-4">
                                 <div className="flex-shrink-0">
                                     <img className="w-8 h-8 rounded-full" src="https://picsum.photos/50/50" alt="Lana image" />
