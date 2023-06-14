@@ -1,0 +1,36 @@
+{
+  "post": [
+    {
+      "nameProfile": "Pietro Amato",
+      "username": "pieamt",
+      "imgPost": "https://picsum.photos/500/500",
+      "imgProfile": "https://randomuser.me/api/portraits/men/9.jpg",
+      "descriptionPost": "lorem ipsum bla bla bla",
+      "postDate": "now"
+    },
+    {
+      "nameProfile": "Andrea A. D'Onorio De Meo",
+      "username": "andgelorea",
+      "imgPost": "https://picsum.photos/500/250",
+      "imgProfile": "./assets/profile-img/Andrea-profile.jpg",
+      "descriptionPost": "lorem ipsum bla bla bla",
+      "postDate": "now"
+    },
+    {
+      "nameProfile": "Davide Catanzaro",
+      "username": "dadocata",
+      "imgPost": "https://picsum.photos/450/300",
+      "imgProfile": "https://randomuser.me/api/portraits/men/7.jpg",
+      "descriptionPost": "lorem ipsum bla bla bla",
+      "postDate": "now"
+    },
+    {
+      "nameProfile": "Luca Giuntoli",
+      "username": "lucone00",
+      "imgPost": "https://picsum.photos/500/350",
+      "imgProfile": "https://randomuser.me/api/portraits/men/6.jpg",
+      "descriptionPost": "lorem ipsum bla bla bla",
+      "postDate": "now"
+    }
+  ]
+}
