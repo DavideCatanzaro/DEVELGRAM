@@ -1,0 +1,35 @@
+{
+  "follower": [
+    {
+      "id": "1",
+      "username": "Rebecca Burke",
+      "number": "+1(227)-691-8675",
+      "imgProfile": "https://randomuser.me/api/portraits/men/9.jpg"
+    },
+    {
+      "id": "2",
+      "username": "Connor Bell",
+      "number": "+1(227)-691-8675",
+      "imgProfile": "https://randomuser.me/api/portraits/men/7.jpg"
+    },
+    {
+      "id": "3",
+      "username": "Lee Fields",
+      "number": "+1(227)-691-8675",
+      "imgProfile": "https://randomuser.me/api/portraits/men/12.jpg"
+    },
+    {
+      "id": "4",
+      "username": "Marie Cole",
+      "number": "+1(227)-691-8675",
+      "imgProfile": "https://randomuser.me/api/portraits/men/22.jpg"
+    },
+    {
+      "id": "5",
+      "username": "Penny Foster",
+      "number": "+1(227)-691-8675",
+      "imgProfile": "https://randomuser.me/api/portraits/men/43.jpg"
+    }
+    
+  ]
+}
