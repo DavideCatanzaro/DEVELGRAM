@@ -1,8 +1,4 @@
-import Separator from "../components/atoms/Separator";
-import UsersSuggested from "../components/shared/UsersSuggested";
-import ProfileCard from "../components/shared/ProfileCard";
-import Navbar from "../components/shared/Navbar";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Follow = () => {
   const [followers, setFollowers] = useState([]);
@@ -10,9 +6,10 @@ const Follow = () => {
   useEffect(() => {
     try {
       async function fetchData() {
-        const response = await fetch("/follow");
+        const response = await fetch("/api/followers-data");
         const data = await response.json();
-        setFollowers(data);
+        console.log(data);
+        setFollowers(data.follower);
       }
       fetchData();
     } catch (error) {
@@ -24,15 +21,7 @@ const Follow = () => {
     <>
       <div className="flex max-w-7xl mx-auto">
         <main className="flex gap-6 container px-2 mx-auto">
-          <Navbar />
-
           <div className="basis-2/3 grow">
-            <div className="sticky top-0 py-4">
-              <div className="sticky top-0 bg-white rounded-xl shadow">
-                <Separator title={"Follower"} />
-              </div>
-            </div>
-
             {/* Follower */}
             <div className="flex flex-col my-4 gap-4 bg-white justify-center items-center rounded-xl">
               <div className="w-full mx-5">
@@ -136,13 +125,6 @@ const Follow = () => {
               </div>
             </div>
           </div>
-
-          <aside className="basis-1/6 hidden md:block">
-            <div className="sticky top-4">
-              <ProfileCard />
-              <UsersSuggested />
-            </div>
-          </aside>
         </main>
       </div>
     </>

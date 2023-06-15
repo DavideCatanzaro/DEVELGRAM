@@ -29,7 +29,12 @@
       "username": "Penny Foster",
       "number": "+1(227)-691-8675",
       "imgProfile": "https://randomuser.me/api/portraits/men/43.jpg"
-    }
-    
+    },
+    {
+        "id": "6",
+        "username": "Amy Farrah Fowler",
+        "number": "+1(227)-234-8373",
+        "imgProfile": "https://randomuser.me/api/portraits/men/33.jpg"
+      }
   ]
 }
