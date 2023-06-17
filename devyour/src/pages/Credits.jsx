@@ -1,25 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "../components/shared/Footer";
 
 function Credits() {
     return (
         <>
-            <section className="h-screen flex flex-col justify-center items-center bg-white dark:bg-grey">
-                <nav className="bg-white w-full flex relative justify-center items-center px-8 h-20 ">
-                    <div className="relative ">
+            <div className="flex flex-col justify-center items-center gap-8 bg-white dark:bg-grey">
+                <nav className="bg-white w-full flex justify-center items-center px-8">
                         <Link to="/">
-                            <img src="DevYour.png" alt="" className="h-40" />
+                            <img src="DevYour.png" alt="logo" className="" />
                         </Link>
-                    </div>
                 </nav>
-                <div className="container px-6 py-10 mx-auto">
+
+                <div className="flex flex-col justify-center items-center ">
                     <h1 className="text-3xl font-semibold text-center text-grey capitalize lg:text-4xl dark:text-white">Our Executive Team</h1>
 
-                    <p className="max-w-2xl mx-auto my-6 text-center text-grey dark:text-white">
+                    <p className="py-6 text-center text-grey dark:text-white">
                         Develhope - FullStack11 - Team1
                     </p>
 
-                    <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-5">
+                    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-5">
 
                         <div className="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-gradient-to-t from-[#ea80fc] to-[#80d8ff] rounded-xl">
                             <img className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./assets/credits/Andrea.jpg" alt="Andrea A. D'Onorio De Meo" />
@@ -163,7 +163,9 @@ function Credits() {
 
                     </div>
                 </div>
-            </section>
+
+                <Footer />
+            </div>
         </>
     )
 }
