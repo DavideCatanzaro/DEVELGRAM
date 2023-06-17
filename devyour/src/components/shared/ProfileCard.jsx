@@ -35,13 +35,13 @@ const ProfileCard = ({
                                 <p className="text-sm font-normal text-grey dark:text-white">Posts</p>
                             </div>
                         </Link>
-                        <Link to="/follow">
+                        <Link to="/follower">
                             <div className="basis-1/3 flex flex-col items-center justify-center">
                                 <p className="text-2xl font-bold text-grey dark:text-white">10</p>
                                 <p className="text-sm font-normal text-grey dark:text-white">Followers</p>
                             </div>
                         </Link>
-                        <Link to="/follow">
+                        <Link to="/following">
                             <div className="basis-1/3 flex flex-col items-center justify-center">
                                 <p className="text-2xl font-bold text-grey dark:text-white">8</p>
                                 <p className="text-sm font-normal text-grey dark:text-white">Following</p>

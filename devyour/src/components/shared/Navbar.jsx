@@ -21,8 +21,7 @@ function Navbar() {
                     <img src="DevYour.png" alt="log" className="hidden md:flex pb-6" />
 
                     <div className="flex md:flex-col grow items-center gap-1 md:gap-6 flex-row">
-                        <Link to="/devyour">
-                            <a href="/" className="flex flex-col items-center justify-center gap-1 rounded-md p-1 text-grey hover:text-blue dark:text-white dark:hover:text-pink
+                        <Link to="/devyour" className="flex flex-col items-center justify-center gap-1 rounded-md p-1 text-grey hover:text-blue dark:text-white dark:hover:text-pink
                                                 md:flex-row">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
@@ -30,10 +29,9 @@ function Navbar() {
                                 </svg>
 
                                 <small className="text-xs font-medium">Home</small>
-                            </a>
                         </Link>
 
-                        <a href="#search" className=" hidden md:flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
+                        <div className=" hidden md:flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
                                                 md:flex-row">
 
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
@@ -41,10 +39,9 @@ function Navbar() {
                             </svg>
 
                             <small className="text-center text-xs font-medium"> Search </small>
-                        </a>
+                        </div>
 
-                        <Link to="/messages">
-                            <a href="#messages" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
+                        <Link to="/messages" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
                                                 md:flex-row">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
@@ -52,10 +49,9 @@ function Navbar() {
                                 </svg>
 
                                 <small className="text-center text-xs font-medium"> Messages </small>
-                            </a>
                         </Link>
 
-                        <a href="#create" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
+                        <div className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
                                                 md:flex-row">
 
                             <svg className="h-5 w-8" fill="currentColor" viewBox="0 0 24 24" width="24">
@@ -65,10 +61,9 @@ function Navbar() {
                             </svg>
 
                             <small className="text-center text-xs font-medium"> Create </small>
-                        </a>
+                        </div>
 
-                        <Link to="/notices">
-                            <a href="#notices" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
+                        <Link to="/notices" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
                                                 md:flex-row">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
@@ -76,10 +71,9 @@ function Navbar() {
                                 </svg>
 
                                 <small className="text-center text-xs font-medium"> Notices </small>
-                            </a>
                         </Link>
 
-                        <a href="#profile" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
+                        <Link to="/userProfile" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
                                                 md:flex-row">
 
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
@@ -87,21 +81,19 @@ function Navbar() {
                             </svg>
 
                             <small className="text-center text-xs font-medium"> Profile </small>
-                        </a>
+                        </Link>
                     </div>
 
                     <div className={`${view ? "flex" : "hidden"} z-20 w-full items-center justify-center`}>
                         <div className="flex flex-col items-center justify-center gap-1 rounded-md
                                                 md:flex-row">
-                            <Link to="/">
-                                <div className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
+                            <Link to="/" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
                                                 md:flex-row">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
                                     </svg>
 
                                     <small className="text-center text-xs font-medium"> Logout </small>
-                                </div>
                             </Link>
                         </div>
                     </div>
@@ -109,7 +101,7 @@ function Navbar() {
                     <div className="border-blue w-[1px] bg-blue"></div>
                     <hr className="text-blue" />
 
-                    <a onClick={handleView} href="#settings" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
+                    <div onClick={handleView} className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
                                                 md:flex-row">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 shrink-0">
@@ -118,7 +110,7 @@ function Navbar() {
                         </svg>
 
                         <small className="text-center text-xs font-medium"> Settings </small>
-                    </a>
+                    </div>
 
                 </nav>
             </aside >

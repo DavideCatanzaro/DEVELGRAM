@@ -20,9 +20,9 @@ export default function Comments() {
           likes="3"
         />
         <div className="w-full">
-          <a href="#" className="w-full block bg-blue text-center rounded-lg text-sm hover:bg-pink transition ease-in-out delay-75">
+          <div className="w-full block bg-blue text-center rounded-lg text-sm hover:bg-pink transition ease-in-out delay-75">
             Show more comments
-          </a>
+          </div>
         </div>
       </div>
     </>
