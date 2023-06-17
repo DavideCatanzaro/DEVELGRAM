@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({createPost}) {
     const [view, setView] = useState(false)
 
     const handleView = () => {
@@ -50,8 +50,9 @@ function Navbar() {
 
                                 <small className="text-center text-xs font-medium"> Messages </small>
                         </Link>
-
-                        <div className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
+                        
+                        <Link to="/devyour" onClick={createPost}
+                            className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 cursor-pointer text-grey hover:text-pink dark:text-white dark:hover:text-blue
                                                 md:flex-row">
 
                             <svg className="h-5 w-8" fill="currentColor" viewBox="0 0 24 24" width="24">
@@ -61,7 +62,7 @@ function Navbar() {
                             </svg>
 
                             <small className="text-center text-xs font-medium"> Create </small>
-                        </div>
+                        </Link>
 
                         <Link to="/notices" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
                                                 md:flex-row">

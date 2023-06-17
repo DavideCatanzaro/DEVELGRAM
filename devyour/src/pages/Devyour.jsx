@@ -5,13 +5,29 @@ import Shoots from "../components/shared/Shoots";
 import Post2 from "../components/shared/Post2";
 import ProfileCard from "../components/shared/ProfileCard";
 import Navbar from "../components/shared/Navbar";
+import { useState } from "react";
 
 function DevYour() {
+  const [newPost, setNewPost] = useState(false)
+
+  const handleCreatePost = () => {
+    if (newPost === false) {
+      setNewPost(true)
+    } else {
+      setNewPost(false)
+    }
+  }
+
   return (
     <>
+      {newPost && <div className="fixed top-0 h-screen w-full z-30 flex justify-center items-center bg-black/75">
+              <div className="absolute top-10 items-center justify-center w-1/2">
+                <NewContent createPost={handleCreatePost}/>
+              </div>
+            </div>}
       <div className="flex max-w-7xl mx-auto">
         <main className="flex gap-6 container px-2 mx-auto">
-          <Navbar />
+          <Navbar createPost={handleCreatePost} />
 
           <div className="basis-2/3 grow">
             <div className="sticky top-0 py-4">
@@ -23,8 +39,6 @@ function DevYour() {
               <div className="sticky top-0 w-full bg-white rounded-xl shadow">
                 <div className="sticky top-0"></div>
               </div>
-
-              <NewContent />
               <Post
                 imgProfile="https://randomuser.me/api/portraits/men/9.jpg"
                 nameProfile="Pietro Amato"
