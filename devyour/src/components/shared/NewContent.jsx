@@ -1,9 +1,15 @@
 import ButtonSend from "../atoms/ButtonSend"
 
-const NewContent = () => {
+const NewContent = ({createPost}) => {
     return (
         <>
             <form className="flex flex-col flex-grow bg-white shadow rounded-lg mb-6 p-4">
+                <div className="flex justify-end flex-grow bg-white">
+                    <svg onClick={createPost} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 cursor-pointer">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                </div>
+
                 <textarea name="message" placeholder="Type something..." className="w-full rounded-lg p-2 text-sm bg-gray-100 border border-transparent appearance-none rounded-tg placeholder-gray-400"></textarea>
                 <div className="flex justify-between mt-2">
                     <div className="flex gap-2">

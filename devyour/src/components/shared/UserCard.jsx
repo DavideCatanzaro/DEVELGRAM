@@ -16,7 +16,7 @@ const UserCard = ({
                         <img src={cover} className="flex h-24 w-full justify-center rounded-xl bg-cover" />
                         <div className="absolute -bottom-12 flex h-[87px] w-[87px] items-center justify-center rounded-full border-4 border-white hover:border-blue">
                             <Link to="/userProfile">
-                                <img className="h-full w-full rounded-full" src={img} alt="" />
+                                <img className="h-full w-full rounded-full" src={img} alt="img" />
                             </Link>
                         </div>
                     </div>
@@ -30,8 +30,8 @@ const UserCard = ({
                         </div>
                     </Link>
                     <div className="py-3 w-full flex justify-center items-center gap-4">
-                        <ButtonFollow />
-                        <ButtonFollow />
+                        <ButtonFollow value="Follow"/>
+                        <ButtonFollow value="Remove"/>
                     </div>
                     <div>
                         <span class="absolute inset-x-0 bottom-0 rounded-b-[20px] h-3 bg-gradient-to-r from-[#80d8ff] to-[#ea80fc]"></span>

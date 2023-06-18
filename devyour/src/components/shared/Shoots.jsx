@@ -13,7 +13,7 @@ export default function Shoots() {
     return (
         <>
             <style dangerouslySetInnerHTML={{ __html: "\n\n    .hover-image-1{\n        transition: ease-in-out 0.2s;\n    }\n    .hover-image-1:hover{\n        width: 50px;\n        height: 50px;\n    }\n\n" }} />
-            <div className="container flex items-center justify-between py-4 px-6 mx-auto text-purple-600 dark:text-purple-300">
+            <div className="container flex items-center justify-between py-4 px-6 mx-auto text-grey dark:text-white">
                 <div className="flex justify-between">
                     <div className="flex items-center flex-shrink-0 space-x-6">
                         <Shoot onclick={handleClickShoot} storyImage='./assets/profile-img/Untitled.png' />

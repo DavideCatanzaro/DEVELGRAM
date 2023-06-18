@@ -1,5 +1,7 @@
 const styles = {
-    success: ""
+    login: "mt-4 w-full cursor-pointer rounded-lg bg-blue pt-3 pb-3 text-white shadow-lg hover:bg-pink",
+    follow: "",
+    send: "",
 }
 
 const ButtonCustom = ({ className, type, children, onClick }) => {
