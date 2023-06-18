@@ -5,25 +5,6 @@ import SettingText from "../components/atoms/SetText";
 import ButtonLogin from "../components/atoms/ButtonLogin";
 
 function Register() {
-  const {text}= SettingText()
- 
- 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    
-    const response = await fetch('http://localhost:3000/register', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(),
-    });
-
-    const data = await response.text({text});
-    console.log(data); 
-  };
- 
   return (
     <div className="flex h-screen w-full items-center justify-center bg-gray-100">
       <div className="w-full max-w-3xl overflow-hidden rounded-lg bg-white shadow-lg sm:flex">
