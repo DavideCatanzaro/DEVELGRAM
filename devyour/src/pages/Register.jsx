@@ -1,8 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import InputField from "../components/atoms/InputField";
+import SettingText from "../components/atoms/SetText";
 
 function Register() {
+  const {text}= SettingText()
+ 
+ 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    
+    const response = await fetch('http://localhost:3000/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(),
+    });
+
+    const data = await response.text({text});
+    console.log(data); 
+  };
+ 
   return (
     <div className="flex h-screen w-full items-center justify-center bg-gray-100">
       <div className="w-full max-w-3xl overflow-hidden rounded-lg bg-white shadow-lg sm:flex">
@@ -25,14 +45,25 @@ function Register() {
               CREATE ACCOUNT
             </h1>
             <p className="mt-2 mb-5 text-base leading-tight text-grey"></p>
-            <form className="mt-8">
+            <form className="mt-8" onSubmit={handleSubmit}>
               <div className="relative mt-2 w-full">
                 <InputField
                   type="text"
                   id="name"
                   value=""
                   placeholder=" "
-                  labelText="Enter your Name"
+                  labelText="Enter your First Name"
+                  input="primaryInputVariant"
+                  label="primaryLabelVariant"
+                />
+              </div>
+              <div className="relative mt-2 w-full">
+                <InputField
+                  type="text"
+                  id="lastName"
+                  value=""
+                  placeholder=" "
+                  labelText="Enter your Last Name"
                   input="primaryInputVariant"
                   label="primaryLabelVariant"
                 />
@@ -80,12 +111,11 @@ function Register() {
                 Have an account?{" "}
                 <Link to="/login">
                   {" "}
-                  <a
-                    href="#"
-                    className="font-bold text-blue no-underline hover:text-pink"
+                  <span
+                    className="font-bold text-blue no-underline hover:text-pink hover:cursor-point"
                   >
                     Sign in
-                  </a>{" "}
+                  </span>{" "}
                 </Link>
               </p>
             </div>
