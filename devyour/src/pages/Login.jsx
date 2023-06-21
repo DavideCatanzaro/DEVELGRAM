@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import InputField from "../components/atoms/InputField";
 import ButtonLogin from "../components/atoms/ButtonLogin";
 
@@ -7,7 +7,10 @@ function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
+  const [isFormValid, setIsFormValid] = useState(false);
 
+
+  const navigate = useNavigate();
   const handleLogin = async (e) => {
     e.preventDefault();
 
@@ -19,13 +22,22 @@ function Login() {
       body: JSON.stringify({ email, password }),
     });
 
-    if (response.ok) {
-      setMessage('Login effettuato con successo!');
-    } else {
-      setMessage('Credenziali non valide');
+    if (!response.ok) {
+      setMessage('Credenziali non valide!');
+    } else{
+      const user = await response.json();
+    console.log('LOGIN FATTO', user);
+      navigate("/devyour");
     }
+    
   };
+  useEffect(() => {
+    setIsFormValid(
   
+        email !== "" &&
+        password !== ""
+    );
+  }, [ email, password]);
   return (
     
     <div className="flex h-screen w-full items-center justify-center bg-gray-100">
@@ -43,8 +55,8 @@ function Login() {
               <img src="DevYour.png" alt="logo" />
             </h1>
             <p className="mt-2 mb-5 text-base leading-tight text-grey"></p>
-            <p>{message}</p>
-            <form className="mt-8" onSubmit={handleLogin}>
+            <p className="text-red text-2xl font-semibold">{message}</p>
+            <form className="mt-8" >
 
               <div className="relative mt-2 w-full">
                 <input
@@ -71,9 +83,9 @@ function Login() {
               <label htmlFor="password" className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform cursor-text select-none bg-white px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-blue-600">Enter your Password</label>
               </div>
 
-              
-                <ButtonLogin value="Login" />
-              
+              <Link to="/devyour">
+                <ButtonLogin value="Login" disabled={!isFormValid} onClick={handleLogin}/>
+                </Link>
 
             </form>
             

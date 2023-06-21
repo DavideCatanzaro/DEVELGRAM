@@ -92,7 +92,7 @@ app.post('/login', (req, res) => {
   );
 
   if (user) {
-    res.send('Login effettuato con successo!');
+    res.status(200).json({ message: 'Login avvenuto con successo!', user });
   } else {
     res.status(401).send('Credenziali non valide');
   }
@@ -109,7 +109,7 @@ function loadUsers() {
   }
 }
 
-const port = process.env.NODE_PORT || 3000;
+const port = process.env.NODE_PORT || 3001;
 app.listen(port, () => {
   console.log('Stiamo ascoltando sulla porta: ', port);
 });
