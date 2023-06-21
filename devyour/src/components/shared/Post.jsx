@@ -38,19 +38,18 @@ export default function Post({
           <img className="h-full w-full object-cover rounded-lg" src={imgPost} alt="" />
         </div>
         <div className="text-grey text-md mb-4 mt-2">{descriptionPost}</div>
-        <div className="py-1">
-          <a className="inline-flex items-center" href="#">
-            <button onClick={incrementLikes}><span>
-              <svg
-                className="fill-rose-600"
-                style={{ width: "24px", height: "24px" }}
-                viewBox="0 0 24 24">
-                <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
-              </svg>
-            </span></button>
-            <span className="text-lg font-bold">{likes}</span>
-          </a>
-        </div>
+        <div className="flex w-full text-xs">
+                    <div className="py-1">
+                        <div className="flex justify-start items-center gap-2">
+                            <button onClick={incrementLikes}><span>
+                                <svg className="fill-pink w-6 h-6" viewBox="0 0 24 24">
+                                    <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+                                </svg>
+                            </span></button>
+                            <span className="text-lg font-bold">{likes}</span>
+                        </div>
+                    </div>
+                </div>
         <div className="flex w-full py-2 text-grey focus-within:text-grey">
           <img className="w-10 h-10 object-cover rounded-full shadow mr-2 cursor-pointer" alt="User avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" />
           <WriteComment />

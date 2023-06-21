@@ -1,27 +1,16 @@
 function UnfollowU() {
-    return(
-        <>
-        <div
-            className="mb-3 space-y-4 py-2 focus:outline-none "
-            tabindex="0"
-          >
-            <div className="relative flex items-center">
-              <img
-                className="h-10 w-10  rounded-full object-cover"
-                src="https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg"
-                alt=""
-              />
-              <div className="ml-4 flex flex-col sm:w-96">
-                <p className="mb-1 font-medium text-grey">TIZIO 2</p> 
-                <span className="text-blue">Decide unfllow you</span>
-              </div>
-              <span className="absolute top-0 right-2 text-sm text-grey">
-                1min ago
-              </span>
-            </div>
-          </div>
-        </>
-    )
+  return (
+    <>
+      <div className="flex">
+        <span className="text-pink">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 16.318A4.486 4.486 0 0012.016 15a4.486 4.486 0 00-3.198 1.318M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+          </svg>
+        </span>
+        <span className="mx-1 font-medium text-pink">User doesn't follow you anymore...</span>
+      </div>
+    </>
+  )
 }
 
 export default UnfollowU
