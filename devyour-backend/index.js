@@ -6,8 +6,8 @@ require('dotenv').config();
 const fs = require('fs');
 const jwt = require('jsonwebtoken');
 const users = require('./users.json');
-
 const app = express();
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.json());
@@ -28,6 +28,17 @@ app.post('/register', (req, res) => {
   res.send('Registrazione completata con successo!');
   
 });
+
+
+//api/users?username=kfadfdsf
+app.get('/api/users',(req,res,next) => {
+ // let firstName = req.query.firstname.toLowerCase()
+let userName = req.query.username.toLowerCase()
+let usersList = JSON.parse(fs.readFileSync('C:/Users/farin/OneDrive/Desktop/DevGram/DEVYOUR/devyour-backend/users.json')).users
+let searchResult=usersList.filter((user) => user.username.toLowerCase().includes(userName)) //|| user.firstName.toLowerCase().includes(firstName) ) 
+console.log(searchResult)
+return res.status(200).send(searchResult);
+}) 
 
 // Funzione per salvare l'utente nel database JSON
 function saveUser(user) {

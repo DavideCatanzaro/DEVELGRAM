@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Navbar({createPost}) {
+function Navbar({createPost, setShowSearchModal}) {
     const [view, setView] = useState(false)
-
+    
     const handleView = () => {
         if (view === false) {
             setView(true)
@@ -31,9 +31,9 @@ function Navbar({createPost}) {
                                 <small className="text-xs font-medium">Home</small>
                         </Link>
 
-                        <div className=" hidden md:flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
+                        <div onClick={() => setShowSearchModal(true)} className="cursor-pointer hidden md:flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
                                                 md:flex-row">
-
+ 
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                             </svg>
