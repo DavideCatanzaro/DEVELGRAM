@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import  SettingText  from "./SetText";
 
 
 const InputVariants = {
@@ -13,14 +13,11 @@ const LabelVariants = {
 }
 
 function InputField({ placeholder, id, type, labelText, input, label }) {
-  const [text, setText] = useState("")
+   const {text, handleText}= SettingText()
 
-  const handleText = (e) => {
-    setText(e.target.value)
-  }
-
+  
   return (
-    <>
+    <>  
       <input
         type={type}
         id={id}
@@ -30,7 +27,7 @@ function InputField({ placeholder, id, type, labelText, input, label }) {
         onChange={handleText}
       />
       <label
-        for={id}
+        htmlFor={id}
         className={LabelVariants[label]}
       >
 
