@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./devyour-beckend/index.js"
+    "dev": "nodemon index"
   },
   "author": "",
   "license": "ISC",
