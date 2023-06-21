@@ -3,12 +3,14 @@ import NewContent from "../components/shared/NewContent";
 import UsersSuggested from "../components/shared/UsersSuggested";
 import Shoots from "../components/shared/Shoots";
 import Post2 from "../components/shared/Post2";
+import SearchModal from "../components/shared/SearchModal";
 import ProfileCard from "../components/shared/ProfileCard";
 import Navbar from "../components/shared/Navbar";
 import { useState } from "react";
 
 function DevYour() {
   const [newPost, setNewPost] = useState(false)
+  const [showSearchModal, setShowSearchModal] = useState(false)
 
   const handleCreatePost = () => {
     if (newPost === false) {
@@ -17,6 +19,7 @@ function DevYour() {
       setNewPost(false)
     }
   }
+  
 
   return (
     <>
@@ -25,9 +28,13 @@ function DevYour() {
                 <NewContent createPost={handleCreatePost}/>
               </div>
             </div>}
+      {
+        showSearchModal &&
+        <SearchModal setShowSearchModal={setShowSearchModal}/>
+      }
       <div className="flex max-w-7xl mx-auto">
         <main className="flex gap-6 container px-2 mx-auto">
-          <Navbar createPost={handleCreatePost} />
+          <Navbar createPost={handleCreatePost} setShowSearchModal={setShowSearchModal} />
 
           <div className="basis-2/3 grow">
             <div className="sticky top-0 py-4">
