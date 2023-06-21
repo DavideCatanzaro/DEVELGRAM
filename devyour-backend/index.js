@@ -34,7 +34,7 @@ app.post('/register', (req, res) => {
 app.get('/api/users',(req,res,next) => {
  // let firstName = req.query.firstname.toLowerCase()
 let userName = req.query.username.toLowerCase()
-let usersList = JSON.parse(fs.readFileSync('C:/Users/farin/OneDrive/Desktop/DevGram/DEVYOUR/devyour-backend/users.json')).users
+let usersList = JSON.parse(fs.readFileSync('users.json')).users
 let searchResult=usersList.filter((user) => user.username.toLowerCase().includes(userName)) //|| user.firstName.toLowerCase().includes(firstName) ) 
 console.log(searchResult)
 return res.status(200).send(searchResult);

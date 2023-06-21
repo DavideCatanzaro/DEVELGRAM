@@ -1,64 +1,74 @@
 {
-  "users": [
-    {
-      "id": "1",
-      "firstName": "Pietro",
-      "lastName": "Amato",
-      "username": "pieamt",
-      "email": "pieamt@gmail.com",
-      "password": "1234",
-      "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
-      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
-    },
-    {
-      "id": "2",
-      "firstName": "Andrea Angelo",
-      "lastName": "D'Onorio De Meo",
-      "username": "andgelorea",
-      "email": "andgelorea@gmail.com",
-      "password": "1234",
-      "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
-      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
-    },
-    {
-      "id": "3",
-      "firstName": "Davide",
-      "lastName": "Catanzaro",
-      "username": "dadocata",
-      "email": "dadocata03@gmail.com",
-      "password": "1234",
-      "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
-      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
-    },
-    {
-      "id": "4",
-      "firstName": "Luca",
-      "lastName": "Giuntoli",
-      "username": "lucone00",
-      "email": "lucone00@gmail.com",
-      "password": "1234",
-      "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
-      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
-    },
-    {
-      "id": "5",
-      "firstName": "Maurilio",
-      "lastName": "Farina",
-      "username": "mauri00",
-      "email": "mauri00@gmail.com",
-      "password": "1234",
-      "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
-      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
-    },
-    {
-      "id": 6,
-      "firstName": "Antonio",
-      "lastName": "Cammarata",
-      "username": "fnatic3ninooo",
-      "email": "antonioucammarata@gmail.com",
-      "password": "12345",
-      "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
-      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
-    }
-  ]
+    "users": [
+        {
+            "id": "1",
+            "firstName": "Pietro",
+            "lastName": "Amato",
+            "username": "pieamt",
+            "email": "pieamt@gmail.com",
+            "password": "1234",
+            "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+            "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+        },
+        {
+            "id": "2",
+            "firstName": "Andrea Angelo",
+            "lastName": "D'Onorio De Meo",
+            "username": "andgelorea",
+            "email": "andgelorea@gmail.com",
+            "password": "1234",
+            "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+            "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+        },
+        {
+            "id": "3",
+            "firstName": "Davide",
+            "lastName": "Catanzaro",
+            "username": "dadocata",
+            "email": "dadocata03@gmail.com",
+            "password": "1234",
+            "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+            "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+        },
+        {
+            "id": "4",
+            "firstName": "Luca",
+            "lastName": "Giuntoli",
+            "username": "lucone00",
+            "email": "lucone00@gmail.com",
+            "password": "1234",
+            "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+            "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+        },
+        {
+            "id": "5",
+            "firstName": "Maurilio",
+            "lastName": "Farina",
+            "username": "mauri00",
+            "email": "mauri00@gmail.com",
+            "password": "1234",
+            "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+            "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+        },
+        {
+            "id": 6,
+            "firstName": "Antonio",
+            "lastName": "Cammarata",
+            "username": "fnatic3ninooo",
+            "email": "antonioucammarata@gmail.com",
+            "password": "12345",
+            "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+            "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+        },
+        {
+            "id": 7,
+            "firstName": "Zoro",
+            "lastName": "Roronoa",
+            "username": "kaizoku_hanta",
+            "email": "roronoa@example.com",
+            "password": "1234",
+            "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+            "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+        }
+    ]
 }
