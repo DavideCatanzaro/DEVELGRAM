@@ -7,25 +7,25 @@ import Credits from "./pages/Credits";
 import UserProfile from "./pages/UserProfile";
 import Notices from "./pages/Notices";
 import Messages from "./pages/Messages";
-import Follow from "./pages/Follow";
+import Follower from "./pages/Follower";
+import Following from "./pages/Following";
 import Suggested from "./pages/Suggested";
-
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/register" element={<Register/>}/>
-        <Route path="/devyour" element={<DevYour/>}/>
-        <Route path="/credits" element={<Credits/>}/>
-        <Route path="/userProfile" element={<UserProfile/>}/>
-        <Route path="/notices" element={<Notices/>}/>
-        <Route path="/messages" element={<Messages/>}/>
-        <Route path="/follow" element={<Follow/>}/>
-        <Route path="/suggested" element={<Suggested/>}/>
-
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/devyour" element={<DevYour />} />
+        <Route path="/credits" element={<Credits />} />
+        <Route path="/userProfile" element={<UserProfile />} />
+        <Route path="/notices" element={<Notices />} />
+        <Route path="/messages" element={<Messages />} />
+        <Route path="/follower" element={<Follower />} />
+        <Route path="/following" element={<Following />} />
+        <Route path="/suggested" element={<Suggested />} />
       </Routes>
     </>
   );
