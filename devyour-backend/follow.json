@@ -31,10 +31,49 @@
       "imgProfile": "https://randomuser.me/api/portraits/men/43.jpg"
     },
     {
-        "id": "6",
-        "username": "Amy Farrah Fowler",
-        "number": "+1(227)-234-8373",
-        "imgProfile": "https://randomuser.me/api/portraits/men/33.jpg"
-      }
+      "id": "6",
+      "username": "Amy Farrah Fowler",
+      "number": "+1(227)-234-8373",
+      "imgProfile": "https://randomuser.me/api/portraits/men/33.jpg"
+    }
+  ],
+
+  "following": [
+    {
+      "id": "1",
+      "username": "Zoe Saldana",
+      "number": "+1(227)-691-8675",
+      "imgProfile": "https://randomuser.me/api/portraits/men/9.jpg"
+    },
+    {
+      "id": "2",
+      "username": "Chris Pratt",
+      "number": "+1(227)-691-8675",
+      "imgProfile": "https://randomuser.me/api/portraits/men/7.jpg"
+    },
+    {
+      "id": "3",
+      "username": "Sean Gunn",
+      "number": "+1(227)-691-8675",
+      "imgProfile": "https://randomuser.me/api/portraits/men/12.jpg"
+    },
+    {
+      "id": "4",
+      "username": "Karen Gillan",
+      "number": "+1(227)-691-8675",
+      "imgProfile": "https://randomuser.me/api/portraits/men/22.jpg"
+    },
+    {
+      "id": "5",
+      "username": "Vin Diesel",
+      "number": "+1(227)-691-8675",
+      "imgProfile": "https://randomuser.me/api/portraits/men/43.jpg"
+    },
+    {
+      "id": "6",
+      "username": "Dave Bautista",
+      "number": "+1(227)-234-8373",
+      "imgProfile": "https://randomuser.me/api/portraits/men/33.jpg"
+    }
   ]
 }
