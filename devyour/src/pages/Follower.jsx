@@ -59,6 +59,123 @@ const Follower = () => {
                                         <div className="text-grey text-sm font-normal">@username</div>
                                     </div>
                                 </div>
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/women/24.jpg" alt="Rebecca Burke" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Rebecca Burke</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
+
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/men/7.jpg" alt="Connor Bell" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Connor Bell</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
+
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/men/9.jpg" alt="Lee Fields" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Lee Fields</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
+
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/women/22.jpg" alt="Marie Cole" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Marie Cole</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
+
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/women/43.jpg" alt="Penny Foster" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Penny Foster</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/women/24.jpg" alt="Rebecca Burke" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Rebecca Burke</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
+
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/men/7.jpg" alt="Connor Bell" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Connor Bell</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
+
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/men/9.jpg" alt="Lee Fields" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Lee Fields</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
+
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/women/22.jpg" alt="Marie Cole" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Marie Cole</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
+
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/women/43.jpg" alt="Penny Foster" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Penny Foster</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/women/24.jpg" alt="Rebecca Burke" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Rebecca Burke</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
+
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/men/7.jpg" alt="Connor Bell" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Connor Bell</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
+
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/men/9.jpg" alt="Lee Fields" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Lee Fields</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
+
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/women/22.jpg" alt="Marie Cole" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Marie Cole</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
+
+                                <div className="odd:bg-pink even:bg-blue flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r from-[#80d8ff] to-[#ea80fc] rounded-xl hover:cursor-pointer">
+                                    <img className="w-16 h-16 rounded-full" src="https://randomuser.me/api/portraits/women/43.jpg" alt="Penny Foster" />
+                                    <div className="flex flex-col">
+                                        <div className="text-grey">Penny Foster</div>
+                                        <div className="text-grey text-sm font-normal">@username</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

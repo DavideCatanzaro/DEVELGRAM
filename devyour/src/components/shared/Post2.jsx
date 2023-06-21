@@ -23,7 +23,7 @@ const Post2 = ({
         <>
             <div className="mb-4 p-4 rounded-xl bg-white flex flex-col shadow">
                 <div className="flex ">
-                    <div className="w-auto h-auto rounded-full">
+                    <div className="rounded-full">
                         <img className="w-12 h-12 object-cover rounded-full shadow cursor-pointer" alt="User avatar" src={imgProfile} />
                     </div>
                     <div className="flex flex-col grow mb-2 ml-4 mt-1">

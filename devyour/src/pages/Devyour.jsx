@@ -51,7 +51,7 @@ function DevYour() {
         showSearchModal &&
         <SearchModal setShowSearchModal={setShowSearchModal}/>
       }
-      <div className="flex max-w-7xl mx-auto">
+      <div className="flex max-w-7xl mx-auto" >
         <main className="flex gap-6 container px-2 mx-auto">
           <Navbar createPost={handleCreatePost} setShowSearchModal={setShowSearchModal} />
 
