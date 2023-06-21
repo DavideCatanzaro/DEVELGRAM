@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./devyour-beckend/index.js"
+    "start": "nodemon ./devyour-beckend/index.js",
     "dev": "nodemon index"
   },
   "author": "",

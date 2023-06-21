@@ -13,7 +13,7 @@ function DevYour() {
   
   async function fetchPosts() {
     try {
-      const response = await fetch("http://localhost:3000/api/posts");
+      const response = await fetch("http://localhost:6700/api/posts");
       const postData = await response.json()
       console.log(postData)
       setPosts(postData);
