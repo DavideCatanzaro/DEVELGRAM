@@ -3,7 +3,7 @@
     {
       "nameProfile": "Pietro Amato",
       "username": "pieamt",
-      "imgPost": "https://picsum.photos/500/500",
+      "imgPost": "https://picsum.photos/500/251",
       "imgProfile": "https://randomuser.me/api/portraits/men/9.jpg",
       "descriptionPost": "lorem ipsum bla bla bla",
       "postDate": "now"
@@ -27,8 +27,24 @@
     {
       "nameProfile": "Luca Giuntoli",
       "username": "lucone00",
-      "imgPost": "https://picsum.photos/500/350",
+      "imgPost": "https://picsum.photos/500/300",
       "imgProfile": "https://randomuser.me/api/portraits/men/6.jpg",
+      "descriptionPost": "lorem ipsum bla bla bla",
+      "postDate": "now"
+    },
+    {
+      "nameProfile": "Maurilio Farina",
+      "username": "erfarina",
+      "imgPost": "https://picsum.photos/450/301",
+      "imgProfile": "https://randomuser.me/api/portraits/men/8.jpg",
+      "descriptionPost": "lorem ipsum bla bla bla",
+      "postDate": "now"
+    },
+    {
+      "nameProfile": "Vittorio Sabbatini",
+      "username": "VittoSenior",
+      "imgPost": "https://picsum.photos/400/300",
+      "imgProfile": "https://randomuser.me/api/portraits/men/5.jpg",
       "descriptionPost": "lorem ipsum bla bla bla",
       "postDate": "now"
     }
