@@ -1,18 +1,15 @@
 import React from "react";
-import InputField from "../atoms/InputField";
 import ButtonSend from "../atoms/ButtonSend";
 
 export default function WriteComment() {
   return (
     <>
       <form className="flex grow">
-        <InputField
+        <input
           type="text"
           id="text"
-          value=""
           placeholder="Write a comment..."
-          labelText=""
-          input="primaryInputVariant"
+          className="border-1 peer block w-full rounded-lg border border-blue bg-transparent px-2 text-sm text-grey focus:border-pink focus:outline-none focus:ring-0"
         />
         <span className="flex justify-center items-center">
           <ButtonSend />
