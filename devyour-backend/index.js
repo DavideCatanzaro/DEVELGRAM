@@ -6,6 +6,7 @@ require('dotenv').config();
 const fs = require('fs');
 const jwt = require('jsonwebtoken');
 const users = require('./users.json');
+const followersData = require("./follow.json");
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -86,6 +87,11 @@ function loadUsers() {
 
 app.get('/api/posts', (req, res) => {
   res.status(200).send(JSON.stringify(posts.post));
+});
+
+//backend followers
+app.get("/api/followers-data", (req, res) => {
+  res.status(200).send(JSON.stringify(followersData));
 });
 
 const port = process.env.NODE_PORT || 3001;
