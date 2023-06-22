@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import InputField from "../components/atoms/InputField";
 import ProfileCard from "../components/shared/ProfileCard";
 import UsersSuggested from "../components/shared/UsersSuggested";
 import Navbar from "../components/shared/Navbar";
 import ButtonSend from "../components/atoms/ButtonSend";
+import NewContent from "../components/shared/NewContent";
+import SearchModal from "../components/shared/SearchModal";
 
 function Messages({
   imgProfile,
@@ -11,14 +13,33 @@ function Messages({
   lastMessage,
   date,
 }) {
+  const [newPost, setNewPost] = useState(false)
+  const [showSearchModal, setShowSearchModal] = useState(false)
+
+  const handleCreatePost = () => {
+    if (newPost === false) {
+      setNewPost(true)
+    } else {
+      setNewPost(false)
+    }
+  }
+
   return (
     <>
+      {
+        newPost &&
+        <NewContent createPost={handleCreatePost} />
+      }
+      {
+        showSearchModal &&
+        <SearchModal setShowSearchModal={setShowSearchModal} />
+      }
       <div className="flex max-w-7xl mx-auto">
         <main className="flex gap-6 container px-2 mx-auto">
-          <Navbar />
+          <Navbar createPost={handleCreatePost} setShowSearchModal={setShowSearchModal} />
           <div className="basis-2/3 grow">
             <div className="sticky top-4 flex flex-row justify-between bg-white shadow rounded-xl h-screen ">
-              
+
               <div className="basis-1/3 w-full flex flex-col overflow-auto">
                 <div className="border-r border-blue py-4 px-2 ">
                   <InputField
@@ -205,7 +226,7 @@ function Messages({
                     </div>
                   </div>
                 </div>
-                <hr/>
+                <hr />
 
                 <div className="flex grow overflow-auto">
                   <div className="flex flex-col justify-end mt-5">

@@ -51,7 +51,7 @@ function Navbar({createPost, setShowSearchModal}) {
                                 <small className="text-center text-xs font-medium"> Messages </small>
                         </Link>
                         
-                        <Link to="/devyour" onClick={createPost}
+                        <div onClick={createPost}
                             className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 cursor-pointer text-grey hover:text-pink dark:text-white dark:hover:text-blue
                                                 md:flex-row">
 
@@ -62,7 +62,7 @@ function Navbar({createPost, setShowSearchModal}) {
                             </svg>
 
                             <small className="text-center text-xs font-medium"> Create </small>
-                        </Link>
+                        </div>
 
                         <Link to="/notices" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
                                                 md:flex-row">

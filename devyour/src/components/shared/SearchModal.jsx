@@ -31,9 +31,8 @@ export default function SearchModal({ setShowSearchModal }) {
             });
     };
 
-
     return <>
-        <div className="flex fixed  top-0 h-screen w-full z-30 flex justify-center items-center bg-black/75">
+        <div className="flex fixed top-0 h-screen w-full z-30 justify-center items-center bg-black/75">
             <div className="absolute top-10 items-center justify-center w-1/2">
                 <div className='flex flex-col bg-white rounded-xl p-4'>
                     <div className="flex justify-end bg-white">
@@ -44,19 +43,16 @@ export default function SearchModal({ setShowSearchModal }) {
 
                     <form className="flex flex-col flex-grow  bg-white shadow rounded-lg mb-6 p-4" onSubmit={fetchUsers}>
                         <input className="border-1 peer block w-full appearance-none rounded-lg border border-blue bg-transparent px-2.5 pb-2.5 pt-4 text-sm text-gray-900 focus:border-pink focus:outline-none focus:ring-0" type="text" name="username" id="input-username" placeholder="Search users..." onChange={event => setUsername(event.target.value)} />
-
                         <div className="flex justify-end mt-2">
-
                             <button type="submit" className="flex items-center py-2 px-4 rounded-lg text-sm bg-blue hover:bg-pink text-white shadow-lg">Search</button>
                         </div>
                     </form>
-                    
 
-                    {userList === [] ? 
-                     <div> </div>
-                     :
+                    {userList === [] ?
+                        <div> </div>
+                        :
                         <>
-                    <div>Users found: {userList.length}</div>
+                            <div>Users found: {userList.length}</div>
                             <div className='flex flex-col w-full'>
 
                                 {//questa mappa deve generare un oggetto html con padding 4, un bordo, e un margine dall'elemento successivo di 4 px
@@ -64,25 +60,18 @@ export default function SearchModal({ setShowSearchModal }) {
                                     userList.map((user) => {
                                         return (
                                             <>
-                                                <div className="flex  p-4 border-1 border border-blue rounded-xl w-full">
+                                                <div className="flex p-4 border-1 border border-blue rounded-xl w-full">
                                                     <img className="flex items-center mr-2 w-10 h-10" src={user.img} alt="imageProfile" />
                                                     <a className="flex items-center" href="{`/userProfile/${user.id}`}">{user.username}</a>
                                                 </div>
                                             </>
                                         )
-                                    }
-                                    )}
+                                    })}
                             </div>
-
                         </>
-                        
-                        
                     }
                 </div>
-
             </div>
         </div>
-
-
     </>
 }

@@ -1,31 +1,28 @@
-import Post from "../components/shared/Post";
 import NewContent from "../components/shared/NewContent";
 import UsersSuggested from "../components/shared/UsersSuggested";
 import Shoots from "../components/shared/Shoots";
-import Post2 from "../components/shared/Post2";
+import Post from "../components/shared/Post";
 import SearchModal from "../components/shared/SearchModal";
 import ProfileCard from "../components/shared/ProfileCard";
 import Navbar from "../components/shared/Navbar";
 import { useEffect, useState } from "react";
 
 function DevYour() {
-
   const [posts, setPosts] = useState([]);
-  
+
   async function fetchPosts() {
     try {
       const response = await fetch("http://localhost:6700/api/posts");
       const postData = await response.json()
-      console.log(postData)
       setPosts(postData);
-    
+
     } catch (error) {
       console.log(error)
     }
   }
-  
+
   useEffect(() => {
-     fetchPosts()
+    fetchPosts()
   }, []);
 
   const [newPost, setNewPost] = useState(false)
@@ -38,18 +35,17 @@ function DevYour() {
       setNewPost(false)
     }
   }
-  
+
 
   return (
     <>
-      {newPost && <div className="fixed top-0 h-screen w-full z-30 flex justify-center items-center bg-black/75">
-              <div className="absolute top-10 items-center justify-center w-1/2">
-                <NewContent createPost={handleCreatePost}/>
-              </div>
-            </div>}
+      {
+        newPost &&
+        <NewContent createPost={handleCreatePost} />
+      }
       {
         showSearchModal &&
-        <SearchModal setShowSearchModal={setShowSearchModal}/>
+        <SearchModal setShowSearchModal={setShowSearchModal} />
       }
       <div className="flex max-w-7xl mx-auto" >
         <main className="flex gap-6 container px-2 mx-auto">
@@ -66,12 +62,12 @@ function DevYour() {
                 <div className="sticky top-0"></div>
               </div>
               {posts.map((item) => {
-                return ( <Post2
-                imgProfile={item.imgProfile}
-                nameProfile={item.nameProfile}
-                imgPost={item.imgPost}
-                descriptionPost={item.descriptionPost}
-              />)
+                return (<Post
+                  imgProfile={item.imgProfile}
+                  username={item.username}
+                  imgPost={item.imgPost}
+                  descriptionPost={item.descriptionPost}
+                />)
               })}
             </div>
           </div>
