@@ -94,6 +94,10 @@ app.get("/api/followers-data", (req, res) => {
   res.status(200).send(JSON.stringify(followersData));
 });
 
+app.get("/api/suggested-data", (req, res) => {
+  res.status(200).send(JSON.stringify(users));
+});
+
 const port = process.env.NODE_PORT || 3001;
 
 app.listen(port, () => {
