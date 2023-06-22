@@ -6,6 +6,7 @@ import Navbar from "../components/shared/Navbar"
 import { useEffect, useState } from "react"
 import NewContent from "../components/shared/NewContent"
 import SearchModal from "../components/shared/SearchModal"
+import { user } from "../pages/Login"
 
 const UserProfile = () => {
     const [posts, setPosts] = useState([]);
@@ -57,14 +58,15 @@ const UserProfile = () => {
                             </div>
                         </div>
 
-                        {posts.map((item) => {
+                        {posts.filter((item) => item.username === user.user.username).map((item) => {
                             return (<Post
                                 imgProfile={item.imgProfile}
                                 username={item.username}
                                 imgPost={item.imgPost}
                                 descriptionPost={item.descriptionPost}
                             />)
-                        })}
+                        })
+                        }
 
                     </div>
 
