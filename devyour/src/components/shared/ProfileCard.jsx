@@ -1,31 +1,28 @@
 import { Link } from "react-router-dom"
+import { user } from '../../pages/Login';
 
-const ProfileCard = ({
-    cover,
-    img,
-    firstName,
-    lastName,
-    username,
-  }) => {
+const ProfileCard = () => {
+  
+    
     return (
         <>
             <div className="flex flex-col justify-center items-center w-full shadow rounded-xl">
                 <div className="w-full relative flex flex-col items-center rounded-xl mx-auto p-4 bg-white bg-clip-border dark:bg-grey dark:text-white ">
                     <div className="relative flex h-24 w-full justify-center rounded-xl bg-cover" >
-                        <img src={cover} className="flex h-24 w-full justify-center rounded-xl bg-cover" />
+                        <img src={user.user.cover} className="flex h-24 w-full justify-center rounded-xl bg-cover" />
                         <div className="absolute -bottom-12 flex h-[87px] w-[87px] items-center justify-center rounded-full border-4 border-white hover:border-blue">
                             <Link to="/userProfile">
-                                <img className="h-full w-full rounded-full" src={img} alt="" />
+                                <img className="h-full w-full rounded-full" src={user.user.img} alt="" />
                             </Link>
                         </div>
                     </div>
                     <Link to="/userProfile">
                         <div className="mt-16 flex flex-col items-center">
                             <h4 className="flex flex-col justify-center items-center text-xl font-bold text-grey dark:text-white">
-                                <span>{firstName}</span>
-                                <span>{lastName}</span>
+                                <span>{user.user.firstName}</span>
+                                <span>{user.user.lastName}</span>
                             </h4>
-                            <p className="text-base font-normal text-grey dark:text-white">@{username}</p>
+                            <p className="text-base font-normal text-grey dark:text-white">@{user.user.username}</p>
                         </div>
                     </Link>
                     <div className="py-3 w-full flex justify-evenly items-center gap-4">
@@ -58,12 +55,6 @@ const ProfileCard = ({
     )
 }
 
-ProfileCard.defaultProps = {
-    cover: "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png",
-    img: "./assets/profile-img/Andrea-profile.jpg",
-    firstName: "Andrea Angelo",
-    lastName: "D'Onorio De Meo",
-    username: "andgelorea",
-}
+
 
 export default ProfileCard

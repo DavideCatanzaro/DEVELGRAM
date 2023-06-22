@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import InputField from "../components/atoms/InputField";
 import ButtonLogin from "../components/atoms/ButtonLogin";
 
+export let user = {};
+
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -14,7 +16,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('http://localhost:6700/login', {
+     const response = await fetch('http://localhost:6700/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -25,7 +27,7 @@ function Login() {
     if (!response.ok) {
       setMessage('Credenziali non valide!');
     } else{
-      const user = await response.json();
+     user = await response.json();
     console.log('LOGIN FATTO', user);
       navigate("/devyour");
     }
