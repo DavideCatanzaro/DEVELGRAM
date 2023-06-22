@@ -6,6 +6,7 @@ import SearchModal from "../components/shared/SearchModal";
 import ProfileCard from "../components/shared/ProfileCard";
 import Navbar from "../components/shared/Navbar";
 import { useEffect, useState } from "react";
+import ViewShoot from "../components/shared/ViewShoot";
 
 function DevYour() {
   const [posts, setPosts] = useState([]);
@@ -36,6 +37,17 @@ function DevYour() {
     }
   }
 
+  const [viewShoot, setViewShoot] = useState(false)
+
+  const handleClickShoot = () => {
+    if (viewShoot === false) {
+      setViewShoot(true)
+    } else {
+      setViewShoot(false)
+    }
+  }
+
+
 
   return (
     <>
@@ -47,6 +59,9 @@ function DevYour() {
         showSearchModal &&
         <SearchModal setShowSearchModal={setShowSearchModal} />
       }
+      {viewShoot &&
+        <ViewShoot viewShoot={handleClickShoot} />
+      }
       <div className="flex max-w-7xl mx-auto" >
         <main className="flex sm:gap-6 container px-2 mx-auto">
           <Navbar createPost={handleCreatePost} setShowSearchModal={setShowSearchModal} />
@@ -54,7 +69,7 @@ function DevYour() {
           <div className="basis-2/3 grow">
             <div className="sticky top-0 py-4">
               <div className="sticky top-0 bg-white rounded-xl shadow">
-                <Shoots />
+                <Shoots viewShoot={handleClickShoot}/>
               </div>
             </div>
             <div className="flex flex-col mx-auto">
