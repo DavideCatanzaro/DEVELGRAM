@@ -5,7 +5,7 @@ import Footer from "../components/shared/Footer";
 function Credits() {
     return (
         <>
-            <div className="flex flex-col justify-center items-center gap-8 bg-white dark:bg-grey">
+            <div className="flex flex-col justify-center items-center gap-4 bg-white dark:bg-grey lg:h-screen">
                 <nav className="bg-white w-full flex justify-center items-center px-8">
                         <Link to="/">
                             <img src="DevYour.png" alt="logo" className="" />

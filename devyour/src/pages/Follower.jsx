@@ -25,7 +25,7 @@ const Follower = () => {
   return (
     <>
       <div className="flex max-w-7xl mx-auto">
-        <main className="flex gap-6 container px-2 mx-auto">
+        <main className="flex sm:gap-6 container px-2 mx-auto">
           <Navbar />
 
           <div className="basis-2/3 grow">

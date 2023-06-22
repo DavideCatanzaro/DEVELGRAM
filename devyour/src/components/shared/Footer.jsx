@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col gap-2 justify-center items-center bg-white p-5">
+        <footer className="flex flex-col gap-2 justify-center items-center bg-white p-5 w-full">
             <div className="mx-auto h-16 rounded-xl border-4 border-pink bg-white p-1">
                 <img className="h-full object-contain" src="DevYour.png" alt="" />
             </div>

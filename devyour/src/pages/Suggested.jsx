@@ -2,13 +2,35 @@ import Navbar from "../components/shared/Navbar";
 import Separator from "../components/atoms/Separator";
 import UserCard from "../components/shared/UserCard";
 import ProfileCard from "../components/shared/ProfileCard";
+import { useState } from "react";
+import NewContent from "../components/shared/NewContent";
+import SearchModal from "../components/shared/SearchModal";
 
 const Suggested = () => {
+  const [newPost, setNewPost] = useState(false)
+  const [showSearchModal, setShowSearchModal] = useState(false)
+
+  const handleCreatePost = () => {
+    if (newPost === false) {
+      setNewPost(true)
+    } else {
+      setNewPost(false)
+    }
+  }
+
   return (
     <>
+      {
+        newPost &&
+        <NewContent createPost={handleCreatePost} />
+      }
+      {
+        showSearchModal &&
+        <SearchModal setShowSearchModal={setShowSearchModal} />
+      }
       <div className="flex max-w-7xl mx-auto">
-        <main className="flex md:gap-6 container px-2 mx-auto">
-          <Navbar />
+        <main className="flex sm:gap-6 container px-2 mx-auto">
+          <Navbar createPost={handleCreatePost} setShowSearchModal={setShowSearchModal} />
 
           <div className="basis-2/3 grow">
             <div className="z-20 sticky top-0 py-4">

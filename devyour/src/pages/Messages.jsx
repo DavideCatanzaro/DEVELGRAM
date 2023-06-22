@@ -35,7 +35,7 @@ function Messages({
         <SearchModal setShowSearchModal={setShowSearchModal} />
       }
       <div className="flex max-w-7xl mx-auto">
-        <main className="flex gap-6 container px-2 mx-auto">
+        <main className="flex sm:gap-6 container px-2 mx-auto">
           <Navbar createPost={handleCreatePost} setShowSearchModal={setShowSearchModal} />
           <div className="basis-2/3 grow">
             <div className="sticky top-4 flex flex-row justify-between bg-white shadow rounded-xl h-screen ">
