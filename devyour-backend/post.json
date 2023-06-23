@@ -36,7 +36,7 @@
       "nameProfile": "Maurilio Farina",
       "username": "erfarina",
       "imgPost": "https://picsum.photos/450/301",
-      "imgProfile": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+      "imgProfile": "./assets/credits/Mauri.jpg",
       "descriptionPost": "lorem ipsum bla bla bla",
       "postDate": "now"
     }

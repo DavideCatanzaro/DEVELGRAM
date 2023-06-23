@@ -106,7 +106,7 @@ function Credits() {
                         </div>
 
                         <div className="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-gradient-to-t from-[#80d8ff] to-[#ea80fc] rounded-xl">
-                            <img className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./assets/credits/Andrea.jpg" alt="Maurilio Farina" />
+                            <img className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="./assets/credits/Mauri.jpg" alt="Maurilio Farina" />
 
                             <h1 className="flex flex-col items-center mt-4 text-2xl font-semibold text-grey capitalize dark:text-white group-hover:text-grey rounded-md"><span className="rounded-md">Maurilio</span><span className="rounded-md">Farina</span></h1>
 
