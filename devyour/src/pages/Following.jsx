@@ -21,11 +21,31 @@ const Following = () => {
     fetchData();
   }, []);
 
+  const [newPost, setNewPost] = useState(false)
+  const [showSearchModal, setShowSearchModal] = useState(false)
+
+  const handleCreatePost = () => {
+    if (newPost === false) {
+      setNewPost(true)
+    } else {
+      setNewPost(false)
+    }
+  }
+
+
   return (
     <>
+      {
+        newPost &&
+        <NewContent createPost={handleCreatePost} />
+      }
+      {
+        showSearchModal &&
+        <SearchModal setShowSearchModal={setShowSearchModal} />
+      }
       <div className="flex max-w-7xl mx-auto">
         <main className="flex sm:gap-6 container px-2 mx-auto">
-          <Navbar />
+          <Navbar createPost={handleCreatePost} setShowSearchModal={setShowSearchModal} />
 
           <div className="basis-2/3 grow">
             <div className="sticky top-0 py-4">
@@ -39,9 +59,8 @@ const Following = () => {
                 {following.map((following, index) => (
                   <div
                     key={index}
-                    className={`${
-                      index % 2 ? "bg-blue" : "bg-pink"
-                    } flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r hover:from-[#80d8ff] hover:to-[#ea80fc] rounded-xl hover:cursor-pointer`}
+                    className={`${index % 2 ? "bg-blue" : "bg-pink"
+                      } flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r hover:from-[#80d8ff] hover:to-[#ea80fc] rounded-xl hover:cursor-pointer`}
                   >
                     <img className="w-16 h-16 rounded-full" src={following.img} alt={`${following.username}`} />
                     <div className="flex flex-col">
