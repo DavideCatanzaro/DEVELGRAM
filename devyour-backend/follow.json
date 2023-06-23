@@ -2,78 +2,146 @@
   "follower": [
     {
       "id": "1",
-      "username": "Rebecca Burke",
-      "number": "+1(227)-691-8675",
-      "imgProfile": "https://randomuser.me/api/portraits/women/84.jpg"
-    },
-    {
+      "firstName": "Pietro",
+      "lastName": "Amato",
+      "username": "pieamt",
+      "email": "pieamt@gmail.com",
+      "password": "1234",
+      "img": "./assets/credits/Pietro-profile.jpg",
+      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+  },
+  {
       "id": "2",
-      "username": "Connor Bell",
-      "number": "+1(227)-691-8675",
-      "imgProfile": "https://randomuser.me/api/portraits/men/7.jpg"
-    },
-    {
+      "firstName": "Andrea Angelo",
+      "lastName": "D'Onorio De Meo",
+      "username": "andgelorea",
+      "email": "andgelorea@gmail.com",
+      "password": "1234",
+      "img": "./assets/profile-img/Andrea-profile.jpg",
+      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+  },
+  {
       "id": "3",
-      "username": "Lee Fields",
-      "number": "+1(227)-691-8675",
-      "imgProfile": "https://randomuser.me/api/portraits/men/12.jpg"
-    },
-    {
+      "firstName": "Davide",
+      "lastName": "Catanzaro",
+      "username": "dadocata",
+      "email": "dadocata03@gmail.com",
+      "password": "1234",
+      "img": "./assets/credits/Davide.jpg",
+      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+  },
+  {
       "id": "4",
-      "username": "Marie Cole",
-      "number": "+1(227)-691-8675",
-      "imgProfile": "https://randomuser.me/api/portraits/women/7.jpg"
-    },
-    {
+      "firstName": "Luca",
+      "lastName": "Giuntoli",
+      "username": "lucone00",
+      "email": "lucone00@gmail.com",
+      "password": "1234",
+      "img": "./assets/credits/Luca-credits.PNG",
+      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+  },
+  {
       "id": "5",
-      "username": "Penny Foster",
-      "number": "+1(227)-691-8675",
-      "imgProfile": "https://randomuser.me/api/portraits/women/28.jpg"
-    },
-    {
-      "id": "6",
-      "username": "Amy Farrah Fowler",
-      "number": "+1(227)-234-8373",
-      "imgProfile": "https://randomuser.me/api/portraits/women/52.jpg"
-    }
+      "firstName": "Maurilio",
+      "lastName": "Farina",
+      "username": "mauri00",
+      "email": "mauri00@gmail.com",
+      "password": "1234",
+      "img": "./assets/credits/Mauri.jpg",
+      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+  },
+  {
+      "id": 6,
+      "firstName": "Antonio",
+      "lastName": "Cammarata",
+      "username": "fnatic3ninooo",
+      "email": "antonioucammarata@gmail.com",
+      "password": "12345",
+      "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+  },
+  {
+      "id": 7,
+      "firstName": "Zoro",
+      "lastName": "Roronoa",
+      "username": "kaizoku_hanta",
+      "email": "roronoa@example.com",
+      "password": "1234",
+      "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+  }
   ],
 
   "following": [
     {
       "id": "1",
-      "username": "Zoe Saldana",
-      "number": "+1(227)-691-8675",
-      "imgProfile": "https://randomuser.me/api/portraits/women/16.jpg"
-    },
-    {
+      "firstName": "Pietro",
+      "lastName": "Amato",
+      "username": "pieamt",
+      "email": "pieamt@gmail.com",
+      "password": "1234",
+      "img": "./assets/credits/Pietro-profile.jpg",
+      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+  },
+  {
       "id": "2",
-      "username": "Chris Pratt",
-      "number": "+1(227)-691-8675",
-      "imgProfile": "https://randomuser.me/api/portraits/men/79.jpg"
-    },
-    {
+      "firstName": "Andrea Angelo",
+      "lastName": "D'Onorio De Meo",
+      "username": "andgelorea",
+      "email": "andgelorea@gmail.com",
+      "password": "1234",
+      "img": "./assets/profile-img/Andrea-profile.jpg",
+      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+  },
+  {
       "id": "3",
-      "username": "Sean Gunn",
-      "number": "+1(227)-691-8675",
-      "imgProfile": "https://randomuser.me/api/portraits/men/3.jpg"
-    },
-    {
+      "firstName": "Davide",
+      "lastName": "Catanzaro",
+      "username": "dadocata",
+      "email": "dadocata03@gmail.com",
+      "password": "1234",
+      "img": "./assets/credits/Davide.jpg",
+      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+  },
+  {
       "id": "4",
-      "username": "Karen Gillan",
-      "number": "+1(227)-691-8675",
-      "imgProfile": "https://randomuser.me/api/portraits/women/53.jpg"
-    },
-    {
+      "firstName": "Luca",
+      "lastName": "Giuntoli",
+      "username": "lucone00",
+      "email": "lucone00@gmail.com",
+      "password": "1234",
+      "img": "./assets/credits/Luca-credits.PNG",
+      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+  },
+  {
       "id": "5",
-      "username": "Vin Diesel",
-      "number": "+1(227)-691-8675",
-      "imgProfile": "https://randomuser.me/api/portraits/men/21.jpg"
-    },
-    {
-      "id": "6",
-      "username": "Dave Bautista",
-      "number": "+1(227)-234-8373",
-      "imgProfile": "https://randomuser.me/api/portraits/men/1.jpg"
-    }
+      "firstName": "Maurilio",
+      "lastName": "Farina",
+      "username": "mauri00",
+      "email": "mauri00@gmail.com",
+      "password": "1234",
+      "img": "./assets/credits/Mauri.jpg",
+      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+  },
+  {
+      "id": 6,
+      "firstName": "Antonio",
+      "lastName": "Cammarata",
+      "username": "fnatic3ninooo",
+      "email": "antonioucammarata@gmail.com",
+      "password": "12345",
+      "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+  },
+  {
+      "id": 7,
+      "firstName": "Zoro",
+      "lastName": "Roronoa",
+      "username": "kaizoku_hanta",
+      "email": "roronoa@example.com",
+      "password": "1234",
+      "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+      "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
+  }
   ]
 }

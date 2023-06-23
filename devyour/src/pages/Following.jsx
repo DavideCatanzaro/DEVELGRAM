@@ -11,7 +11,6 @@ const Following = () => {
     try {
       const response = await fetch("http://localhost:6700/api/followers-data");
       const data = await response.json();
-      console.log(data);
       setFollowing(data.following);
     } catch (error) {
       console.error(error);
@@ -44,16 +43,10 @@ const Following = () => {
                       index % 2 ? "bg-blue" : "bg-pink"
                     } flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r hover:from-[#80d8ff] hover:to-[#ea80fc] rounded-xl hover:cursor-pointer`}
                   >
-                    <img
-                      className="w-16 h-16 rounded-full"
-                      src={following.imgProfile}
-                      alt={`${following.username}`}
-                    />
+                    <img className="w-16 h-16 rounded-full" src={following.img} alt={`${following.username}`} />
                     <div className="flex flex-col">
-                      <div className="text-grey">{`${following.username}`}</div>
-                      <div className="text-grey text-sm font-normal">
-                        @{following.username}
-                      </div>
+                      <div className="text-grey">{`@${following.username}`}</div>
+                      <div className="text-grey text-sm font-normal">{following.firstName + " " + following.lastName}</div>
                     </div>
                   </div>
                 ))}

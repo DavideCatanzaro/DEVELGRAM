@@ -4,14 +4,15 @@ import ProfileCard from "../components/shared/ProfileCard";
 import Navbar from "../components/shared/Navbar";
 import { useState, useEffect } from "react";
 
+export let data = []
+
 const Follower = () => {
   const [followers, setFollowers] = useState([]);
 
   async function fetchData() {
     try {
       const response = await fetch("http://localhost:6700/api/followers-data");
-      const data = await response.json();
-      console.log(data);
+      data = await response.json();
       setFollowers(data.follower);
     } catch (error) {
       console.error(error);
@@ -44,16 +45,10 @@ const Follower = () => {
                       index % 2 ? "bg-blue" : "bg-pink"
                     } flex gap-3 items-center font-semibold text-grey p-3 hover:bg-gradient-to-r hover:from-[#80d8ff] hover:to-[#ea80fc] rounded-xl hover:cursor-pointer`}
                   >
-                    <img
-                      className="w-16 h-16 rounded-full"
-                      src={follower.imgProfile}
-                      alt={`${follower.username}`}
-                    />
+                    <img className="w-16 h-16 rounded-full" src={follower.img} alt={`${follower.username}`} />
                     <div className="flex flex-col">
-                      <div className="text-grey">{`${follower.username}`}</div>
-                      <div className="text-grey text-sm font-normal">
-                        @{follower.username}
-                      </div>
+                      <div className="text-grey">{`@${follower.username}`}</div>
+                      <div className="text-grey text-sm font-normal">{follower.firstName + " " + follower.lastName}</div>
                     </div>
                   </div>
                 ))}

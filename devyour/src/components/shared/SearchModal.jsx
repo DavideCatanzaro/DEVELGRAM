@@ -61,7 +61,7 @@ export default function SearchModal({ setShowSearchModal }) {
                                         return (
                                             <>
                                                 <div className="flex p-4 border-1 border border-blue rounded-xl w-full">
-                                                    <img className="flex items-center mr-2 w-10 h-10" src={user.img} alt="imageProfile" />
+                                                    <img className=" rounded-full flex items-center mr-2 w-10 h-10" src={user.img} alt="imageProfile" />
                                                     <a className="flex items-center" href="{`/userProfile/${user.id}`}">{user.username}</a>
                                                 </div>
                                             </>
