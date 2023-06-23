@@ -7,7 +7,7 @@
             "username": "pieamt",
             "email": "pieamt@gmail.com",
             "password": "1234",
-            "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+            "img": "./assets/credits/Pietro-profile.jpg",
             "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
         },
         {
@@ -17,7 +17,7 @@
             "username": "andgelorea",
             "email": "andgelorea@gmail.com",
             "password": "1234",
-            "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+            "img": "./assets/profile-img/Andrea-profile.jpg",
             "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
         },
         {
@@ -27,7 +27,7 @@
             "username": "dadocata",
             "email": "dadocata03@gmail.com",
             "password": "1234",
-            "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+            "img": "./assets/credits/Davide.jpg",
             "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
         },
         {
@@ -37,7 +37,7 @@
             "username": "lucone00",
             "email": "lucone00@gmail.com",
             "password": "1234",
-            "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+            "img": "./assets/credits/Luca-credits.PNG",
             "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
         },
         {

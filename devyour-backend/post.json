@@ -4,7 +4,7 @@
       "nameProfile": "Pietro Amato",
       "username": "pieamt",
       "imgPost": "https://picsum.photos/500/251",
-      "imgProfile": "https://randomuser.me/api/portraits/men/9.jpg",
+      "imgProfile": "./assets/credits/Pietro-profile.jpg",
       "descriptionPost": "lorem ipsum bla bla bla",
       "postDate": "now"
     },
@@ -20,7 +20,7 @@
       "nameProfile": "Davide Catanzaro",
       "username": "dadocata",
       "imgPost": "https://picsum.photos/450/300",
-      "imgProfile": "https://randomuser.me/api/portraits/men/7.jpg",
+      "imgProfile": "./assets/credits/Davide.jpg",
       "descriptionPost": "lorem ipsum bla bla bla",
       "postDate": "now"
     },
@@ -28,7 +28,7 @@
       "nameProfile": "Luca Giuntoli",
       "username": "lucone00",
       "imgPost": "https://picsum.photos/500/300",
-      "imgProfile": "https://randomuser.me/api/portraits/men/6.jpg",
+      "imgProfile": "./assets/credits/Luca-credits.PNG",
       "descriptionPost": "lorem ipsum bla bla bla",
       "postDate": "now"
     },
@@ -36,15 +36,7 @@
       "nameProfile": "Maurilio Farina",
       "username": "erfarina",
       "imgPost": "https://picsum.photos/450/301",
-      "imgProfile": "https://randomuser.me/api/portraits/men/8.jpg",
-      "descriptionPost": "lorem ipsum bla bla bla",
-      "postDate": "now"
-    },
-    {
-      "nameProfile": "Vittorio Sabbatini",
-      "username": "VittoSenior",
-      "imgPost": "https://picsum.photos/400/300",
-      "imgProfile": "https://randomuser.me/api/portraits/men/5.jpg",
+      "imgProfile": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
       "descriptionPost": "lorem ipsum bla bla bla",
       "postDate": "now"
     }
