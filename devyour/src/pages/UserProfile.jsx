@@ -10,7 +10,8 @@ import { user } from "../pages/Login"
 
 const UserProfile = () => {
     const [posts, setPosts] = useState([]);
-
+    const savedUser = localStorage.getItem('user');
+    const user = savedUser ? JSON.parse(savedUser) : null;
     async function fetchPosts() {
         try {
             const response = await fetch("http://localhost:6700/api/posts");

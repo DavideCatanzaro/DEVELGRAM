@@ -67,7 +67,7 @@
       "username": "kaizoku_hanta",
       "email": "roronoa@example.com",
       "password": "1234",
-      "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+      "img": "./assets/profile-img/images.jpg",
       "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
   }
   ],
@@ -140,7 +140,7 @@
       "username": "kaizoku_hanta",
       "email": "roronoa@example.com",
       "password": "1234",
-      "img": "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+      "img": "./assets/profile-img/images.jpg",
       "cover": "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png"
   }
   ]

@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom"
 import { user } from '../../pages/Login';
-import { data } from "../../pages/Follower"
-
 
 const ProfileCard = () => {
+    const savedUser = localStorage.getItem('user');
+    const user = savedUser ? JSON.parse(savedUser) : null;
+    
     return (
         <>
             <div className="flex flex-col justify-center items-center w-full shadow rounded-xl">
                 <div className="w-full relative flex flex-col items-center rounded-xl mx-auto p-4 bg-white bg-clip-border dark:bg-grey dark:text-white ">
                     <div className="relative flex h-24 w-full justify-center rounded-xl bg-cover" >
-                        <img src={user.user.cover} className="flex h-24 w-full justify-center rounded-xl bg-cover" alt={user.user.username} />
+                        <img src={user.user.cover} className="flex h-24 w-full justify-center rounded-xl bg-cover" />
                         <div className="absolute -bottom-12 flex h-[87px] w-[87px] items-center justify-center rounded-full border-4 border-white hover:border-blue">
                             <Link to="/userProfile">
-                                <img className="h-full w-full rounded-full" src={user.user.img} alt={user.user.username} />
+                                <img className="h-full w-full rounded-full" src={user.user.img} alt="" />
                             </Link>
                         </div>
                     </div>
