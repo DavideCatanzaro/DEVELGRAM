@@ -3,6 +3,8 @@ import UsersSuggested from "../components/shared/UsersSuggested";
 import ProfileCard from "../components/shared/ProfileCard";
 import Navbar from "../components/shared/Navbar";
 import { useState, useEffect } from "react";
+import NewContent from '../components/shared/NewContent'
+import SearchModal from "../components/shared/SearchModal";
 
 const Following = () => {
   const [following, setFollowing] = useState([]);
