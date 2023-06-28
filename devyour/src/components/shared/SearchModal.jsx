@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import InputField from "../atoms/InputField";
-import { Link } from "react-router-dom";
 
 export default function SearchModal({ setShowSearchModal }) {
 

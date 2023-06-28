@@ -6,7 +6,6 @@ import Navbar from "../components/shared/Navbar"
 import { useEffect, useState } from "react"
 import NewContent from "../components/shared/NewContent"
 import SearchModal from "../components/shared/SearchModal"
-import { user } from "../pages/Login"
 
 const UserProfile = () => {
     const [posts, setPosts] = useState([]);

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Shoot from "./Shoot";
 import Separator from "../atoms/Separator";
 

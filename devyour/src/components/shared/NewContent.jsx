@@ -24,6 +24,7 @@ const NewContent = ({ createPost }, imgProfile, postDate) => {
         });
 
         const data = await response.text();
+        console.log(data);
 
         navigate("/devyour");
     };

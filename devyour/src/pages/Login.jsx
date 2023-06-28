@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import InputField from "../components/atoms/InputField";
 import ButtonLogin from "../components/atoms/ButtonLogin";
 
 export let user = {};
