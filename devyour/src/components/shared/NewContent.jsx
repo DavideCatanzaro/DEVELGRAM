@@ -1,19 +1,65 @@
+import { useState, useEffect } from "react";
 import ButtonSend from "../atoms/ButtonSend"
+import { useNavigate } from "react-router-dom";
 
-const NewContent = ({ createPost }) => {
+const NewContent = ({ createPost }, imgProfile, postDate) => {
+    const savedUser = localStorage.getItem('user');
+    const user = savedUser ? JSON.parse(savedUser) : null;
+
+    const [username, setUsername] = useState(user.user.username);
+    const [descriptionPost, setDescriptionPost] = useState("")
+    const [isFormValid, setIsFormValid] = useState(false);
+
+    const navigate = useNavigate();
+
+    const handleNewContent = async (e) => {
+        e.preventDefault();
+
+        const response = await fetch("http://localhost:6700/api/create/post", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ username, descriptionPost }),
+        });
+
+        const data = await response.text();
+
+        navigate("/devyour");
+    };
+
+    useEffect(() => {
+        setIsFormValid(
+            descriptionPost !== ""
+        );
+    }, [descriptionPost]);
+
     return (
         <>
             <div className="fixed top-0 h-screen w-full z-30 flex justify-center items-center bg-black/75">
                 <div className="absolute top-10 items-center justify-center w-1/2">
+                    <form className="flex flex-col flex-grow gap-2 bg-white shadow rounded-lg mb-6 p-4">
 
-                    <form className="flex flex-col flex-grow bg-white shadow rounded-lg mb-6 p-4">
                         <div className="flex justify-end flex-grow bg-white">
                             <svg onClick={createPost} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 cursor-pointer">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </div>
 
-                        <textarea name="message" placeholder="Type something..." className="w-full rounded-lg p-2 text-sm bg-gray-100 border border-transparent appearance-none rounded-tg placeholder-gray-400"></textarea>
+                        <div className="flex ">
+                            <div className="rounded-full">
+                                <img className="w-12 h-12 object-cover rounded-full shadow cursor-pointer" alt="User avatar" src={imgProfile = user.user.img} />
+                            </div>
+                            <div className="flex justify-start items-center grow mb-2 ml-4 mt-1">
+                                <div className="text-grey text-md font-semibold flex grow">{user.user.username}</div>
+                                <div className="text-grey font-thin text-xs">{postDate}</div>
+                            </div>
+                        </div>
+
+                        <textarea onChange={(e) => setDescriptionPost(e.target.value)} name="message" placeholder="Type something..." className="w-full rounded-lg p-2 text-sm bg-gray-100 border border-transparent appearance-none rounded-tg placeholder-gray-400">
+
+                        </textarea>
+
                         <div className="flex justify-between mt-2">
                             <div className="flex gap-2">
                                 <span className="flex items-center transition ease-out duration-300 hover:bg-blue hover:text-white bg-blue-100 w-8 h-8 px-2 rounded-full text-blue-400 cursor-pointer">
@@ -22,14 +68,8 @@ const NewContent = ({ createPost }) => {
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />
                                     </svg>
                                 </span>
-                                <span className="flex items-center transition ease-out duration-300 hover:bg-blue hover:text-white bg-blue-100 w-8 h-8 px-2 rounded-full text-blue-400 cursor-pointer">
-                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                </span>
-                                <span className="flex items-center transition ease-out duration-300 hover:bg-blue hover:text-white bg-blue-100 w-8 h-8 px-2 rounded-full text-blue-400 cursor-pointer">
-                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
-                                </span>
                             </div>
-                            <ButtonSend />
+                            <ButtonSend disabled={!isFormValid} onClick={handleNewContent} />
                         </div>
                     </form>
                 </div>

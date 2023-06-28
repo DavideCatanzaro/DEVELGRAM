@@ -35,7 +35,7 @@ const UserCard = ({ cover, img, firstName, lastName, username }) => {
                 <div className="absolute -bottom-12 flex h-[87px] w-[87px] items-center justify-center rounded-full border-4 border-white hover:border-blue">
                   <Link to="/userProfile">
                     <img
-                      className="h-full w-full rounded-full"
+                      className="h-[79px] w-[79px] rounded-full"
                       src={userCard.img}
                       alt={userCard.username}
                     />

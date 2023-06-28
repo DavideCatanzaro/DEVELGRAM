@@ -1,7 +1,6 @@
 {
   "post": [
     {
-      "nameProfile": "Pietro Amato",
       "username": "pieamt",
       "imgPost": "https://picsum.photos/500/251",
       "imgProfile": "./assets/credits/Pietro-profile.jpg",
@@ -9,7 +8,6 @@
       "postDate": "now"
     },
     {
-      "nameProfile": "Andrea A. D'Onorio De Meo",
       "username": "andgelorea",
       "imgPost": "https://picsum.photos/500/250",
       "imgProfile": "./assets/profile-img/Andrea-profile.jpg",
@@ -17,7 +15,6 @@
       "postDate": "now"
     },
     {
-      "nameProfile": "Davide Catanzaro",
       "username": "dadocata",
       "imgPost": "https://picsum.photos/450/300",
       "imgProfile": "./assets/credits/Davide.jpg",
@@ -25,7 +22,6 @@
       "postDate": "now"
     },
     {
-      "nameProfile": "Luca Giuntoli",
       "username": "lucone00",
       "imgPost": "https://picsum.photos/500/300",
       "imgProfile": "./assets/credits/Luca-credits.PNG",
@@ -33,7 +29,6 @@
       "postDate": "now"
     },
     {
-      "nameProfile": "Maurilio Farina",
       "username": "erfarina",
       "imgPost": "https://picsum.photos/450/301",
       "imgProfile": "./assets/credits/Mauri.jpg",

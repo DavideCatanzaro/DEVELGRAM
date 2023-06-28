@@ -4,7 +4,6 @@ import Comments from "./Comments";
 
 const Post = ({
     imgProfile,
-    nameProfile,
     username,
     imgPost,
     descriptionPost,

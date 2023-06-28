@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import { user } from '../../pages/Login';
 
 const ProfileCard = () => {
     const savedUser = localStorage.getItem('user');
@@ -13,7 +12,7 @@ const ProfileCard = () => {
                         <img src={user.user.cover} className="flex h-24 w-full justify-center rounded-xl bg-cover" />
                         <div className="absolute -bottom-12 flex h-[87px] w-[87px] items-center justify-center rounded-full border-4 border-white hover:border-blue">
                             <Link to="/userProfile">
-                                <img className="h-full w-full rounded-full" src={user.user.img} alt="" />
+                                <img className="h-[79px] w-[79px] rounded-full" src={user.user.img} alt="" />
                             </Link>
                         </div>
                     </div>

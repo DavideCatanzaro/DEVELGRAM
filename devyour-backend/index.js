@@ -27,9 +27,8 @@ app.post("/register", (req, res) => {
     username,
     email,
     password,
-    img: "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
-    cover:
-      "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png",
+    imgProfile: "https://png.pngtree.com/png-vector/20191009/ourlarge/pngtree-user-icon-png-image_1796659.jpg",
+    cover: "https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png",
   };
 
   // Salva il nuovo utente nel database JSON
@@ -93,6 +92,8 @@ function loadUsers() {
   }
 }
 
+
+// Funzione per creare i post
 app.get("/api/posts", (req, res) => {
   res.status(200).send(JSON.stringify(posts.post));
 });
