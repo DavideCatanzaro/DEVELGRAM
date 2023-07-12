@@ -1,8 +1,7 @@
 import Shoot from "./Shoot";
 import Separator from "../atoms/Separator";
 
-export default function Shoots({ viewShoot }) {
-    
+const Shoots = ({ viewShoot }) => {
     return (
         <>
             <style dangerouslySetInnerHTML={{ __html: "\n\n    .hover-image-1{\n        transition: ease-in-out 0.2s;\n    }\n    .hover-image-1:hover{\n        width: 50px;\n        height: 50px;\n    }\n\n" }} />
@@ -20,5 +19,7 @@ export default function Shoots({ viewShoot }) {
             </div>
             <Separator title="Shoots" />
         </>
-    )
-}
+    );
+};
+
+export default Shoots;

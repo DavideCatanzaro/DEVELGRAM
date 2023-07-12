@@ -1,6 +1,4 @@
-function LikeYourComment({
-    lastMessage,
-}) {
+const LikeYourComment = ({lastMessage}) => {
     return (
         <>
             <div className="flex">
@@ -13,11 +11,11 @@ function LikeYourComment({
                 <span className="text-grey ">{lastMessage}</span>
             </div>
         </>
-    )
-}
+    );
+};
 
 LikeYourComment.defaultProps = {
     lastMessage: "Message not found",
-}
+};
 
 export default LikeYourComment;

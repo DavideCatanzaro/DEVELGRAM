@@ -1,8 +1,8 @@
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom"
 
 const ProfileCard = () => {
-    const savedUser = localStorage.getItem('user');
-    const user = savedUser ? JSON.parse(savedUser) : null;
+    const user = useSelector((state) => state.auth);
     
     return (
         <>
@@ -12,7 +12,7 @@ const ProfileCard = () => {
                         <img src={user.user.cover} className="flex h-24 w-full justify-center rounded-xl bg-cover" alt={user.user.username} />
                         <div className="absolute -bottom-12 flex h-[87px] w-[87px] items-center justify-center rounded-full border-4 border-white hover:border-blue">
                             <Link to="/userProfile">
-                                <img className="h-[79px] w-[79px] rounded-full" src={user.user.img} alt={user.user.username} />
+                                <img className="h-[79px] w-[79px] rounded-full" src={user.user.image} alt={user.user.username} />
                             </Link>
                         </div>
                     </div>
@@ -28,25 +28,25 @@ const ProfileCard = () => {
                     <div className="py-3 w-full flex justify-evenly items-center gap-4">
                         <Link to="/userProfile">
                             <div className="basis-1/3 flex flex-col items-center justify-center">
-                                <p className="text-2xl font-bold text-grey dark:text-white">0</p>
+                                <p className="text-2xl font-bold text-grey dark:text-white"></p>
                                 <p className="text-sm font-normal text-grey dark:text-white">Posts</p>
                             </div>
                         </Link>
                         <Link to="/follower">
                             <div className="basis-1/3 flex flex-col items-center justify-center">
-                                <p className="text-2xl font-bold text-grey dark:text-white">0</p>
+                                <p className="text-2xl font-bold text-grey dark:text-white"></p>
                                 <p className="text-sm font-normal text-grey dark:text-white">Followers</p>
                             </div>
                         </Link>
                         <Link to="/following">
                             <div className="basis-1/3 flex flex-col items-center justify-center">
-                                <p className="text-2xl font-bold text-grey dark:text-white">0</p>
+                                <p className="text-2xl font-bold text-grey dark:text-white"></p>
                                 <p className="text-sm font-normal text-grey dark:text-white">Following</p>
                             </div>
                         </Link>
                     </div>
                     <div>
-                        <span class="absolute inset-x-0 bottom-0 rounded-b-[20px] h-3 bg-gradient-to-r from-[#80d8ff] to-[#ea80fc]"></span>
+                        <span className="absolute inset-x-0 bottom-0 rounded-b-[20px] h-3 bg-gradient-to-r from-[#80d8ff] to-[#ea80fc]"></span>
                     </div>
                 </div>
             </div>

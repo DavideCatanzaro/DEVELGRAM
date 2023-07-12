@@ -6,25 +6,38 @@ import Navbar from "../components/shared/Navbar"
 import { useEffect, useState } from "react"
 import NewContent from "../components/shared/NewContent"
 import SearchModal from "../components/shared/SearchModal"
+import { useDispatch, useSelector } from "react-redux"
+import axios from "axios"
+import { setPosts } from "../store/postsSlice"
 
 const UserProfile = () => {
-    const [posts, setPosts] = useState([]);
-    const savedUser = localStorage.getItem('user');
-    const user = savedUser ? JSON.parse(savedUser) : null;
-    async function fetchPosts() {
-        try {
-            const response = await fetch("http://localhost:6700/api/posts");
-            const postData = await response.json()
-            setPosts(postData);
+    const dispatch = useDispatch();
+    const user = useSelector((state) => state.auth);
+	const posts = useSelector((state) => state.posts.items);
+	const token = useSelector(state => state.auth.token)
 
-        } catch (error) {
-            console.log(error)
-        }
-    }
+	useEffect(() => {
+		const fetchDataPosts = async () => {
+			try {
+				const results = await axios({
+					url: "http://localhost:6700/api/posts",
+					method: "GET",
+					headers: {
+						"Authorization": `Bearer ${token}`,
+					}
+				});
 
-    useEffect(() => {
-        fetchPosts()
-    }, []);
+				const data = results.data;
+				dispatch(setPosts(data));
+				// console.log(data);
+			} catch (err) {
+				console.error(err);
+			}
+		};
+		if (posts.length === 0) {
+			fetchDataPosts();
+		}
+	}, [posts]);
 
     const [newPost, setNewPost] = useState(false)
     const [showSearchModal, setShowSearchModal] = useState(false)
@@ -34,8 +47,8 @@ const UserProfile = () => {
             setNewPost(true)
         } else {
             setNewPost(false)
-        }
-    }
+        };
+    };
 
     return (
         <>
@@ -58,12 +71,12 @@ const UserProfile = () => {
                             </div>
                         </div>
 
-                        {posts.filter((item) => item.username === user.user.username).map((item) => {
+                        {posts.filter((post) => post.user._id === user.user._id).map((post, index)=> {
                             return (<Post
-                                imgProfile={item.imgProfile}
-                                username={item.username}
-                                imgPost={item.imgPost}
-                                descriptionPost={item.descriptionPost}
+                                key={`post-${index}`}
+                                user={post.user}
+                                cover={post.cover}
+                                description={post.description}
                             />)
                         })
                         }

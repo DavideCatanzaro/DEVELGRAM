@@ -1,16 +1,25 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { logout } from "../../store/authSlice";
+import { useDispatch, useSelector } from "react-redux";
 
-function Navbar({createPost, setShowSearchModal}) {
-    const [view, setView] = useState(false)
-    
+const Navbar = ({ createPost, setShowSearchModal }) => {
+    const user = useSelector((state) => state.auth);
+    const dispatch = useDispatch();
+
+    const handleLogout = () => {
+        dispatch(logout());
+    };
+
+    const [view, setView] = useState(false);
+
     const handleView = () => {
         if (view === false) {
-            setView(true)
+            setView(true);
         } else {
-            setView(false)
-        }
-    }
+            setView(false);
+        };
+    };
 
     return (
         <>
@@ -24,17 +33,17 @@ function Navbar({createPost, setShowSearchModal}) {
                         <Link to="/devyour" className="flex flex-col items-center justify-center gap-1 rounded-md p-1 text-grey hover:text-blue dark:text-white dark:hover:text-pink
                                                 md:flex-row">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                            </svg>
 
-                                <small className="text-xs font-medium">Home</small>
+                            <small className="text-xs font-medium">Home</small>
                         </Link>
 
                         <div onClick={() => setShowSearchModal(true)} className="cursor-pointer hidden md:flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
                                                 md:flex-row">
- 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                             </svg>
 
@@ -44,13 +53,13 @@ function Navbar({createPost, setShowSearchModal}) {
                         <Link to="/messages" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
                                                 md:flex-row">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                            </svg>
 
-                                <small className="text-center text-xs font-medium"> Messages </small>
+                            <small className="text-center text-xs font-medium"> Messages </small>
                         </Link>
-                        
+
                         <div onClick={createPost}
                             className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 cursor-pointer text-grey hover:text-pink dark:text-white dark:hover:text-blue
                                                 md:flex-row">
@@ -67,17 +76,17 @@ function Navbar({createPost, setShowSearchModal}) {
                         <Link to="/notices" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
                                                 md:flex-row">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
+                            </svg>
 
-                                <small className="text-center text-xs font-medium"> Notices </small>
+                            <small className="text-center text-xs font-medium"> Notices </small>
                         </Link>
 
                         <Link to="/userProfile" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
                                                 md:flex-row">
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
                             </svg>
 
@@ -88,21 +97,25 @@ function Navbar({createPost, setShowSearchModal}) {
                     <div className={`${view ? "flex" : "hidden"} z-20 w-full items-center justify-center`}>
                         <div className="flex flex-col items-center justify-center gap-1 rounded-md
                                                 md:flex-row">
-                            <Link to="/" className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
+                            {
+                                user.token !== null && (
+                                    <button onClick={handleLogout} className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-pink dark:text-white dark:hover:text-blue
                                                 md:flex-row">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
-                                    </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+                                        </svg>
 
-                                    <small className="text-center text-xs font-medium"> Logout </small>
-                            </Link>
+                                        <small className="text-center text-xs font-medium"> Logout </small>
+                                    </button>
+                                )
+                            }
                         </div>
                     </div>
 
                     <div className="border-blue w-[1px] bg-blue"></div>
                     <hr className="text-blue" />
 
-                    <div onClick={handleView} className="flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
+                    <div onClick={handleView} className="cursor-pointer flex flex-col items-center justify-center gap-1 rounded-md p-1.5 text-grey hover:text-blue dark:text-white dark:hover:text-pink
                                                 md:flex-row">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 shrink-0">
